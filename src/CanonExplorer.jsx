@@ -17,11 +17,11 @@ const SERIES = [...new Set(ENTRIES.map((e) => e.series))].sort(
 const PEOPLE = [...new Set(ENTRIES.flatMap((e) => e.who))].sort();
 
 const PATHS = {
-  "Start here": ENTRIES.filter(e => ["core_lore_summary","universe_overview","bio_one","root_myth"].includes(e.id)).map(e => e.id),
-  "One & Sandi": ENTRIES.filter(e => ["love_lobby","love_kitchen","love_newsstand","sandi_ii","scene_dagger","scene_ballroom"].includes(e.id)).map(e => e.id),
-  "The Baptist & the synthetic voice": ENTRIES.filter(e => ["bio_baptist","baptist_ii","baptist_iv","carm_iv","decoy_detection"].includes(e.id)).map(e => e.id),
-  "Carmichael's descent": ENTRIES.filter(e => ["carm_i","carm_ii","carm_iii","carm_iv","scene_spectacle"].includes(e.id)).map(e => e.id),
-  "Power & method": ENTRIES.filter(e => ["servant_test","means_message","naming","scapegoat","fourth_branch"].includes(e.id)).map(e => e.id),
+  "Start here": ["core_lore_summary","the_voice_of_one_universe_overview","bio_one","the_root_of_the_myth"],
+  "One & Sandi": ["love_series_letter_to_sandi_i_the_quiet_lobby","love_kitchen_light","love_letter_to_sandi_viii_newsstand","scroll_of_sandi_ii_the_file_on_one","scene_the_dagger_point","scene_the_inaugural_ballroom"],
+  "The Baptist & the synthetic voice": ["bio_baptist","scroll_of_the_baptist_ii","scroll_of_the_baptist_iv","scroll_of_carmichael_iv","scroll_conscience_04_decoy_detection"],
+  "Carmichael's descent": ["scroll_of_carmichael_i","scroll_of_carmichael_ii","scroll_of_carmichael_iii","scroll_of_carmichael_iv","scroll_of_one_on_spectacle_and_power"],
+  "Power & method": ["scroll_leadership_servant_test","scroll_of_leadership_vii_the_means_are_the_message","scroll_on_naming_without_becoming_the_play","scroll_of_one_the_scapegoat_ledger","scroll_governance_01_the_fourth_branch"],
 };
 
 const STATUS_LABEL = { canon: "Canon", draft: "Draft", seed: "Seed", repair: "Needs repair" };
