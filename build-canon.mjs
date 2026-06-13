@@ -32,6 +32,7 @@ const REQUIRED = ["id","title","series","kind","who","status","arc","order","sum
 const SKIP = new Set([
   "SCROLL_MASTER_INDEX.md","SCROLL_INDEX.md","PROJECT_FILE_CATALOG.md",
   "RENAME_MAP.md","SCROLLS_INDEX_AI_AND_POWER.md","SCROLL_METADATA_SPEC.md",
+  "SCROLLS_LOVE_SERIES.md",
 ]);
 
 const dir = process.argv[2];

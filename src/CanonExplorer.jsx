@@ -137,6 +137,9 @@ const CSS = `
 .voc-foot{max-width:1180px; margin:0 auto; padding:22px 28px 40px; border-top:1px solid var(--line);
   display:flex; flex-wrap:wrap; gap:12px; justify-content:space-between;
   font-family:'Spline Sans Mono',monospace; font-size:10.5px; letter-spacing:.06em; color:var(--bone-faint);}
+.voc-foot-link{color:var(--bone-dim); text-decoration:none;
+  border-bottom:1px solid var(--line2); transition:color .15s,border-color .15s;}
+.voc-foot-link:hover{color:var(--amber); border-color:var(--amber-dim);}
 @media (max-width:820px){
   .voc-body{grid-template-columns:1fr; gap:22px;}
   .voc-rail{position:static; flex-direction:row; flex-wrap:wrap; gap:24px;}
@@ -316,7 +319,11 @@ export default function CanonExplorer() {
 
       <footer className="voc-foot">
         <span>Scrolls of One — canon record · {STATS.total} entries</span>
-        <span>Generated {new Date(STATS.generated).toLocaleDateString()}</span>
+        <span>
+          A project of the{" "}
+          <a href="https://emergenceinstitute.live" className="voc-foot-link"
+             target="_blank" rel="noopener noreferrer">Emergence Institute</a>
+        </span>
       </footer>
     </div>
   );
