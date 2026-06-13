@@ -43,7 +43,7 @@ const CSS = `
 .voc-root button{font-family:'Spline Sans Mono',ui-monospace,monospace; cursor:pointer;}
 .voc-head{position:relative; padding:0;}
 .voc-head-rule{height:3px; background:linear-gradient(90deg,var(--amber),transparent 70%);}
-.voc-head-inner{max-width:1180px; margin:0 auto; padding:44px 28px 30px;}
+.voc-head-inner{max-width:none; margin:0 auto; padding:44px 32px 30px;}
 .voc-eyebrow{font-family:'Spline Sans Mono',monospace; font-size:11px; letter-spacing:.22em;
   text-transform:uppercase; color:var(--amber-dim); margin:0 0 14px;}
 .voc-title{font-family:'Fraunces',serif; font-optical-sizing:auto; font-weight:500;
@@ -54,7 +54,7 @@ const CSS = `
 .voc-stat b{color:var(--bone);}
 .voc-dot-canon{color:var(--amber);} .voc-dot-draft{color:var(--slate);}
 .voc-dot-seed{color:var(--green);} .voc-dot-repair{color:var(--rust);}
-.voc-controls{max-width:1180px; margin:0 auto; padding:0 28px 8px;
+.voc-controls{max-width:none; margin:0 auto; padding:0 32px 8px;
   display:flex; flex-wrap:wrap; gap:18px 28px; align-items:center; justify-content:space-between;}
 .voc-search{flex:1; min-width:240px; background:var(--ink2); border:1px solid var(--line);
   color:var(--bone); font-family:'Newsreader',serif; font-size:16px; padding:12px 16px; border-radius:2px;}
@@ -67,7 +67,7 @@ const CSS = `
   font-size:12px; padding:6px 11px; border-radius:999px; transition:all .15s;}
 .voc-chip:hover{border-color:var(--amber-dim); color:var(--bone);}
 .voc-chip.is-on{background:var(--amber); border-color:var(--amber); color:var(--ink); font-weight:500;}
-.voc-body{max-width:1180px; margin:0 auto; padding:18px 28px 60px; display:grid;
+.voc-body{max-width:none; margin:0 auto; padding:18px 32px 60px; display:grid;
   grid-template-columns:220px 1fr; gap:36px;}
 .voc-rail{position:sticky; top:18px; align-self:start; display:flex; flex-direction:column; gap:26px;}
 .voc-rail-head{font-family:'Spline Sans Mono',monospace; font-size:10px; letter-spacing:.2em;
@@ -134,7 +134,7 @@ const CSS = `
 .voc-placeholder{font-size:14px; line-height:1.6; color:var(--bone-faint); font-style:italic; margin:0;}
 .voc-body-text{font-size:15px; line-height:1.6; color:var(--bone);}
 .voc-body-text p{margin-bottom:0.75rem;}
-.voc-foot{max-width:1180px; margin:0 auto; padding:22px 28px 40px; border-top:1px solid var(--line);
+.voc-foot{max-width:none; margin:0 auto; padding:22px 32px 40px; border-top:1px solid var(--line);
   display:flex; flex-wrap:wrap; gap:12px; justify-content:space-between;
   font-family:'Spline Sans Mono',monospace; font-size:10.5px; letter-spacing:.06em; color:var(--bone-faint);}
 .voc-foot-link{color:var(--bone-dim); text-decoration:none;
