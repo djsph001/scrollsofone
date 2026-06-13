@@ -157,6 +157,7 @@ export default function CanonExplorer() {
   const [person, setPerson] = useState(null);
   const [path, setPath] = useState(null);
   const [selected, setSelected] = useState(null);
+  const [openedAt, setOpenedAt] = useState(0);
 
   useEffect(() => {
     const onKey = (e) => { if (e.key === "Escape") setSelected(null); };
@@ -270,7 +271,7 @@ export default function CanonExplorer() {
             <ul className="voc-grid">
               {filtered.map((e, i) => (
                 <li key={e.id} className="voc-card" style={{ animationDelay: `${Math.min(i * 24, 360)}ms` }}>
-                  <button className="voc-card-btn" onClick={() => setSelected(e)}>
+                  <button className="voc-card-btn" onClick={() => { setSelected(e); setOpenedAt(Date.now()); }}>
                     <div className="voc-card-meta">
                       <span className="voc-kind">{e.kind}</span>
                       <span className={"voc-status voc-status-" + e.status}>{STATUS_LABEL[e.status]}</span>
@@ -290,7 +291,7 @@ export default function CanonExplorer() {
       </div>
 
       {selected && (
-        <div className="voc-overlay" onClick={() => setSelected(null)}>
+        <div className="voc-overlay" onClick={() => { if (Date.now() - openedAt > 300) setSelected(null); }}>
           <div className="voc-drawer" onClick={(e) => e.stopPropagation()} role="dialog" aria-modal="true" aria-label={selected.title}>
             <button className="voc-close" onClick={() => setSelected(null)} aria-label="Close">✕</button>
             <div className="voc-drawer-meta">
