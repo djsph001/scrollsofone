@@ -1,4 +1,6 @@
+import React from "react";
 import { useState, useMemo, useEffect } from "react";
+import { Link } from "react-router-dom";
 import data from "./entries.json";
 
 const ENTRIES = data.entries;
@@ -313,6 +315,16 @@ export default function CanonExplorer() {
                   {selected.visibility === "archive" ? " This chapter is published in The Antichrist and the Prophet, available on Amazon." : ""}
                 </p>
               )}
+            </div>
+            <div style={{ marginTop: '18px', paddingTop: '12px', borderTop: '1px solid var(--line)' }}>
+              <Link
+                to={`/scroll/${selected.id}`}
+                className="voc-foot-link"
+                onClick={(e) => e.stopPropagation()}
+                style={{ fontFamily: "'Spline Sans Mono',monospace", fontSize: '11px', letterSpacing: '.08em' }}
+              >
+                Permalink ↗
+              </Link>
             </div>
           </div>
         </div>
