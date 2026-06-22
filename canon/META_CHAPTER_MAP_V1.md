@@ -10,7 +10,7 @@ order: null
 summary: >
   Canonical arc sequencing mapping all scrolls and scenes into eight narrative arcs from Reality is Editable through Congressional.
 supersedes: null
-visibility: public
+visibility: archive
 ---
 
 Canon status: CANONICAL

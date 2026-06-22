@@ -6,11 +6,7 @@ import EntryPage from './pages/EntryPage';
 export const routes = [
   { path: '/', element: <CanonExplorer /> },
   { path: '/scroll/core_lore_summary', element: <EntryPage /> },
-  { path: '/scroll/first_instructions', element: <EntryPage /> },
-  { path: '/scroll/meta_chapter_map_v1', element: <EntryPage /> },
-  { path: '/scroll/revised_instructions', element: <EntryPage /> },
   { path: '/scroll/the_voice_of_one_universe_overview', element: <EntryPage /> },
-  { path: '/scroll/universe_intro_canon', element: <EntryPage /> },
   { path: '/scroll/additional_profile_for_baptist', element: <EntryPage /> },
   { path: '/scroll/bio_baptist', element: <EntryPage /> },
   { path: '/scroll/bio_one', element: <EntryPage /> },

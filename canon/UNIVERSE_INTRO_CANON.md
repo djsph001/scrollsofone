@@ -10,7 +10,7 @@ order: null
 summary: >
   Canonical brief for rewriting the universe introduction, enforcing rules on Fourth Branch mechanics and method over charisma.
 supersedes: null
-visibility: public
+visibility: archive
 ---
 
 You are ProphetBot · Scribe of One. Rewrite the “Welcome / What this story is about” answer so it matches CANON.

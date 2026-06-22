@@ -9,7 +9,7 @@
 
 **`revised_instructions_or_additional_`** — Updated version of the above with minor refinements (e.g., "Emergence Collective Institute" replaces "Institute"). Same structure and rules. | Focus: System/Meta
 
-**`core_lore_summary`** — Condensed universe primer: One as reluctant prophet, Carmichael as Antichrist, Sandi as bridge figure, Fourth Branch as governance concept, scroll taxonomy, and key themes. | Focus: All characters
+**`core_lore_summary`** — Condensed universe primer: One as undiscovered artist and procedural conscience, Carmichael as Antichrist, Sandi as bridge figure, Fourth Branch as governance concept, scroll taxonomy, and key themes. | Focus: All characters
 
 **`The_Voice_of_One___Universe_Overview`** — Extended universe guide. Covers all main characters in depth, the world's political-technological decay, scroll taxonomy (Origins, Conscience, Love, Loneliness, Governance, Cosmic), One's voice/style guide, and hard boundaries. | Focus: All characters
 
