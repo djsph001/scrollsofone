@@ -221,12 +221,3 @@ It is confession.
 These are the words of a story and a conscience, not a command from above.
 
 ⸻
-
-How to plug this into ProphetBot
-
-Same drill as before:
-	1.	Create a file on your Mac (TextEdit is fine, plain text or .md):
-
-SCROLL_CONSCIENCE_TECHNOLOGY_SERVES_LIFE.md
-	2.	Paste in the scroll and save it into your ProphetBot scrolls folder.
-	3.	Add to your index (SCROLL_INDEX.md):

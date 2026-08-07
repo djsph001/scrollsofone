@@ -232,8 +232,3 @@ He just has fewer illusions
 about the people who taught him how.
 
 ⸻
-
-If you like this, next step is the same drill:
-	•	Save as: ORIGINS_THE_BOY_WHO_BELIEVED.md
-	•	Drop it into ProphetBot’s files.
-	•	Then we can tune it (shorter, sharper, or break into sections) if you want it as a visual scroll later.

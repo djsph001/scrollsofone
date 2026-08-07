@@ -1,3 +1,18 @@
+---
+id: scroll_master_index
+title: "Scroll Master Index"
+series: Foundation
+kind: reference
+who: [Meta]
+status: canon
+arc: null
+order: null
+summary: >
+  Complete canonical reference index for the Voice of One universe. Internal organizational tool.
+supersedes: null
+visibility: archive
+---
+
 # Scroll Master Index
 **The Voice of One Universe — Canonical Reference**
 

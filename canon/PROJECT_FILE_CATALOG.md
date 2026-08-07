@@ -1,3 +1,18 @@
+---
+id: project_file_catalog
+title: "Complete Project File Catalog"
+series: Foundation
+kind: reference
+who: [Meta]
+status: canon
+arc: null
+order: null
+summary: >
+  Full catalog of every file in the Voice of One canon project. Internal organizational tool.
+supersedes: null
+visibility: archive
+---
+
 # The Voice of One — Complete Project File Catalog
 **Total files: 113 | Generated: April 2026**
 

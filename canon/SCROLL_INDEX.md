@@ -1,4 +1,17 @@
-Good, this is a perfect moment to start scaffolding the scroll universe.
+---
+id: scroll_index
+title: "Scroll Index"
+series: Foundation
+kind: reference
+who: [Meta]
+status: canon
+arc: null
+order: null
+summary: >
+  Working table of contents for the scroll universe across six lanes — Origins, Love, Conscience, Leadership, Economics, AI & Power. Internal organizational tool.
+supersedes: null
+visibility: archive
+---
 
 Here’s a working Scrolls Table of Contents you can literally drop into a file called SCROLL_INDEX.md for ProphetBot’s brain and your own sanity.
 

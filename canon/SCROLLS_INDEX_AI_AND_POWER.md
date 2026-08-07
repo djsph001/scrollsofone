@@ -1,3 +1,18 @@
+---
+id: scrolls_index_ai_power
+title: "Scrolls Index — AI & Power"
+series: Foundation
+kind: reference
+who: [Meta]
+status: canon
+arc: null
+order: null
+summary: >
+  Index of core Scrolls where One wrestles with technology, power, and superintelligence. Internal organizational tool.
+supersedes: null
+visibility: archive
+---
+
 # Scrolls Index – AI & Power
 
 These are the core Scrolls where One wrestles with technology, power, and what it means to keep machines beneath life and conscience.

@@ -203,17 +203,3 @@ to live with that choice ever since.
 These are the words of a story and a conscience, not a command from above.
 
 ⸻
-
-What to do with this now
-
-On the Mac, quick and simple:
-	1.	Create the file
-
-	•	Open TextEdit → new document
-	•	Paste the scroll
-	•	Save as (plain text or .md) in your ProphetBot folder:
-
-SCROLL_ORIGINS_BOY_WHO_BELIEVED.md
-	2.	Update your index
-
-In SCROLL_INDEX.md, add under Origins:
