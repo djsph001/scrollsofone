@@ -4,11 +4,11 @@ title: "BIO Sandi"
 series: Characters
 kind: profile
 who: [Sandi]
-status: repair
+status: canon
 arc: null
 order: null
 summary: >
-  Sandi Carmichael's intended standalone profile. Note: currently contains One's bio text — misfile to be repaired.
+  Sandi Carmichael: the President's daughter, bridge between regimes, One's partner. Performance-born, navigating invisible cost in a universe that treats intimacy as intelligence. Not One's shadow — his equal, his tether, and sometimes his hardest mirror.
 supersedes: null
 visibility: public
 ---
