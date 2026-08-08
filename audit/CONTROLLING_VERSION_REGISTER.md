@@ -57,12 +57,16 @@ Locked by ruling, not metadata. These are the inheritance surface for the featur
 | **Arc architecture (8 vs 9)** | **Eight arcs.** Former Arc 9 ("Contempt Weapon: Comedy as Repression") folds into Arc 8, retitled "Narrative and Contempt War." Scenes 48–50 belong to Arc 8. Validator remains limited to arcs 1–8. |
 | **One's age** | **Fifties; exact age unspecified.** The manuscript controls. Already ratified: Prologue V2 corrected from 40s to 50s. |
 
-## 5. Open — RENAME_MAP items (Dec 2024 plan, unexecuted)
+## 5. Resolved — RENAME_MAP naming decisions (ratified @ `c237c23`)
 
-- Origins numbering
-- Leadership VII
-- Scene-vs-Scroll for Spectacle
-- Love Series guide name
+| Item | Ruling |
+|---|---|
+| Origins numbering | Retain lore number `12` |
+| Leadership VII | Retain `07` |
+| On Spectacle and Power | Classify as a scroll |
+| Love Series guide | Rename to `GUIDE_LOVE_SERIES.md` |
+
+Migration is mechanical — file renames only, per the December 2024 plan with stale sections preserved. No prose edits, no canon changes.
 
 ## 6. Known coverage gap (finding, not a fork)
 
