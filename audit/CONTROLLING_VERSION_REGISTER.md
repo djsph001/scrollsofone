@@ -53,21 +53,18 @@ Locked by ruling, not metadata. These are the inheritance surface for the featur
 
 | Question | Ruling |
 |---|---|
-| **Fourth Branch progression** | **Three-stage progression:** private method → Witness Circles / decentralized practice → constitutional proposal. |
-| **Arc architecture (8 vs 9)** | **Eight arcs.** The proposed Arc 9 ("Contempt Weapon: Comedy as Repression") is **folded into Arc 8**, not a standalone arc. |
+| **Fourth Branch progression** | **Three-stage progression:** (1) One's private procedural method; (2) Witness Circles, mutual aid, and the Fourth Branch Ethic as decentralized civic practice; (3) eventual constitutional Fourth Branch proposal. Practice precedes proposal — One does not begin by campaigning for or preaching a new constitutional institution. |
+| **Arc architecture (8 vs 9)** | **Eight arcs.** Former Arc 9 ("Contempt Weapon: Comedy as Repression") folds into Arc 8, retitled "Narrative and Contempt War." Scenes 48–50 belong to Arc 8. Validator remains limited to arcs 1–8. |
+| **One's age** | **Fifties; exact age unspecified.** The manuscript controls. Already ratified: Prologue V2 corrected from 40s to 50s. |
 
-## 5. Open — authorial rulings still required
-
-- **One's age** — file currently reads 50s; the manuscript is controlling (screen docs cannot set canon). Confirm the manuscript's own 50s is internally consistent, and check what back-history depended on it (span since prior events, Carmichael's tenure) before locking.
-
-## 6. Open — RENAME_MAP items (Dec 2024 plan, unexecuted)
+## 5. Open — RENAME_MAP items (Dec 2024 plan, unexecuted)
 
 - Origins numbering
 - Leadership VII
 - Scene-vs-Scroll for Spectacle
 - Love Series guide name
 
-## 7. Known coverage gap (finding, not a fork)
+## 6. Known coverage gap (finding, not a fork)
 
 `build-canon.mjs` scans only `.md` and extensionless files; ~4–5 malformed/broken-extension files (e.g. `Scroll_of_the_Baptist_III_md.`) fall outside the scan. The 141-entry "green" is honest for what is scanned but is **not** the full 145-file folder. Closes when the RENAME_MAP phases run — scoped out of mechanical passes.
 
