@@ -47,22 +47,27 @@ Extraction sources: `scene_12_sandi_hears_it` ← `scroll_ai_black_box_rule_02_v
 
 ---
 
-## 4. Open — authorial rulings still required
+## 4. Resolved — structural rulings (authorial)
 
-Structural questions no metadata can resolve; these are Dale's to decide.
+Locked by ruling, not metadata. These are the inheritance surface for the feature's structure.
 
-- **Fourth Branch progression** — the sequence/logic of the governance arc.
-- **8-vs-9 arc architecture** — whether the universe is eight arcs or nine. Changes what the feature's act structure inherits.
+| Question | Ruling |
+|---|---|
+| **Fourth Branch progression** | **Three-stage progression:** private method → Witness Circles / decentralized practice → constitutional proposal. |
+| **Arc architecture (8 vs 9)** | **Eight arcs.** The proposed Arc 9 ("Contempt Weapon: Comedy as Repression") is **folded into Arc 8**, not a standalone arc. |
+
+## 5. Open — authorial rulings still required
+
 - **One's age** — file currently reads 50s; the manuscript is controlling (screen docs cannot set canon). Confirm the manuscript's own 50s is internally consistent, and check what back-history depended on it (span since prior events, Carmichael's tenure) before locking.
 
-## 5. Open — RENAME_MAP items (Dec 2024 plan, unexecuted)
+## 6. Open — RENAME_MAP items (Dec 2024 plan, unexecuted)
 
 - Origins numbering
 - Leadership VII
 - Scene-vs-Scroll for Spectacle
 - Love Series guide name
 
-## 6. Known coverage gap (finding, not a fork)
+## 7. Known coverage gap (finding, not a fork)
 
 `build-canon.mjs` scans only `.md` and extensionless files; ~4–5 malformed/broken-extension files (e.g. `Scroll_of_the_Baptist_III_md.`) fall outside the scan. The 141-entry "green" is honest for what is scanned but is **not** the full 145-file folder. Closes when the RENAME_MAP phases run — scoped out of mechanical passes.
 
