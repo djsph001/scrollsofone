@@ -1,6 +1,6 @@
 ---
 id: scene_64_the_terms_of_silence
-title: "Scene 64 — The Terms of Silence"
+title: "Scene 64 — Drafting the Terms of Silence"
 series: Scenes
 kind: scene
 who: [One]

@@ -1,6 +1,6 @@
 ---
 id: scene_67_the_terms_of_silence
-title: "Scene 67 — The Terms of Silence"
+title: "Scene 67 — The Terms of Silence — Haiti"
 series: Scenes
 kind: scene
 who: [One]
