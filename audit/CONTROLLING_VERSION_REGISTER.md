@@ -18,7 +18,7 @@ These forks are self-declaring in frontmatter; no ruling was needed beyond readi
 | Technology / Conscience | `scroll_conscience_that_technology_shall_bow_to_life` | `scroll_conscience_technology_serves_life` | head declares supersession |
 | Origins XII | `scroll_origins_xii_the_haitian_son` | `scroll_of_origins_xii` | head declares `supersedes: scroll_of_origins_xii` |
 
-**Downstream consequence (open):** the prologue's opening narration quotes the *third-person* superseded Boy Who Believed. The controlling head is *first-person* ("Before they called me prophet"). The screen doc must reconcile to the head; flagged for the next screen pass, not this mechanical one.
+**Downstream consequence (resolved):** Prologue V2 revised 2026-08-07. Opening narration reconciles to the controlling first-person head ("Before they called me dangerous / Before they called me prophet"). Retrospective narrator labeled OLDER ONE (V.O.); THE VOICE remains a distinct, unlocated present-tense presence. Prologue now presumes One's survival to a narrating age — inherited from canon, not established by the screen doc.
 
 ---
 
