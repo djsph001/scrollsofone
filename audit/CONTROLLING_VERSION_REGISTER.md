@@ -4,7 +4,7 @@
 
 **Governing rule:** Screen documents (anything under `screen/`) inherit from canon and may not establish new canon facts. Where this register and a screen document disagree, the register controls.
 
-**Last validated:** `build-canon.mjs ./canon --check` → 141 entries, passed, against `master` @ `1d88ea8`.
+**Last validated:** `build-canon.mjs ./canon --check` → 138 entries, passed, against `master` @ `e2f82ee`. Migration complete: 45 standardized moves, 6 retained archive IDs, 131 canon-status entries.
 
 ---
 
