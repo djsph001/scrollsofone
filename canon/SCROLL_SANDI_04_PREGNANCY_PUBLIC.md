@@ -46,13 +46,13 @@ Title:
 Scroll of Sandi IV: When Social Media Discovered the Pregnancy
 
 File name:
-Scroll_of_Sandi_IV_When_Social_Media_Discovered_the_Pregnancy.md
+SCROLL_SANDI_04_PREGNANCY_PUBLIC.md
 
 Order so far in the Sandi arc:
-	1.	Scroll_of_Sandi_I_The_Presidents_Daughter.md (to write)
-	2.	Scroll_of_Sandi_II_The_File_on_One.md (to write)
-	3.	Scroll_of_Sandi_III_The_Child_of_Two_Kingdoms.md (we just did)
-	4.	Scroll_of_Sandi_IV_When_Social_Media_Discovered_the_Pregnancy.md (this one)
+	1.	SCROLL_SANDI_01_GROWING_UP_IN_PERFORMANCE.md (to write)
+	2.	SCROLL_SANDI_02_THE_FILE_ON_ONE.md (to write)
+	3.	SCROLL_SANDI_03_PREGNANCY_PRIVATE.md (we just did)
+	4.	SCROLL_SANDI_04_PREGNANCY_PUBLIC.md (this one)
 
 ⸻
 

@@ -13,8 +13,8 @@
  * Zero dependencies except js-yaml:  npm install js-yaml
  */
 
-import { readdirSync, readFileSync, writeFileSync, mkdirSync } from "node:fs";
-import { join, extname, basename } from "node:path";
+import { readdirSync, readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
+import { join, extname, basename, dirname, resolve } from "node:path";
 import yaml from "js-yaml";
 
 // ---------- Spec v1 closed vocabularies ----------
@@ -30,9 +30,9 @@ const REQUIRED = ["id","title","series","kind","who","status","arc","order","sum
 
 // Index/organizational files that intentionally carry no frontmatter:
 const SKIP = new Set([
-  "SCROLL_MASTER_INDEX.md","SCROLL_INDEX.md","PROJECT_FILE_CATALOG.md",
-  "RENAME_MAP.md","SCROLLS_INDEX_AI_AND_POWER.md","SCROLL_METADATA_SPEC.md",
-  "SCROLLS_LOVE_SERIES.md",
+  "PROJECT_FILE_CATALOG.md",
+  "RENAME_MAP.md","INDEX_AI_POWER.md","SCROLL_METADATA_SPEC.md",
+  "GUIDE_LOVE_SERIES.md",
 ]);
 
 const dir = process.argv[2];
@@ -43,6 +43,30 @@ if (!dir) { console.error("Usage: node build-canon.mjs <canon-dir> [--check]"); 
 const errors = [];
 const warnings = [];
 const entries = [];
+
+// Retained superseded bodies live outside /canon so they are not shipped in
+// the public bundle. Their IDs still participate in chain validation.
+const archiveIds = new Set();
+const archiveDir = resolve(dirname(dir), "archive");
+if (existsSync(archiveDir)) {
+  const walkArchive = (root) => {
+    for (const item of readdirSync(root, { withFileTypes: true })) {
+      const path = join(root, item.name);
+      if (item.isDirectory()) { walkArchive(path); continue; }
+      if (extname(item.name) !== ".md") continue;
+      const raw = readFileSync(path, "utf8");
+      const match = raw.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+      if (!match) continue; // Organizational indexes have no frontmatter.
+      try {
+        const fm = yaml.load(match[1]);
+        if (fm?.id) archiveIds.add(fm.id);
+      } catch (e) {
+        errors.push(`${path}: archive YAML parse error — ${e.message}`);
+      }
+    }
+  };
+  walkArchive(archiveDir);
+}
 
 const files = readdirSync(dir).filter((f) => {
   if (SKIP.has(f)) return false;
@@ -113,8 +137,11 @@ for (const e of entries) {
 
 // ---------- Rule 3: supersedes chains resolve ----------
 const ids = new Set(entries.map((e) => e.id));
+for (const id of archiveIds) {
+  if (ids.has(id)) errors.push(`duplicate id '${id}' exists in canon and archive`);
+}
 for (const e of entries) {
-  if (e.supersedes && !ids.has(e.supersedes))
+  if (e.supersedes && !ids.has(e.supersedes) && !archiveIds.has(e.supersedes))
     errors.push(`${e.file}: supersedes '${e.supersedes}' — no such id`);
 }
 // Detect cycles
@@ -129,6 +156,7 @@ for (const e of entries) {
 // ---------- Report ----------
 console.log(`\nScrolls of One — canon build`);
 console.log(`  scanned: ${files.length} files · parsed: ${entries.length} entries`);
+if (archiveIds.size) console.log(`  archive references: ${archiveIds.size} retained id(s)`);
 if (warnings.length) {
   console.log(`\n  ⚠ ${warnings.length} warning(s):`);
   warnings.forEach((w) => console.log(`    - ${w}`));

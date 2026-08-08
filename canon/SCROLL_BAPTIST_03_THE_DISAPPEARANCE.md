@@ -13,7 +13,7 @@ supersedes: null
 visibility: public
 ---
 
-Good. This is already strong. I’ll give you a tightened, canonical cut that keeps every beat you wrote, just cleaner, a bit sharper, and ready to drop in as Scroll_of_the_Baptist_III.md.
+Good. This is already strong. I’ll give you a tightened, canonical cut that keeps every beat you wrote, just cleaner, a bit sharper, and ready to drop in as SCROLL_BAPTIST_03_THE_DISAPPEARANCE.md.
 
 ⸻
 

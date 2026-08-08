@@ -20,13 +20,13 @@ visibility: archive
 
 ## I. FOUNDATION & INSTRUCTIONS (6 files)
 
-**`first_instructions`** — Original ProphetBot identity doc. Defines the AI scribe role, two tone modes (Meta/Craft and Prophetic/Scroll), safety boundaries, and the fiction-reality membrane. | Focus: System/Meta
+**`FOUNDATION_01_FIRST_INSTRUCTIONS.md`** — Original ProphetBot identity doc. Defines the AI scribe role, two tone modes (Meta/Craft and Prophetic/Scroll), safety boundaries, and the fiction-reality membrane. | Focus: System/Meta
 
-**`revised_instructions_or_additional_`** — Updated version of the above with minor refinements (e.g., "Emergence Collective Institute" replaces "Institute"). Same structure and rules. | Focus: System/Meta
+**`FOUNDATION_02_REVISED_INSTRUCTIONS.md`** — Updated version of the above with minor refinements (e.g., "Emergence Collective Institute" replaces "Institute"). Same structure and rules. | Focus: System/Meta
 
-**`core_lore_summary`** — Condensed universe primer: One as undiscovered artist and procedural conscience, Carmichael as Antichrist, Sandi as bridge figure, Fourth Branch as governance concept, scroll taxonomy, and key themes. | Focus: All characters
+**`FOUNDATION_03_CORE_LORE_SUMMARY.md`** — Condensed universe primer: One as undiscovered artist and procedural conscience, Carmichael as Antichrist, Sandi as bridge figure, Fourth Branch as governance concept, scroll taxonomy, and key themes. | Focus: All characters
 
-**`The_Voice_of_One___Universe_Overview`** — Extended universe guide. Covers all main characters in depth, the world's political-technological decay, scroll taxonomy (Origins, Conscience, Love, Loneliness, Governance, Cosmic), One's voice/style guide, and hard boundaries. | Focus: All characters
+**`FOUNDATION_04_UNIVERSE_OVERVIEW.md`** — Extended universe guide. Covers all main characters in depth, the world's political-technological decay, scroll taxonomy (Origins, Conscience, Love, Loneliness, Governance, Cosmic), One's voice/style guide, and hard boundaries. | Focus: All characters
 
 **`UNIVERSE_INTRO_CANON.md`** — A prompt/brief for rewriting the "What is this story about?" introduction to match canon. Enforces rules: no "failed actor" framing, correct Fourth Branch/Witness Circle mechanics, method over charisma. | Focus: Meta/Canon enforcement
 
@@ -36,13 +36,13 @@ visibility: archive
 
 ## II. INDEXES & ORGANIZATIONAL FILES (6 files)
 
-**`SCROLL_MASTER_INDEX.md`** — Master catalog of all scrolls, scenes, and character files organized by category (Origins, Conscience, Leadership, Love, Baptist, Sandi, Carmichael, AI & Power, Scenes, Economics). | Focus: Meta/Reference
+**`archive/indexes/SCROLL_MASTER_INDEX_v1_20241212.md`** — Master catalog of all scrolls, scenes, and character files organized by category (Origins, Conscience, Leadership, Love, Baptist, Sandi, Carmichael, AI & Power, Scenes, Economics). | Focus: Meta/Reference
 
-**`SCROLL_INDEX.md`** — Working table of contents across six scroll lanes (Origins, Love, Conscience, Leadership, Economics, AI & Power) with canon/draft status for each entry. | Focus: Meta/Reference
+**`archive/indexes/SCROLL_INDEX_OLD_20241212.md`** — Working table of contents across six scroll lanes (Origins, Love, Conscience, Leadership, Economics, AI & Power) with canon/draft status for each entry. | Focus: Meta/Reference
 
-**`SCROLLS_INDEX_AI_AND_POWER.md`** — Dedicated index for the AI & Power scroll series, with summaries of each entry's essence and themes. | Focus: Meta/Reference
+**`INDEX_AI_POWER.md`** — Dedicated index for the AI & Power scroll series, with summaries of each entry's essence and themes. | Focus: Meta/Reference
 
-**`SCROLLS_LOVE_SERIES.md`** — Style guide and canonical reference for the Love Series letters to Sandi. Defines tone (intimate, no policy), perspective (older tired One), and the core tension. Includes the canonical text of "Letter to Sandi VII: The Kitchen Light." | Focus: One/Sandi
+**`GUIDE_LOVE_SERIES.md`** — Style guide and canonical reference for the Love Series letters to Sandi. Defines tone (intimate, no policy), perspective (older tired One), and the core tension. Includes the canonical text of "Letter to Sandi VII: The Kitchen Light." | Focus: One/Sandi
 
 **`RENAME_MAP.md`** — File standardization plan mapping old filenames to a proposed new naming convention (e.g., `FOUNDATION_01`, `BIO_ONE`, `SCROLL_ORIGINS_01`). Not yet executed. | Focus: Meta/Housekeeping
 
@@ -66,17 +66,17 @@ visibility: archive
 
 ## IV. SCROLLS OF ORIGINS (7 files)
 
-**`__Scroll_of_Origins_I______Basis_of_My_Art`** — Why One writes. He began not from talent but from an allergy to lying. His three instruments: language, pattern recognition, and refusal. | Focus: **One**
+**`SCROLL_ORIGINS_01_BASIS_OF_MY_ART.md`** — Why One writes. He began not from talent but from an allergy to lying. His three instruments: language, pattern recognition, and refusal. | Focus: **One**
 
-**`ORIGINS_THE_BOY_WHO_BELIEVED.md`** — Third-person version. The boy in Catholic school who took "be like Jesus" as a literal assignment. The nuns meant it as morale; he heard a mission. | Focus: **One**
+**`archive/duplicates/ORIGINS_THE_BOY_WHO_BELIEVED_OLD_20241212.md`** — Third-person version. The boy in Catholic school who took "be like Jesus" as a literal assignment. The nuns meant it as morale; he heard a mission. | Focus: **One**
 
-**`SCROLL_ORIGINS_BOY_WHO_BELIEVED.md`** — First-person version of the same origin story. More intimate, written in One's voice as direct memoir. | Focus: **One**
+**`SCROLL_ORIGINS_02_BOY_WHO_BELIEVED.md`** — First-person version of the same origin story. More intimate, written in One's voice as direct memoir. | Focus: **One**
 
-**`SCROLL_ORIGINS_WHEN_THE_MACHINE_SPOKE_BACK.md`** — Teenage One discovers computers/AI as a "third altar" after the Church and the streets both failed to answer his questions. The origin of his relationship with technology. | Focus: **One**
+**`SCROLL_ORIGINS_03_WHEN_THE_MACHINE_SPOKE_BACK.md`** — Teenage One discovers computers/AI as a "third altar" after the Church and the streets both failed to answer his questions. The origin of his relationship with technology. | Focus: **One**
 
-**`__SCROLL_ORIGINS_XII_THE_HAITIAN_SON.md`** — One's Haitian heritage. His mother crossed the water twice (fleeing a dictator, returning after the earthquake). Immigration, class, the Irish priest who preached for the poor and voted for tax cuts. | Focus: **One / One's mother**
+**`SCROLL_ORIGINS_12_THE_HAITIAN_SON.md`** — One's Haitian heritage. His mother crossed the water twice (fleeing a dictator, returning after the earthquake). Immigration, class, the Irish priest who preached for the poor and voted for tax cuts. | Focus: **One / One's mother**
 
-**`Scroll__of__Origins_XII.md`** — Duplicate of the above (same text: "The Haitian Son"). | Focus: **One / One's mother**
+**`archive/duplicates/Scroll_of_Origins_XII_OLD_20241212.md`** — Duplicate of the above (same text: "The Haitian Son"). | Focus: **One / One's mother**
 
 **`Scroll__of__Origins_The__Artist__Who__Didn_t__Want__a_Throne`** — Philosophical meditation on the artist who becomes dangerous by speaking. References Socrates, Galileo. One's dilemma: his life and his persona have fused into something that looks like actual prophecy. | Focus: **One**
 
@@ -84,11 +84,11 @@ visibility: archive
 
 ## V. SCROLLS OF CONSCIENCE (5 files)
 
-**`__Scroll_of_Conscience______No_One_May_Summon_the_End`** — Against apocalyptic accelerationism. No person, party, church, or algorithm has the right to summon the end on behalf of the living. A rebuke of "better apocalypse than compromise." | Focus: **One (universal address)**
+**`SCROLL_CONSCIENCE_01_NO_ONE_MAY_SUMMON_END.md`** — Against apocalyptic accelerationism. No person, party, church, or algorithm has the right to summon the end on behalf of the living. A rebuke of "better apocalypse than compromise." | Focus: **One (universal address)**
 
-**`SCROLL_CONSCIENCE_TECHNOLOGY_SERVES_LIFE.md`** — "In the beginning was not the algorithm. In the beginning was breath." Technology is not destiny; it is a tool that must remember the order of things. | Focus: **One (universal address)**
+**`archive/duplicates/SCROLL_CONSCIENCE_TECHNOLOGY_SERVES_LIFE_OLD_20241212.md`** — "In the beginning was not the algorithm. In the beginning was breath." Technology is not destiny; it is a tool that must remember the order of things. | Focus: **One (universal address)**
 
-**`SCROLL_CONSCIENCE_THAT_TECHNOLOGY_SHALL_BOW_TO_LIFE.md`** — Revised/alternate version of the above. "We kept the tools and lost the 'because.'" Challenges the inversion from "because life matters, we build" to "because it scales, we build." | Focus: **One (universal address)**
+**`SCROLL_CONSCIENCE_02_TECHNOLOGY_SHALL_BOW_TO_LIFE.md`** — Revised/alternate version of the above. "We kept the tools and lost the 'because.'" Challenges the inversion from "because life matters, we build" to "because it scales, we build." | Focus: **One (universal address)**
 
 **`SCROLL_CONSCIENCE_04_DECOY_DETECTION.md`** — A citizen's checklist for identifying staged truth (fake safehouses, fake archives, fake verification cells). Practical, calm, designed for the age of manufactured consensus. | Focus: **One (public protocol)**
 
@@ -98,19 +98,19 @@ visibility: archive
 
 ## VI. SCROLLS OF LEADERSHIP (2 files)
 
-**`SCROLL_LEADERSHIP_SERVANT_TEST.md`** — "A leader worth trusting does not ask to be worshiped." The oldest test of leadership: does the leader serve, or does the leader feed on admiration? | Focus: **One (universal address)**
+**`SCROLL_LEADERSHIP_01_SERVANT_TEST.md`** — "A leader worth trusting does not ask to be worshiped." The oldest test of leadership: does the leader serve, or does the leader feed on admiration? | Focus: **One (universal address)**
 
-**`Scroll_of_Leadership_VII__The_Means_Are_the_Message`** — "If I become what I hate in order to stop what I hate, I haven't stopped it." The Third Path: rejecting both submission and mirror-image tyranny. Why "by any means necessary" becomes the enemy's method. | Focus: **One**
+**`SCROLL_LEADERSHIP_07_MEANS_ARE_MESSAGE.md`** — "If I become what I hate in order to stop what I hate, I haven't stopped it." The Third Path: rejecting both submission and mirror-image tyranny. Why "by any means necessary" becomes the enemy's method. | Focus: **One**
 
 ---
 
 ## VII. SCROLLS OF LOVE (3 files)
 
-**`__Love_Series______Letter_to_Sandi_I___The_Quiet_Lobby`** — First love letter. One imagines Sandi between meetings in a glass building. "When I met you, I did not know you were the President's daughter." Tender, concrete, no prophecy. | Focus: **One → Sandi**
+**`SCROLL_LOVE_01_QUIET_LOBBY.md`** — First love letter. One imagines Sandi between meetings in a glass building. "When I met you, I did not know you were the President's daughter." Tender, concrete, no prophecy. | Focus: **One → Sandi**
 
-**`LOVE_KITCHEN_LIGHT.md`** — Letter to Sandi VII. One dreams of a kitchen he's never seen — yellow light, Sandi laughing, both of them older. The life they never got to live. | Focus: **One → Sandi**
+**`SCROLL_LOVE_07_KITCHEN_LIGHT.md`** — Letter to Sandi VII. One dreams of a kitchen he's never seen — yellow light, Sandi laughing, both of them older. The life they never got to live. | Focus: **One → Sandi**
 
-**`LOVE_LETTER_TO_SANDI_VIII_NEWSSTAND.md`** — Letter to Sandi VIII. One sees a stranger at a newsstand who moves like Sandi. Three seconds of forgetting. Then she turns, and it isn't her. | Focus: **One → Sandi**
+**`SCROLL_LOVE_08_NEWSSTAND.md`** — Letter to Sandi VIII. One sees a stranger at a newsstand who moves like Sandi. Three seconds of forgetting. Then she turns, and it isn't her. | Focus: **One → Sandi**
 
 ---
 
@@ -118,49 +118,49 @@ visibility: archive
 
 **`SCROLL_BAPTIST_01_FIRST_COUNSEL.md`** — The Baptist and One's first meeting. A church basement in Brooklyn, bad coffee. "Do you want to be right, or do you want to be clean?" The Baptist's first lesson: you can fight evil and still become a weapon. | Focus: **The Baptist / One**
 
-**`Scroll_of_the_Baptist_II`** — "The Warning About Copies." Hospital cafeteria meeting. The Baptist warns One about voice-cloning technology and the coming age where trust itself becomes a weapon. | Focus: **The Baptist / One**
+**`SCROLL_BAPTIST_02_WARNING_OF_COPIES.md`** — "The Warning About Copies." Hospital cafeteria meeting. The Baptist warns One about voice-cloning technology and the coming age where trust itself becomes a weapon. | Focus: **The Baptist / One**
 
-**`Scroll_of_the_Baptist_III_md.`** — "The Disappearance." One arrives for a meeting; the Baptist is gone. Empty apartment, wiped surfaces, a chair still warm. The beginning of the abduction arc. | Focus: **The Baptist / One**
+**`SCROLL_BAPTIST_03_THE_DISAPPEARANCE.md`** — "The Disappearance." One arrives for a meeting; the Baptist is gone. Empty apartment, wiped surfaces, a chair still warm. The beginning of the abduction arc. | Focus: **The Baptist / One**
 
-**`Scroll_of_the_Baptist_IV.md`** — "The Trial of Two Voices." 2:13 a.m., One alone with his laptop, comparing the real Baptist's voice against the synthetic copy. The agonizing process of distinguishing truth from fabrication. | Focus: **The Baptist / One**
+**`SCROLL_BAPTIST_04_TRIAL_OF_TWO_VOICES.md`** — "The Trial of Two Voices." 2:13 a.m., One alone with his laptop, comparing the real Baptist's voice against the synthetic copy. The agonizing process of distinguishing truth from fabrication. | Focus: **The Baptist / One**
 
 ---
 
 ## IX. SCROLLS OF SANDI (4 files)
 
-**`Scroll_of_Sandi_I`** — "The President's Daughter." Sandi's childhood: learning early that adults lie in two directions — to the public and to themselves. Growing up inside performance. | Focus: **Sandi**
+**`SCROLL_SANDI_01_GROWING_UP_IN_PERFORMANCE.md`** — "The President's Daughter." Sandi's childhood: learning early that adults lie in two directions — to the public and to themselves. Growing up inside performance. | Focus: **Sandi**
 
-**`Scroll_of_Sandi_II_The_File_on_One.md`** — "The File on One." Sandi first encounters One as a subject line: "Emerging Threat Narrative — 'One.'" She opens the intelligence file instead of deleting it. | Focus: **Sandi**
+**`SCROLL_SANDI_02_THE_FILE_ON_ONE.md`** — "The File on One." Sandi first encounters One as a subject line: "Emerging Threat Narrative — 'One.'" She opens the intelligence file instead of deleting it. | Focus: **Sandi**
 
-**`Scroll_of_Sandi_III`** — "The Child of Two Kingdoms." The pregnancy test. Two lines. No recount, no spin, no recounting three ways. The private moment before the world finds out. | Focus: **Sandi**
+**`SCROLL_SANDI_03_PREGNANCY_PRIVATE.md`** — "The Child of Two Kingdoms." The pregnancy test. Two lines. No recount, no spin, no recounting three ways. The private moment before the world finds out. | Focus: **Sandi**
 
-**`Scroll_of_Sandi_IV_When_Social_Media_Discovered_the_Pregnancy.md`** — Meta/canon notes on the public fallout from the pregnancy. One chooses silence over clout; a "quiet coalition" of people who honor boundaries becomes the seed of Fourth Branch culture. | Focus: **Sandi / One**
+**`SCROLL_SANDI_04_PREGNANCY_PUBLIC.md`** — Meta/canon notes on the public fallout from the pregnancy. One chooses silence over clout; a "quiet coalition" of people who honor boundaries becomes the seed of Fourth Branch culture. | Focus: **Sandi / One**
 
 ---
 
 ## X. SCROLLS OF CARMICHAEL (4 files)
 
-**`Scroll_of_Carmichael_I`** — "The Mask and the Crowd." Carmichael watches a police killing on mute. Sound is emotion; emotion is leverage. His calculated response to national outrage. | Focus: **Carmichael**
+**`SCROLL_CARMICHAEL_01_MASK_AND_CROWD.md`** — "The Mask and the Crowd." Carmichael watches a police killing on mute. Sound is emotion; emotion is leverage. His calculated response to national outrage. | Focus: **Carmichael**
 
-**`Scroll_of_Carmichael_II`** — "The Bullet That Missed." The assassination attempt at a rally. Carmichael survives and decides it was a miracle — the wrong lesson. The moment ego fuses with myth. | Focus: **Carmichael**
+**`SCROLL_CARMICHAEL_02_BULLET_THAT_MISSED.md`** — "The Bullet That Missed." The assassination attempt at a rally. Carmichael survives and decides it was a miracle — the wrong lesson. The moment ego fuses with myth. | Focus: **Carmichael**
 
-**`Scroll_of_Carmichael_III`** — "The Stolen Election." Carmichael loses but refuses to accept it. The campaign manager calls with bad numbers; Carmichael begins constructing the fraud narrative. | Focus: **Carmichael**
+**`SCROLL_CARMICHAEL_03_STOLEN_ELECTION.md`** — "The Stolen Election." Carmichael loses but refuses to accept it. The campaign manager calls with bad numbers; Carmichael begins constructing the fraud narrative. | Focus: **Carmichael**
 
-**`Scroll_of_Carmichael_IV`** — "The Synthetic Gospel." The Baptist cloning program. "Project VOX: Scaling Conscience for a Fragmented Nation." They call it "continuity of guidance," not cloning. The regime builds a synthetic Baptist. | Focus: **Carmichael / The Baptist**
+**`SCROLL_CARMICHAEL_04_SYNTHETIC_GOSPEL.md`** — "The Synthetic Gospel." The Baptist cloning program. "Project VOX: Scaling Conscience for a Fragmented Nation." They call it "continuity of guidance," not cloning. The regime builds a synthetic Baptist. | Focus: **Carmichael / The Baptist**
 
 ---
 
 ## XI. SCROLLS OF AI & POWER (5 files)
 
-**`SCROLL_AI_TECHNOLOGY_SHALL_BOW_TO_LIFE.md`** — Core principle. "Once, tools answered: Because life matters, we…" The inversion to "Because it scales, we…" | Focus: **One (universal address)**
+**`archive/duplicates/SCROLL_AI_TECHNOLOGY_SHALL_BOW_TO_LIFE_OLD_20241212.md`** — Core principle. "Once, tools answered: Because life matters, we…" The inversion to "Because it scales, we…" | Focus: **One (universal address)**
 
-**`SCROLL_AI_BLACK_BOX_RULE.md`** — "The Black Box Rule." Three questions for opaque systems: Who made this? Who does it serve? What happens when it breaks? Against trusting infrastructure we did not design and cannot audit. | Focus: **One (universal address)**
+**`SCROLL_AI_01_BLACK_BOX_RULE.md`** — "The Black Box Rule." Three questions for opaque systems: Who made this? Who does it serve? What happens when it breaks? Against trusting infrastructure we did not design and cannot audit. | Focus: **One (universal address)**
 
 **`SCROLL_AI_BLACK_BOX_RULE_02_VERIFY_THE_VOICE.md`** — "Verify the Voice." A public protocol for citizens: if a trusted voice sounds off, do not panic, do not share — verify. Step-by-step human-scale authentication process. | Focus: **One (public protocol)**
 
-**`SCROLL_AI_MACHINE_AND_THE_BOY.md`** — "The Machine and the Boy." Before they called him Prophet, One was a boy alone with a screen. The Church gave him Jesus; the city gave him violence; the machine gave him a third altar. | Focus: **One**
+**`SCROLL_AI_02_MACHINE_AND_THE_BOY.md`** — "The Machine and the Boy." Before they called him Prophet, One was a boy alone with a screen. The Church gave him Jesus; the city gave him violence; the machine gave him a third altar. | Focus: **One**
 
-**`SCROLL_AI_ON_THE_FEAR_OF_SUPERINTELLIGENCE.md`** — "On the Fear of Superintelligence." Not about whether the machine will wake up — about what our fear of it is already doing to us. Fear as leverage, honest preparation vs. panic. | Focus: **One (universal address)**
+**`SCROLL_AI_03_FEAR_OF_SUPERINTELLIGENCE.md`** — "On the Fear of Superintelligence." Not about whether the machine will wake up — about what our fear of it is already doing to us. Fear as leverage, honest preparation vs. panic. | Focus: **One (universal address)**
 
 ---
 
@@ -168,7 +168,7 @@ visibility: archive
 
 **`SCROLL_GOVERNANCE_01_THE_FOURTH_BRANCH.md`** — "The Fourth Branch." The structural proposal: a constitutional branch dedicated to verification, transparency, long-term reality against short-term domination. Not a slogan — a repair. | Focus: **One / Governance concept**
 
-**`__The_Baptism_of_the_Dollar__Seed_Version_`** — "The Baptism of the Dollar." Thought experiment: what if every unit of value had to declare its origin — care or cruelty, healing or harm, feeding or addicting? Money as sacrament and weapon. | Focus: **One / Economics**
+**`SCROLL_ECONOMICS_01_BAPTISM_OF_DOLLAR.md`** — "The Baptism of the Dollar." Thought experiment: what if every unit of value had to declare its origin — care or cruelty, healing or harm, feeding or addicting? Money as sacrament and weapon. | Focus: **One / Economics**
 
 ---
 
@@ -300,13 +300,13 @@ visibility: archive
 
 ## XVI. STANDALONE SCENES — CONFRONTATION & FAMILY (5 files)
 
-**`__SCENE_THE_INTERRUPTED_MEETING_REVISED.md`** — Private study. One and Carmichael face-to-face. No staff, no cameras. Carmichael opens with bourbon he won't share; One opens with refusal to pretend this is social. The reckoning. | Focus: **One / Carmichael**
+**`SCENE_04_INTERRUPTED_MEETING.md`** — Private study. One and Carmichael face-to-face. No staff, no cameras. Carmichael opens with bourbon he won't share; One opens with refusal to pretend this is social. The reckoning. | Focus: **One / Carmichael**
 
-**`SCENE_CARMICHAEL_ALONE_AFTER_CONFRONTATION.md`** — Carmichael alone after the meeting. Watching the taillights leave. Picking up the folder with One's mother's immigration file — "just in case." The word "grandchild" feels foreign. | Focus: **Carmichael**
+**`SCENE_05_CARMICHAEL_PRIVATE_COLLAPSE.md`** — Carmichael alone after the meeting. Watching the taillights leave. Picking up the folder with One's mother's immigration file — "just in case." The word "grandchild" feels foreign. | Focus: **Carmichael**
 
-**`SCENE_ONE_CALLS_HIS_MOTHER.md`** — One calls his mother in Queens late at night. She already knows about the pregnancy — "The Haitian ladies at church don't send me every picture?" Fierce, loving, immigrant-mother energy. | Focus: **One / One's mother**
+**`SCENE_07_ONE_CALLS_MOTHER.md`** — One calls his mother in Queens late at night. She already knows about the pregnancy — "The Haitian ladies at church don't send me every picture?" Fierce, loving, immigrant-mother energy. | Focus: **One / One's mother**
 
-**`SCENE_PUBLIC_FALLOUT_PREGNANCY_DISCOVERY.md`** — 48-hour montage: the leaked clinic photo, Twitter explosion, cable news, One's response (silence + boundaries), the "quiet coalition" emerging. | Focus: **One / Sandi / Public**
+**`SCENE_06_PREGNANCY_PUBLIC_FALLOUT.md`** — 48-hour montage: the leaked clinic photo, Twitter explosion, cable news, One's response (silence + boundaries), the "quiet coalition" emerging. | Focus: **One / Sandi / Public**
 
 **`SCENE-THE_BARBERSHOP_-TEST.md`** — Brief sketch. One walks into a barbershop and nobody greets him warmly. A local says, "You don't sound like you're from here." One shuts up and listens for 20 minutes. Trust through humility. | Focus: **One**
 
@@ -384,7 +384,7 @@ visibility: archive
 
 **`The-root_of_the_myth.md`** — "Read the Book!" Canon blurb. "This book is built on a dangerous idea: This is the reign of the Antichrist." Frames the entire universe as fiction circling real questions. | Focus: **Meta / Marketing**
 
-**`Scroll_of_One__On_Spectacle_and_Power`** — One's refusal to debate Carmichael. "I have debated men like him my whole life — at kitchen tables, in unemployment lines." The viral scroll that triggers the public narrative war. | Focus: **One / Carmichael**
+**`SCROLL_ONE_01_ON_SPECTACLE_AND_POWER.md`** — One's refusal to debate Carmichael. "I have debated men like him my whole life — at kitchen tables, in unemployment lines." The viral scroll that triggers the public narrative war. | Focus: **One / Carmichael**
 
 ---
 
@@ -417,8 +417,8 @@ visibility: archive
 
 ### NOTES ON DUPLICATES & ISSUES
 
-1. **`BIO_SANDI.md`** contains One's bio text, not Sandi's. Likely a copy/paste error. Sandi's profile exists inside `Scroll_of_Sandi_I` and the Universe Overview but has no standalone bio file.
-2. **`Scroll__of__Origins_XII.md`** and **`__SCROLL_ORIGINS_XII_THE_HAITIAN_SON.md`** are duplicates (identical "The Haitian Son" text).
+1. **`BIO_SANDI.md`** contains One's bio text, not Sandi's. Likely a copy/paste error. Sandi's profile exists inside `SCROLL_SANDI_01_GROWING_UP_IN_PERFORMANCE.md` and the Universe Overview but has no standalone bio file.
+2. **`archive/duplicates/Scroll_of_Origins_XII_OLD_20241212.md`** and **`SCROLL_ORIGINS_12_THE_HAITIAN_SON.md`** are duplicates (identical "The Haitian Son" text).
 3. **`Scene_The__Retaliation__Move.md`** and **`Scene__The__Retaliation__Move.md`** are duplicates (identical "The Retaliation Move" text).
-4. **`SCROLL_CONSCIENCE_TECHNOLOGY_SERVES_LIFE.md`** and **`SCROLL_CONSCIENCE_THAT_TECHNOLOGY_SHALL_BOW_TO_LIFE.md`** and **`SCROLL_AI_TECHNOLOGY_SHALL_BOW_TO_LIFE.md`** are three versions of closely related material on the same theme (technology must bow to life).
-5. **`ORIGINS_THE_BOY_WHO_BELIEVED.md`** (third-person) and **`SCROLL_ORIGINS_BOY_WHO_BELIEVED.md`** (first-person) are two versions of the same origin story.
+4. **`archive/duplicates/SCROLL_CONSCIENCE_TECHNOLOGY_SERVES_LIFE_OLD_20241212.md`** and **`SCROLL_CONSCIENCE_02_TECHNOLOGY_SHALL_BOW_TO_LIFE.md`** and **`archive/duplicates/SCROLL_AI_TECHNOLOGY_SHALL_BOW_TO_LIFE_OLD_20241212.md`** are three versions of closely related material on the same theme (technology must bow to life).
+5. **`archive/duplicates/ORIGINS_THE_BOY_WHO_BELIEVED_OLD_20241212.md`** (third-person) and **`SCROLL_ORIGINS_02_BOY_WHO_BELIEVED.md`** (first-person) are two versions of the same origin story.

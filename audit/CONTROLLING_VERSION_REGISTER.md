@@ -68,9 +68,9 @@ Locked by ruling, not metadata. These are the inheritance surface for the featur
 
 Migration is mechanical — file renames only, per the December 2024 plan with stale sections preserved. No prose edits, no canon changes.
 
-## 6. Known coverage gap (finding, not a fork)
+## 6. Migration coverage
 
-`build-canon.mjs` scans only `.md` and extensionless files; ~4–5 malformed/broken-extension files (e.g. `Scroll_of_the_Baptist_III_md.`) fall outside the scan. The 141-entry "green" is honest for what is scanned but is **not** the full 145-file folder. Closes when the RENAME_MAP phases run — scoped out of mechanical passes.
+The rename migration closes the known malformed-extension gap by renaming `Scroll_of_the_Baptist_III_md.` to `SCROLL_BAPTIST_03_THE_DISAPPEARANCE.md`. Stable IDs remain unchanged; filenames are standardized independently of identity.
 
 ---
 

@@ -33,7 +33,7 @@ Everything else in the AI & Power series hangs from this sentence.
 
 ## 2. Scroll of Conscience: On the Fear of Superintelligence  *(COMPLETE)*
 
-**Filename:** `SCROLL_AI_ON_THE_FEAR_OF_SUPERINTELLIGENCE.md`  
+**Filename:** `SCROLL_AI_03_FEAR_OF_SUPERINTELLIGENCE.md`
 **Essence:** This scroll is not about whether superintelligence will “wake up.”  
 It’s about what **our fear** of it is already doing to us.
 
