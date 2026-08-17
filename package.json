@@ -8,6 +8,7 @@
     "build": "bash scripts/build-ssg.sh",
     "check:canon": "node build-canon.mjs ./canon --check && node scripts/check-site-data.mjs",
     "lint": "eslint .",
+    "test": "node --test",
     "preview": "vite preview"
   },
   "dependencies": {

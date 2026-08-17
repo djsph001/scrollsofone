@@ -1,32 +1,12 @@
 import React from "react"; // eslint-disable-line no-unused-vars -- required by SSG JSX transform
 import { useState, useMemo, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
-import data from "./entries.json";
+import { Link, useSearchParams } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import SiteNav from "./SiteNav";
+import { ENTRIES, STATS, SERIES, WHO, PATHS, SLUG_MAPS } from "./canonFilters";
+import { Q_MAX, parseCanonParams, serializeCanonParams, buildExplorerParam } from "./canonFilterParams";
 
-const ENTRIES = data.entries;
 const PUBLIC_HEADS = ENTRIES.filter((e) => e.visibility !== "archive" && e.isHead);
-const STATS = data.stats;
-
-// Derive series and people from the data
-const SERIES = [...new Set(ENTRIES.map((e) => e.series))].sort(
-  (a, b) => ["Foundation","Characters","Origins","Conscience","Leadership",
-    "Love","Baptist","Sandi","Carmichael","AI & Power","Governance",
-    "Scenes","Pandemic Papers","Framing"].indexOf(a) - 
-    ["Foundation","Characters","Origins","Conscience","Leadership",
-    "Love","Baptist","Sandi","Carmichael","AI & Power","Governance",
-    "Scenes","Pandemic Papers","Framing"].indexOf(b)
-);
-
-const PEOPLE = [...new Set(ENTRIES.flatMap((e) => e.who))].sort();
-
-const PATHS = {
-  "Start here": ["bio_one","scroll_origins_i_basis_of_my_art","scroll_of_sandi_ii_the_file_on_one","scroll_of_the_baptist_ii","scroll_of_one_on_spectacle_and_power","the_root_of_the_myth"],
-  "One & Sandi": ["love_series_letter_to_sandi_i_the_quiet_lobby","love_kitchen_light","love_letter_to_sandi_viii_newsstand","scroll_of_sandi_ii_the_file_on_one","scene_the_dagger_point","scene_the_inaugural_ballroom"],
-  "The Baptist & the synthetic voice": ["bio_baptist","scroll_of_the_baptist_ii","scroll_of_the_baptist_iv","scroll_of_carmichael_iv","scroll_conscience_04_decoy_detection"],
-  "Carmichael's descent": ["scroll_of_carmichael_i","scroll_of_carmichael_ii","scroll_of_carmichael_iii","scroll_of_carmichael_iv","scroll_of_one_on_spectacle_and_power"],
-  "Power & method": ["scroll_leadership_servant_test","scroll_of_leadership_vii_the_means_are_the_message","scroll_on_naming_without_becoming_the_play","scroll_of_one_the_scapegoat_ledger","scroll_governance_01_the_fourth_branch"],
-};
 
 const STATUS_LABEL = { canon: "Canon", draft: "Draft", seed: "Seed", repair: "Needs repair" };
 
@@ -162,9 +142,37 @@ export default function CanonExplorer() {
   const [path, setPath] = useState(null);
   const [selected, setSelected] = useState(null);
   const [openedAt, setOpenedAt] = useState(0);
+  const [ready, setReady] = useState(false);
   const triggerRef = useRef(null);
   const drawerRef = useRef(null);
   const closeBtnRef = useRef(null);
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  // Hydration-safe init: apply filter state from the URL exactly once after
+  // mount, then allow URL writes. Reading the URL during render would mismatch
+  // the statically-rendered empty state, so this post-mount sync is the
+  // deliberate exception to react-hooks/set-state-in-effect.
+  /* eslint-disable react-hooks/set-state-in-effect */
+  useEffect(() => {
+    const state = parseCanonParams(new URLSearchParams(window.location.search), SLUG_MAPS);
+    setQuery(state.q);
+    setSeries(state.series);
+    setPerson(state.who);
+    setPath(state.path);
+    setReady(true);
+  }, []);
+  /* eslint-enable react-hooks/set-state-in-effect */
+
+  // Sync filter state to the URL with replace (no history spam). The equality
+  // guard makes writes idempotent and normalizes invalid/stale params out of
+  // the address bar so the visible URL matches the interface.
+  useEffect(() => {
+    if (!ready) return;
+    const desired = serializeCanonParams({ q: query, series, who: person, path });
+    if (desired !== searchParams.toString()) {
+      setSearchParams(desired ? desired : {}, { replace: true });
+    }
+  }, [ready, query, series, person, path, searchParams, setSearchParams]);
 
   // Escape closes; Tab is trapped inside the open drawer.
   useEffect(() => {
@@ -237,12 +245,22 @@ export default function CanonExplorer() {
 
   const clearAll = () => { setSeries(null); setPerson(null); setPath(null); setQuery(""); };
   const active = series || person || path || query.trim();
+  const explorerParam = buildExplorerParam({ q: query, series, who: person, path });
 
   return (
-    <div className="voc-root">
-      <style>{FONTS + CSS}</style>
+    <>
+      <Helmet>
+        <title>Canon — Scrolls of One</title>
+        <meta
+          name="description"
+          content="Every scroll, scene, and person in the Voice of One universe — browsable, filterable, and marked for what it is."
+        />
+        <link rel="canonical" href="https://scrollsofone.com/canon" />
+      </Helmet>
+      <div className="voc-root">
+        <style>{FONTS + CSS}</style>
 
-      <SiteNav active="canon" />
+        <SiteNav active="canon" />
 
       <header className="voc-head">
         <div className="voc-head-rule" />
@@ -268,7 +286,8 @@ export default function CanonExplorer() {
           className="voc-search"
           placeholder="Search titles and summaries…"
           value={query}
-          onChange={(e) => setQuery(e.target.value)}
+          onChange={(e) => setQuery(e.target.value.slice(0, Q_MAX))}
+          maxLength={Q_MAX}
           aria-label="Search the canon"
         />
         <div className="voc-paths" role="group" aria-label="Reading paths">
@@ -277,6 +296,7 @@ export default function CanonExplorer() {
             <button
               key={p}
               className={"voc-chip" + (path === p ? " is-on" : "")}
+              aria-pressed={path === p}
               onClick={() => setPath(path === p ? null : p)}
             >{p}</button>
           ))}
@@ -293,6 +313,7 @@ export default function CanonExplorer() {
                 if (!n) return null;
                 return (
                   <button key={s} className={"voc-railbtn" + (series === s ? " is-on" : "")}
+                    aria-pressed={series === s}
                     onClick={() => setSeries(series === s ? null : s)}>
                     <span>{s}</span><span className="voc-count">{n}</span>
                   </button>
@@ -303,8 +324,9 @@ export default function CanonExplorer() {
           <div className="voc-rail-group">
             <p className="voc-rail-head">Who</p>
             <div className="voc-pills">
-              {PEOPLE.map((p) => (
+              {WHO.map((p) => (
                 <button key={p} className={"voc-pill" + (person === p ? " is-on" : "")}
+                  aria-pressed={person === p}
                   onClick={() => setPerson(person === p ? null : p)}>{p}</button>
               ))}
             </div>
@@ -313,7 +335,7 @@ export default function CanonExplorer() {
 
         <main className="voc-main">
           <div className="voc-mainbar">
-            <span className="voc-resultcount">{filtered.length} {filtered.length === 1 ? "entry" : "entries"}</span>
+            <span className="voc-resultcount" aria-live="polite">{filtered.length} {filtered.length === 1 ? "entry" : "entries"}</span>
             {active ? <button className="voc-clear" onClick={clearAll}>Clear filters</button> : <span />}
           </div>
 
@@ -388,7 +410,7 @@ export default function CanonExplorer() {
             </div>
             <div style={{ marginTop: '18px', paddingTop: '12px', borderTop: '1px solid var(--line)' }}>
               <Link
-                to={`/scroll/${selected.id}?from=canon`}
+                to={`/scroll/${selected.id}?from=canon${explorerParam ? `&explorer=${encodeURIComponent(explorerParam)}` : ""}`}
                 className="voc-foot-link"
                 onClick={(e) => e.stopPropagation()}
                 style={{ fontFamily: "'Spline Sans Mono',monospace", fontSize: '11px', letterSpacing: '.08em' }}
@@ -408,6 +430,7 @@ export default function CanonExplorer() {
              target="_blank" rel="noopener noreferrer">Emergence Institute ↗</a>
         </span>
       </footer>
-    </div>
+      </div>
+    </>
   );
 }

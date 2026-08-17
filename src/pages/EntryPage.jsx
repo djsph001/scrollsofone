@@ -1,9 +1,10 @@
-import React from 'react'; // eslint-disable-line no-unused-vars -- required by SSG JSX transform
+import React, { useState, useEffect } from 'react'; // eslint-disable-line no-unused-vars -- required by SSG JSX transform
 import { useLocation, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import data from '../entries.json';
 import { whoToCharacterKey } from '../characters';
 import { backLinkFor } from '../navigation';
+import { SLUG_MAPS } from '../canonFilters';
 import SiteNav from '../SiteNav';
 
 const ENTRIES = data.entries;
@@ -51,6 +52,16 @@ export default function EntryPage() {
   const location = useLocation();
   const entryId = getEntryIdFromPath(location.pathname);
   const entry = ENTRIES.find(e => e.id === entryId);
+  const [back, setBack] = useState(() => ({ label: "Canon", to: "/canon" }));
+
+  // Hydration-safe: the return link depends on query params that are absent
+  // from the statically-rendered HTML, so resolve it once after mount.
+  /* eslint-disable react-hooks/set-state-in-effect */
+  useEffect(() => {
+    const from = new URLSearchParams(location.search).get("from");
+    setBack(backLinkFor(from, location.search, SLUG_MAPS));
+  }, [location.search]);
+  /* eslint-enable react-hooks/set-state-in-effect */
 
   if (!entry) {
     return (
@@ -69,10 +80,6 @@ export default function EntryPage() {
   }
 
   const pageTitle = `${entry.title} — Scrolls of One`;
-
-  // Origin-aware return link: whitelisted `from` query param, fallback to Canon.
-  const from = new URLSearchParams(location.search).get('from');
-  const back = backLinkFor(from);
 
   const charLinks = (entry.who || [])
     .map((w) => ({ who: w, key: whoToCharacterKey[w] }))
