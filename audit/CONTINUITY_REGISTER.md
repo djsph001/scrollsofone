@@ -55,7 +55,7 @@ Controlling scheme: **eight arcs.** Arc 8 is the folded "Narrative and Contempt 
 
 ---
 
-## 4. Full arc → order map (data as of base commit)
+## 4. Full arc → order map (current state — post-correction `d27be2a`)
 
 ### Arc 1 — Reality is Editable (5)
 | order | entry | series/kind |
@@ -111,11 +111,11 @@ Controlling scheme: **eight arcs.** Arc 8 is the folded "Narrative and Contempt 
 | — | scene_carmichael_hears_the_scroll | Scenes/scene |
 | — | scene_sandi_between_two_voices | Scenes/scene |
 
-### Arc 6 — Regime Countermoves (11)
+### Arc 6 — Regime Countermoves (8)
 | order | entry | series/kind |
 |---|---|---|
 | 3 | scroll_of_carmichael_iii | Carmichael/scroll |
-| 35, 36, 38, 40–42, 44, 48–50 | scene_35 … scene_50 (10 scenes) | Scenes/scene |
+| 35, 36, 38, 40–42, 44 | scene_35 … scene_44 (7 scenes) | Scenes/scene |
 
 ### Arc 7 — Haiti / Departure (21)
 | order | entry | series/kind |
@@ -125,10 +125,10 @@ Controlling scheme: **eight arcs.** Arc 8 is the folded "Narrative and Contempt 
 | — | scroll_on_returning_without_becoming_the_story | Conscience/scroll |
 | — | scene_the_letter_that_finds_them | Scenes/scene |
 
-### Arc 8 — Narrative and Contempt War (15)
+### Arc 8 — Narrative and Contempt War (18)
 | order | entry | series/kind |
 |---|---|---|
-| 46, 47 | scene_46_the_first_public_hearing, scene_47_one_refuses_the_stage_again | Scenes/scene |
+| 46–50 | scene_46_the_first_public_hearing … scene_50_the_joke_backfires (5 scenes) | Scenes/scene |
 | — | scroll_of_one_the_scapegoat_ledger | Conscience/scroll |
 | — | scroll_on_mercy_that_has_teeth | Conscience/scroll |
 | — | scroll_on_naming_without_becoming_the_play | Conscience/scroll |
@@ -143,7 +143,7 @@ Controlling scheme: **eight arcs.** Arc 8 is the folded "Narrative and Contempt 
 | — | scene_the_retaliation_move_duplicate | Scenes/scene |
 | — | scene_the_warm_rescue | Scenes/scene |
 
-*Per ruling 1, scenes 48–50 will move Arc 6 → Arc 8 when the metadata correction is applied (not yet done).*
+*Scenes 48–50 moved here from Arc 6 in `d27be2a` (ruling 1).*
 
 ### No arc (15)
 | order | entry | series/kind |
@@ -170,7 +170,7 @@ Scene numbers 08–67 are all present (60 scenes). The apparent gaps at 20, 62, 
 `cene_20_the_safehouse`, `cene_62_the_process_comes_to_the_door`, `cene_63_the_meeting_with_the_gatekeepers` — stable public identifiers (ID and filename both drop the leading "s"). No change in this checkpoint; filenames may be corrected later with clean `/scene/...` redirects.
 
 ### 5c. Arc vs scene-number non-contiguity — ruled: thematic, not error
-The numbered spine 08–67 is sliced non-contiguously by the arcs (e.g. scene 28 in Arc 7 numerically precedes Arc 4/5/6 scenes 29–50; scenes 46–47 in Arc 8 precede 48–50). Each arc's slice is internally monotonic. Per ruling 3, this is thematic structure, not chronology reversal.
+The numbered spine 08–67 is sliced non-contiguously by the arcs (e.g. scene 28 in Arc 7 numerically precedes Arc 4/5/6 scenes 29–50; arcs 5 and 6 interleave across scenes 30–45). Each arc's slice is internally monotonic. Per ruling 3, this is thematic structure, not chronology reversal.
 
 ### 5d. Duplicate `order` within an arc — ruled: series-local, not collision
 Sandi I vs "Letter to Sandi I" (arc 2, order 1); Baptist IV vs Carmichael IV (arc 4, order 4); Black Box Rule vs Fourth Branch (arc 5, order 1). Per ruling 4, `order` is per-series; these are not collisions.
@@ -181,18 +181,18 @@ Thematic scrolls, titled scenes, and profiles have null order by design (§1, "u
 ### 5f. Orphaned ordinals — ruled: unchanged
 `scroll_conscience_04_decoy_detection` (order 4) and `scroll_of_leadership_vii_the_means_are_the_message` (order 7) carry series-position numbers with arc null. Per ruling 6, unchanged.
 
-### 5g. Scenes 48–50 arc placement — ruled: Arc 8, correction pending
-Register §4 said "Scenes 48–50 belong to Arc 8"; the data has them in Arc 6. Ruling 1 confirms Arc 8. **Metadata correction deferred** (see §6). This is the only live divergence between the data and the controlling scheme.
+### 5g. Scenes 48–50 arc placement — ruled: Arc 8, correction applied
+Register §4 said "Scenes 48–50 belong to Arc 8." Ruling 1 confirms Arc 8. The correction (arc 6 → arc 8) was applied in `d27be2a`. No live divergence remains between the data and the controlling scheme.
 
 ---
 
-## 6. Pending metadata corrections (deferred — do not apply in this checkpoint)
+## 6. Metadata corrections
 
 | Item | Correction | Status |
 |---|---|---|
-| scenes 48, 49, 50 | arc 6 → arc 8 | ruled, awaiting a future metadata pass |
+| scenes 48, 49, 50 | arc 6 → arc 8 | **Applied** — commit `d27be2a` (2026-08-17) |
 
-No other metadata changes are authorized at this time.
+No metadata corrections are pending.
 
 ---
 
