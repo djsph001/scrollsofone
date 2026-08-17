@@ -1,4 +1,5 @@
 import { readFileSync } from 'node:fs';
+import { characters, characterKeys } from '../src/characters.js';
 
 const data = JSON.parse(readFileSync(new URL('../src/entries.json', import.meta.url), 'utf8'));
 const entries = data.entries;
@@ -15,13 +16,6 @@ const readingPaths = {
   'Power & method': ['scroll_leadership_servant_test', 'scroll_of_leadership_vii_the_means_are_the_message', 'scroll_on_naming_without_becoming_the_play', 'scroll_of_one_the_scapegoat_ledger', 'scroll_governance_01_the_fourth_branch'],
 };
 
-const landingEntrances = [
-  'bio_one',
-  'scroll_of_sandi_ii_the_file_on_one',
-  'scroll_of_the_baptist_iii',
-  'scroll_of_carmichael_i',
-];
-
 for (const [path, pathIds] of Object.entries(readingPaths)) {
   for (const id of pathIds) {
     if (!ids.has(id)) errors.push(`reading path "${path}" references missing id "${id}"`);
@@ -29,9 +23,21 @@ for (const [path, pathIds] of Object.entries(readingPaths)) {
   }
 }
 
-for (const id of landingEntrances) {
-  if (!ids.has(id)) errors.push(`landing entrance references missing id "${id}"`);
-  else if (!publicHeads.some((entry) => entry.id === id)) errors.push(`landing entrance references a hidden or superseded entry "${id}"`);
+const expectedCharacters = ['one', 'sandi', 'baptist', 'carmichael'];
+for (const key of expectedCharacters) {
+  if (!characterKeys.includes(key)) errors.push(`character route "/characters/${key}" missing — not in characters.js`);
+}
+for (const key of characterKeys) {
+  const c = characters[key];
+  if (!c || !c.name || !c.intro || !c.roleInConflict) errors.push(`character "${key}" missing name/intro/roleInConflict`);
+  if (!c || !Array.isArray(c.relationships) || c.relationships.length === 0) errors.push(`character "${key}" has no relationships`);
+  if (!c || !Array.isArray(c.essentials) || c.essentials.length === 0) errors.push(`character "${key}" has no essential entries`);
+  if (!c || !Array.isArray(c.readingPath) || c.readingPath.length === 0) errors.push(`character "${key}" has no reading path`);
+  const refs = [...(c?.essentials || []), ...(c?.readingPath || []).map((p) => p.id)];
+  for (const id of refs) {
+    if (!ids.has(id)) errors.push(`character "${key}" references missing id "${id}"`);
+    else if (!publicHeads.some((entry) => entry.id === id)) errors.push(`character "${key}" references a hidden or superseded entry "${id}"`);
+  }
 }
 
 const summaryOwners = new Map();

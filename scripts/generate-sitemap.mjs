@@ -1,6 +1,7 @@
 import { readFileSync, writeFileSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { characterKeys } from '../src/characters.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -19,9 +20,17 @@ const entryUrls = data.entries
     priority: '0.7',
   }));
 
+const characterUrls = characterKeys.map((k) => ({
+  loc: `${BASE}/characters/${k}`,
+  lastmod,
+  changefreq: 'monthly',
+  priority: '0.6',
+}));
+
 const urls = [
   { loc: `${BASE}/`, changefreq: 'weekly', priority: '1.0', lastmod },
   { loc: `${BASE}/canon`, changefreq: 'weekly', priority: '0.8', lastmod },
+  ...characterUrls,
   ...entryUrls,
 ];
 
