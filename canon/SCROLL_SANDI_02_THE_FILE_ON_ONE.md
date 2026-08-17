@@ -8,7 +8,7 @@ status: canon
 arc: 2
 order: 2
 summary: >
-  The President's Daughter. Sandi's childhood: learning early that adults lie in two directions — to the public and to themselves.
+  Sandi first encounters One through an intelligence file meant to map his weaknesses—and recognizes a man who refuses every available script.
 supersedes: null
 visibility: public
 ---

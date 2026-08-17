@@ -8,7 +8,7 @@ status: canon
 arc: 8
 order: null
 summary: >
-  A file in The Voice of One canon.
+  One refuses to reduce structural corruption to a single villain, naming people as coordinates without feeding the spectacle around them.
 supersedes: null
 visibility: public
 ---

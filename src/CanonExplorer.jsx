@@ -1,9 +1,10 @@
-import React from "react";
+import React from "react"; // eslint-disable-line no-unused-vars -- required by SSG JSX transform
 import { useState, useMemo, useEffect } from "react";
 import { Link } from "react-router-dom";
 import data from "./entries.json";
 
 const ENTRIES = data.entries;
+const PUBLIC_HEADS = ENTRIES.filter((e) => e.visibility !== "archive" && e.isHead);
 const STATS = data.stats;
 
 // Derive series and people from the data
@@ -168,10 +169,10 @@ export default function CanonExplorer() {
   }, []);
 
   const filtered = useMemo(() => {
-    let base = ENTRIES.filter(e => e.visibility !== "archive");
+    let base = PUBLIC_HEADS;
     if (path) {
       const order = PATHS[path];
-      base = order.map((id) => ENTRIES.find((e) => e.id === id)).filter(Boolean).filter(e => e.visibility !== "archive");
+      base = order.map((id) => PUBLIC_HEADS.find((e) => e.id === id)).filter(Boolean);
     }
     return base.filter((e) => {
       if (series && e.series !== series) return false;
@@ -201,7 +202,7 @@ export default function CanonExplorer() {
             for what it is. A plain, verified index for a story about who you can believe.
           </p>
           <div className="voc-stat">
-            <span><b>{STATS.public}</b> public entries · <b>{STATS.canon}</b> canon</span>
+            <span><b>{STATS.publicHeads ?? STATS.public}</b> public works · <b>{STATS.canonicalPublicHeads ?? STATS.canon}</b> canonical heads</span>
             <span className="voc-dot-canon">● canon</span>
             <span className="voc-dot-draft">● draft</span>
             <span className="voc-dot-seed">● seed</span>
@@ -236,7 +237,7 @@ export default function CanonExplorer() {
             <p className="voc-rail-head">Series</p>
             <div className="voc-rail-list">
               {SERIES.map((s) => {
-                const n = ENTRIES.filter((e) => e.series === s && e.visibility !== "archive").length;
+                const n = PUBLIC_HEADS.filter((e) => e.series === s).length;
                 if (!n) return null;
                 return (
                   <button key={s} className={"voc-railbtn" + (series === s ? " is-on" : "")}
@@ -331,7 +332,7 @@ export default function CanonExplorer() {
       )}
 
       <footer className="voc-foot">
-        <span>Scrolls of One — canon record · {STATS.total} entries</span>
+        <span>Scrolls of One — public canon record · {STATS.publicHeads ?? STATS.public} works</span>
         <span>
           A project of the{" "}
           <a href="https://emergenceinstitute.live" className="voc-foot-link"

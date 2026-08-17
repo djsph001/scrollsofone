@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; // eslint-disable-line no-unused-vars -- required by SSG JSX transform
 import { useLocation, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import data from '../entries.json';
@@ -52,7 +52,7 @@ export default function EntryPage() {
         <div className="page not-found">
           <h2>Not in the record</h2>
           <p>No scroll matches that ID.</p>
-          <Link to="/" className="back">← Back to the Canon Explorer</Link>
+          <Link to="/canon" className="back">← Back to the Canon Explorer</Link>
         </div>
       </>
     );
@@ -73,7 +73,7 @@ export default function EntryPage() {
         <style>{FONTS + CSS}</style>
       </Helmet>
       <div className="page">
-        <Link to="/" className="back">← Back to Canon Explorer</Link>
+        <Link to="/canon" className="back">← Back to Canon Explorer</Link>
 
         <div className="meta">
           <span>{entry.kind}</span>

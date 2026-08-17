@@ -8,7 +8,7 @@ status: canon
 arc: 6
 order: 3
 summary: >
-  Carmichael watches a police killing on mute. Sound is emotion; emotion is leverage. His calculated response to national outrage.
+  Facing electoral defeat, Carmichael refuses concession and begins transforming a lost election into a story of theft and personal betrayal.
 supersedes: null
 visibility: public
 ---

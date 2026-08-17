@@ -2,6 +2,10 @@
 set -e
 cd "$(dirname "$0")/.."
 
+# Refresh and verify canon data before routes or pages are generated.
+node build-canon.mjs ./canon
+node scripts/check-site-data.mjs
+
 # Generate Routes.jsx with explicit paths from entries.json
 echo "Generating routes..."
 node scripts/generate-routes.mjs

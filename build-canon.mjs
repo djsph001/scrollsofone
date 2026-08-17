@@ -190,6 +190,8 @@ const stats = {
   total: output.length,
   public: output.filter((e) => e.visibility === "public").length,
   canon: output.filter((e) => e.status === "canon").length,
+  publicHeads: output.filter((e) => e.visibility === "public" && e.isHead).length,
+  canonicalPublicHeads: output.filter((e) => e.visibility === "public" && e.isHead && e.status === "canon").length,
   generated: new Date().toISOString(),
 };
 

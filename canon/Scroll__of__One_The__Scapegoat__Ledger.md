@@ -8,7 +8,7 @@ status: canon
 arc: 8
 order: null
 summary: >
-  A file in The Voice of One canon.
+  One names the machinery of scapegoating: people ignore a warning, then blame the witness for failing to prevent the consequences.
 supersedes: null
 visibility: public
 ---

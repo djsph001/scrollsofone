@@ -8,7 +8,7 @@ status: canon
 arc: 2
 order: null
 summary: >
-  A file in The Voice of One canon.
+  One dreams of an intimate union with the First Daughter, binding love, danger, faith, and political inheritance inside the same impossible embrace.
 supersedes: null
 visibility: public
 ---

@@ -8,17 +8,20 @@ const data = JSON.parse(readFileSync(resolve(__dirname, '../src/entries.json'), 
 const dist = resolve(__dirname, '../dist');
 const BASE = 'https://scrollsofone.com';
 
+const lastmod = data.stats.generated?.split('T')[0] || '2026-06-13';
+
 const entryUrls = data.entries
-  .filter(e => e.visibility !== 'archive')
+  .filter(e => e.visibility !== 'archive' && e.isHead)
   .map(e => ({
     loc: `${BASE}/scroll/${e.id}`,
-    lastmod: data.stats.generated?.split('T')[0] || '2026-06-13',
+    lastmod,
     changefreq: 'monthly',
     priority: '0.7',
   }));
 
 const urls = [
-  { loc: BASE, changefreq: 'weekly', priority: '1.0', lastmod: '2026-06-13' },
+  { loc: `${BASE}/`, changefreq: 'weekly', priority: '1.0', lastmod },
+  { loc: `${BASE}/canon`, changefreq: 'weekly', priority: '0.8', lastmod },
   ...entryUrls,
 ];
 

@@ -4,11 +4,11 @@ title: "Scroll of Sandi IV — When Social Media Discovered the Pregnancy"
 series: Sandi
 kind: scroll
 who: [Sandi, One]
-status: canon
+status: repair
 arc: 2
 order: 4
 summary: >
-  The President's Daughter. Sandi's childhood: learning early that adults lie in two directions — to the public and to themselves.
+  A leaked clinic photograph turns Sandi's pregnancy into public property, while she and One answer the spectacle by establishing a boundary.
 supersedes: null
 visibility: public
 ---

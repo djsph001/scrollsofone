@@ -8,14 +8,10 @@ status: canon
 arc: 4
 order: 3
 summary: >
-  Hospital cafeteria meeting where the Baptist warns One about voice-cloning technology and the coming age where trust itself becomes a weapon.
+  One arrives for his regular meeting and finds the Baptist gone, leaving an empty office, a broken routine, and the first unmistakable sign of danger.
 supersedes: null
 visibility: public
 ---
-
-Good. This is already strong. I’ll give you a tightened, canonical cut that keeps every beat you wrote, just cleaner, a bit sharper, and ready to drop in as SCROLL_BAPTIST_03_THE_DISAPPEARANCE.md.
-
-⸻
 
 Scroll of the Baptist III
 
@@ -363,5 +359,3 @@ is not truth.
 It is trust.
 
 ⸻
-
-If you want to keep the momentum, I can go straight into Scroll of the Baptist IV: The Trial of Two Voices next—same energy, but even more pressure: One alone at night with two “Baptists” competing for his obedience.

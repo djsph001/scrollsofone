@@ -8,7 +8,7 @@ status: canon
 arc: 8
 order: null
 summary: >
-  A file in The Voice of One canon.
+  One confronts the deepest cost of conscience: power punishing the people he loves for truths he refuses to abandon.
 supersedes: null
 visibility: public
 ---

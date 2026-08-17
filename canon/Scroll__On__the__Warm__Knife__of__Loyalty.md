@@ -8,7 +8,7 @@ status: canon
 arc: 5
 order: null
 summary: >
-  A file in The Voice of One canon.
+  A warning about belonging used as coercion—the friendly demand to betray one's own eyes in the name of loyalty and strategy.
 supersedes: null
 visibility: public
 ---

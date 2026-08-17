@@ -8,7 +8,7 @@ status: canon
 arc: 4
 order: 4
 summary: >
-  Carmichael watches a police killing on mute. Sound is emotion; emotion is leverage. His calculated response to national outrage.
+  Carmichael is offered Project VOX: an artificial Baptist whose trusted voice can be scaled, directed, and made to bless the machinery of power.
 supersedes: null
 visibility: public
 ---

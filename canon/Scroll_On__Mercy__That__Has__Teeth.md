@@ -8,7 +8,7 @@ status: canon
 arc: 8
 order: null
 summary: >
-  A file in The Voice of One canon.
+  One distinguishes mercy from a velvet leash, refusing protection whose hidden price is betrayal.
 supersedes: null
 visibility: public
 ---

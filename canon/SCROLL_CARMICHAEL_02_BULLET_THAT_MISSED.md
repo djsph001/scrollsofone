@@ -8,7 +8,7 @@ status: canon
 arc: 3
 order: 2
 summary: >
-  Carmichael watches a police killing on mute. Sound is emotion; emotion is leverage. His calculated response to national outrage.
+  An assassination attempt misses Carmichael and gives him something more useful than survival: a public miracle he can convert into destiny.
 supersedes: null
 visibility: public
 ---

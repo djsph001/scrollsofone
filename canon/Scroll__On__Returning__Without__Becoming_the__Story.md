@@ -8,7 +8,7 @@ status: canon
 arc: 7
 order: null
 summary: >
-  A file in The Voice of One canon.
+  One returns without surrendering to the theater built around him, recognizing how procedure can reach what power cannot directly touch.
 supersedes: null
 visibility: public
 ---

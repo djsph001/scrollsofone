@@ -8,7 +8,7 @@ status: canon
 arc: 8
 order: null
 summary: >
-  A file in The Voice of One canon.
+  A defense of privacy and dignity when institutions and audiences try to turn a person's body, history, and pain into public evidence.
 supersedes: null
 visibility: public
 ---

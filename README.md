@@ -1,16 +1,36 @@
-# React + Vite
+# Scrolls of One
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The canonical public record for **The Voice of One** universe. The site presents the literary world to readers while preserving a validated distinction between current canon, drafts, seeds, superseded material, and archives.
 
-Currently, two official plugins are available:
+## Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- `canon/` — active source material and metadata
+- `archive/` — retained superseded material
+- `audit/` — controlling-version and continuity records
+- `screen/` — derived screenplay material; cannot establish canon
+- `src/` — reader-facing React application
+- `build-canon.mjs` — canon metadata validator and data generator
+- `scripts/` — static route, build, metadata, and sitemap generation
+- `dist/` — generated production site
 
-## React Compiler
+## Local development
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm ci
+npm run check:canon
+npm run dev
+```
 
-## Expanding the ESLint configuration
+## Production build
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm run build
+```
+
+The build validates canon, checks the public display set and reading paths, generates static routes, builds the site, moves page metadata into the document head, and produces the sitemap and robots file.
+
+## Canon rules
+
+Canon metadata is validated against closed vocabularies in `build-canon.mjs`. Stable entry IDs must not be renamed casually: they are public URLs and may participate in supersession chains. Screen documents inherit from canon and cannot create new canon facts.
+
+The controlling record for resolved forks and authorial rulings is `audit/CONTROLLING_VERSION_REGISTER.md`.
