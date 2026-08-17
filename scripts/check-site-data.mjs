@@ -30,7 +30,7 @@ for (const key of expectedCharacters) {
 }
 for (const key of characterKeys) {
   const c = characters[key];
-  if (!c || !c.name || !c.intro || !c.roleInConflict) errors.push(`character "${key}" missing name/intro/roleInConflict`);
+  if (!c || !c.name || !c.shortName || !c.role || !c.intro || !c.roleInConflict) errors.push(`character "${key}" missing name/shortName/role/intro/roleInConflict`);
   if (!c || !Array.isArray(c.relationships) || c.relationships.length === 0) errors.push(`character "${key}" has no relationships`);
   if (!c || !Array.isArray(c.essentials) || c.essentials.length === 0) errors.push(`character "${key}" has no essential entries`);
   if (!c || !Array.isArray(c.readingPath) || c.readingPath.length === 0) errors.push(`character "${key}" has no reading path`);

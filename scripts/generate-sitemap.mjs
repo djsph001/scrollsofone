@@ -31,6 +31,7 @@ const urls = [
   { loc: `${BASE}/`, changefreq: 'weekly', priority: '1.0', lastmod },
   { loc: `${BASE}/canon`, changefreq: 'weekly', priority: '0.8', lastmod },
   { loc: `${BASE}/timeline`, changefreq: 'weekly', priority: '0.8', lastmod },
+  { loc: `${BASE}/characters`, changefreq: 'weekly', priority: '0.8', lastmod },
   ...characterUrls,
   ...entryUrls,
 ];

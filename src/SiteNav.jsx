@@ -22,6 +22,7 @@ export default function SiteNav({ active }) {
         </Link>
         <div className="site-links">
           <Link to="/" className={active === "home" ? "on" : ""}>Home</Link>
+          <Link to="/characters" className={active === "characters" ? "on" : ""}>Characters</Link>
           <Link to="/canon" className={active === "canon" ? "on" : ""}>Canon</Link>
           <Link to="/timeline" className={active === "timeline" ? "on" : ""}>Timeline</Link>
         </div>

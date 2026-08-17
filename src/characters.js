@@ -5,6 +5,7 @@ export const characters = {
   one: {
     key: "one",
     name: "One",
+    shortName: "One",
     role: "The conscience — trained political thinker, undiscovered artist, the story's center",
     intro:
       "One is a trained political thinker and an undiscovered artist with real talent — raised Catholic and told to “be like Jesus,” a directive he took literally while everyone else treated it as metaphor. He is not a clean messiah: exhausted, doubtful, wounded, often angry, but still committed to love and justice. He claims no divinity — only that he was given an impossible standard as a child and decided to take it seriously.",
@@ -36,6 +37,7 @@ export const characters = {
   sandi: {
     key: "sandi",
     name: "Sandi Carmichael",
+    shortName: "Sandi",
     role: "The President's daughter, One's partner, the bridge between regimes",
     intro:
       "Sandi is the daughter of President Carmichael and One's partner — raised inside the machinery of spectacle, where she learned early that adults lie in two directions: to the public and to themselves. She learned the machine's mechanics without losing the ability to see through it. Sharper than both men who orbit her, she is not a damsel or a prop: she is a woman making impossible choices in real time, knowing every option costs something she loves.",
@@ -67,6 +69,7 @@ export const characters = {
   baptist: {
     key: "baptist",
     name: "The Baptist",
+    shortName: "Baptist",
     role: "One's mentor, spiritual counselor, the conscience-keeper",
     intro:
       "The Baptist is a quiet, slightly eccentric spiritual counselor who never built a brand — a former theologian and psychiatrist with Haitian roots who bridges old-world spirituality and new-world information warfare. He is the one man who believes in One without worshiping him, and believes in God without selling Him.",
@@ -95,6 +98,7 @@ export const characters = {
   carmichael: {
     key: "carmichael",
     name: "President Carmichael",
+    shortName: "Carmichael",
     role: "The President — Sandi's father, power without conscience",
     intro:
       "Carmichael is the President — the man who converts crisis, spectacle, and manufactured truth into power. He treats the country not as something to govern but as a set of stories to curate, and he taught his daughter Sandi to read power without ever teaching her when to refuse it. He is the embodiment of power without conscience — the man One refuses to become.",

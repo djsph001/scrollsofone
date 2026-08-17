@@ -73,12 +73,12 @@ export default function CharacterPage({ char }) {
       </Helmet>
 
       <main className="chars">
-        <SiteNav />
+        <SiteNav active="characters" />
         <div className="chars-subnav" aria-label="Characters">
           <div className="chars-tabs">
             {characterKeys.map((k) => (
               <Link key={k} to={`/characters/${k}`} className={k === c.key ? "on" : ""}>
-                {characters[k].name.split(" ")[0]}
+                {characters[k].shortName}
               </Link>
             ))}
           </div>
