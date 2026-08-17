@@ -3,11 +3,13 @@ import React from 'react'; // eslint-disable-line no-unused-vars -- required by 
 import CanonExplorer from './CanonExplorer';
 import LandingPage from './LandingPage';
 import CharacterPage from './CharacterPage';
+import TimelinePage from './TimelinePage';
 import EntryPage from './pages/EntryPage';
 
 export const routes = [
   { path: '/', element: <LandingPage /> },
   { path: '/canon', element: <CanonExplorer /> },
+  { path: '/timeline', element: <TimelinePage /> },
   { path: '/characters/one', element: <CharacterPage char="one" /> },
   { path: '/characters/sandi', element: <CharacterPage char="sandi" /> },
   { path: '/characters/baptist', element: <CharacterPage char="baptist" /> },

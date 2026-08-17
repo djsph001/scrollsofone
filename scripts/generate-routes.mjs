@@ -23,15 +23,17 @@ import React from 'react'; // eslint-disable-line no-unused-vars -- required by 
 import CanonExplorer from './CanonExplorer';
 import LandingPage from './LandingPage';
 import CharacterPage from './CharacterPage';
+import TimelinePage from './TimelinePage';
 import EntryPage from './pages/EntryPage';
 
 export const routes = [
   { path: '/', element: <LandingPage /> },
   { path: '/canon', element: <CanonExplorer /> },
+  { path: '/timeline', element: <TimelinePage /> },
 ${characterLines.join(',\n')},
 ${routeLines.join(',\n')},
 ];
 `;
 
 writeFileSync(resolve(ROOT, 'src/Routes.jsx'), content, 'utf-8');
-console.log(`Generated Routes.jsx with ${entries.length + 2 + characterKeys.length} routes`);
+console.log(`Generated Routes.jsx with ${entries.length + 3 + characterKeys.length} routes`);

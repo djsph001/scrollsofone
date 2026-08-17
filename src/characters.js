@@ -123,3 +123,12 @@ export const characters = {
 };
 
 export const characterKeys = Object.keys(characters);
+
+// Maps an entry's `who` value to a character page route key. Only the four
+// characters with dedicated pages are linked; Universal / Cosmic / Meta are not.
+export const whoToCharacterKey = {
+  One: "one",
+  Sandi: "sandi",
+  Baptist: "baptist",
+  Carmichael: "carmichael",
+};

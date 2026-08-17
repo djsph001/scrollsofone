@@ -1,5 +1,5 @@
 import { readFileSync } from 'node:fs';
-import { characters, characterKeys } from '../src/characters.js';
+import { characters, characterKeys, whoToCharacterKey } from '../src/characters.js';
 
 const data = JSON.parse(readFileSync(new URL('../src/entries.json', import.meta.url), 'utf8'));
 const entries = data.entries;
@@ -37,6 +37,24 @@ for (const key of characterKeys) {
   for (const id of refs) {
     if (!ids.has(id)) errors.push(`character "${key}" references missing id "${id}"`);
     else if (!publicHeads.some((entry) => entry.id === id)) errors.push(`character "${key}" references a hidden or superseded entry "${id}"`);
+  }
+}
+
+// Spine validation: numbered scenes 08–67, resolved by `order` (not ID), so the
+// three legacy `cene_` IDs land at their correct positions.
+const spine = entries.filter((e) => e.kind === 'scene' && Number.isInteger(e.order) && e.order >= 8 && e.order <= 67);
+if (spine.length !== 60) errors.push(`spine: expected 60 numbered scenes, found ${spine.length}`);
+for (let o = 8; o <= 67; o++) {
+  const at = spine.filter((e) => e.order === o);
+  if (at.length === 0) errors.push(`spine: missing scene at order ${o}`);
+  else if (at.length > 1) errors.push(`spine: duplicate scene at order ${o} (${at.map((e) => e.id).join(', ')})`);
+}
+for (const e of spine) {
+  if (e.visibility !== 'public' || !e.isHead || e.status !== 'canon') errors.push(`spine: ${e.id} (order ${e.order}) is not a public canonical head`);
+  if (!Number.isInteger(e.arc) || e.arc < 1 || e.arc > 8) errors.push(`spine: ${e.id} (order ${e.order}) has invalid arc "${e.arc}"`);
+  for (const w of e.who || []) {
+    const key = whoToCharacterKey[w];
+    if (key && !characterKeys.includes(key)) errors.push(`spine: ${e.id} links who "${w}" to missing character "${key}"`);
   }
 }
 
