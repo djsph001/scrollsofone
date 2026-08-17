@@ -10,14 +10,12 @@ order: null
 summary: >
   Cosmic-mythic invocation addressed to Earth and Heaven. Angels, avatars, and humans mingling for counsel. Performance-ready spoken word.
 supersedes: null
-visibility: public
+visibility: archive
 ---
 
 Pandemic Papers 
 
 Prelude to the Trial
-
-(cleaned + performance-ready)
 
 Brothers and sisters—Earth and Heaven—listen.
 

@@ -10,7 +10,7 @@ order: null
 summary: >
   A performable satirical play with Off-Broadway energy, hip-hop chorus, and mythic comedy. Part of the Pandemic Papers.
 supersedes: null
-visibility: public
+visibility: archive
 ---
 
 Absolutely. I kept the off-Broadway chaos, the hip-hop chorus energy, and the mythic satire, but I made it performable: clearer voices, cleaner stage directions, tighter rhythm, and I removed the hard racial slurs (you don’t need them to get the punch). Part of "the pandemic papers meaning prophetic stories published during the Pandemic.

@@ -10,7 +10,7 @@ order: null
 summary: >
   Thought experiment: what if every unit of value had to declare its origin — care or cruelty, healing or harm? Money as sacrament and weapon.
 supersedes: null
-visibility: public
+visibility: archive
 ---
 
 # The Baptism of the Dollar (Seed Version)

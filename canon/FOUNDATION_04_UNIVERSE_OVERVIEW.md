@@ -10,7 +10,7 @@ order: null
 summary: >
   Extended universe guide covering all main characters, the world's political-technological decay, scroll taxonomy, One's voice and style, and hard boundaries.
 supersedes: null
-visibility: public
+visibility: archive
 ---
 
 The Voice of One — Universe Overview

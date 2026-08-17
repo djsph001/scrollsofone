@@ -15,8 +15,6 @@ visibility: public
 
 Canon Blurb: “Read the Book!”
 
-(cleaned, sharper, publishable — still you)
-
 READ THE BOOK.
 
 This book is built on a dangerous idea:

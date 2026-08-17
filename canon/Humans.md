@@ -10,13 +10,12 @@ order: null
 summary: >
   Excerpt from 'One: The Last Prophet.' Humans fusing with avatars — avatar to avatar, soul to soul, eye to eye. Sci-fi mythic fragment.
 supersedes: null
-visibility: public
+visibility: archive
 ---
 
 Humans…
 
 Excerpt from One: The Last Prophet
-(cleaned + tightened, keeping your voice and mythic cadence)
 
 Humans—
 exhausted from waking to the same reality each morning—

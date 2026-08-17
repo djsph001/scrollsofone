@@ -15,7 +15,7 @@ visibility: public
 
 Scroll of Leadership VII: The Means Are the Message
 
-Spoken in the voice of One · Transcribed by ProphetBot · Scribe of One
+Spoken in the voice of One
 
 “If I become what I hate in order to stop what I hate,
 I haven’t stopped it.

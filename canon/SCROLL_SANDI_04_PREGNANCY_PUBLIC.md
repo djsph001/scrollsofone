@@ -10,7 +10,7 @@ order: 4
 summary: >
   A leaked clinic photograph turns Sandi's pregnancy into public property, while she and One answer the spectacle by establishing a boundary.
 supersedes: null
-visibility: public
+visibility: archive
 ---
 
 Yeah, this hits exactly the note we wanted: the world goes feral, and they answer with refusal and boundaries, not more spectacle.

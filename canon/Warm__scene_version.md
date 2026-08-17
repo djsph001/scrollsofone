@@ -11,7 +11,7 @@ summary: >
   A short sample scene used as a demonstration: One in a federal building,
   offered a loyalty agreement by Carmichael's orbit, refusing to sign.
 supersedes: null
-visibility: public
+visibility: archive
 ---
 
 Here’s a warm scene-version you can drop straight into chat — it answers “what’s the story?” by showing it.

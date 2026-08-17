@@ -10,7 +10,7 @@ order: null
 summary: >
   Early Pandemic Papers notes imagine a frightened humanity moving through biohazard, isolation, avatars, and rumors of an unfamiliar kind of war.
 supersedes: null
-visibility: public
+visibility: archive
 ---
 
 Pandemic Papers

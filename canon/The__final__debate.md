@@ -10,7 +10,7 @@ order: null
 summary: >
   Raw draft and stream-of-consciousness notes about avatars, prophets, Jesus's return, and the largest masquerade ball in the universe.
 supersedes: null
-visibility: public
+visibility: archive
 ---
 
 In the confusion that let to the final debate 

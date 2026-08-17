@@ -10,7 +10,7 @@ order: null
 summary: >
   One is an undiscovered artist with real talent, a trained political thinker, and a conscience who works through method — constraining implementation rather than commanding the agenda.
 supersedes: null
-visibility: public
+visibility: archive
 ---
 
 === CORE LORE SUMMARY: UNIVERSE OF ONE (FOR INTERNAL USE) ===
