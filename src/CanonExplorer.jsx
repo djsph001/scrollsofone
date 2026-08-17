@@ -2,6 +2,7 @@ import React from "react"; // eslint-disable-line no-unused-vars -- required by 
 import { useState, useMemo, useEffect } from "react";
 import { Link } from "react-router-dom";
 import data from "./entries.json";
+import SiteNav from "./SiteNav";
 
 const ENTRIES = data.entries;
 const PUBLIC_HEADS = ENTRIES.filter((e) => e.visibility !== "archive" && e.isHead);
@@ -192,6 +193,8 @@ export default function CanonExplorer() {
     <div className="voc-root">
       <style>{FONTS + CSS}</style>
 
+      <SiteNav active="canon" />
+
       <header className="voc-head">
         <div className="voc-head-rule" />
         <div className="voc-head-inner">
@@ -319,7 +322,7 @@ export default function CanonExplorer() {
             </div>
             <div style={{ marginTop: '18px', paddingTop: '12px', borderTop: '1px solid var(--line)' }}>
               <Link
-                to={`/scroll/${selected.id}`}
+                to={`/scroll/${selected.id}?from=canon`}
                 className="voc-foot-link"
                 onClick={(e) => e.stopPropagation()}
                 style={{ fontFamily: "'Spline Sans Mono',monospace", fontSize: '11px', letterSpacing: '.08em' }}

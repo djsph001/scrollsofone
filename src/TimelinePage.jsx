@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import data from "./entries.json";
 import { whoToCharacterKey } from "./characters";
+import SiteNav from "./SiteNav";
 
 const ARC_NAMES = {
   1: "Reality is Editable",
@@ -57,17 +58,19 @@ const CSS = `
 .tl-arc{font-family:'Spline Sans Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;display:flex;align-items:center;gap:12px;padding:10px 0 12px;color:var(--dim)}
 .tl-arc:before{content:"";width:9px;height:9px;border-radius:50%;background:currentColor;flex:none}
 .tl-scenes{display:grid;gap:1px;border:1px solid var(--line);border-radius:4px;overflow:hidden}
-.tl-node{display:grid;grid-template-columns:64px 1fr;gap:0;background:rgba(24,22,16,.5);text-decoration:none;transition:background .2s}
+.tl-node{display:block;background:rgba(24,22,16,.5);transition:background .2s}
 .tl-node:hover{background:#211d14}
-.tl-num{font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--amber);padding:18px 0 0 16px;border-right:1px solid var(--line)}
-.tl-body{padding:16px 18px 16px 20px}
-.tl-node h3{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(18px,2vw,22px);line-height:1.15;margin:0 0 6px;color:var(--paper)}
-.tl-summary{color:var(--dim);font-size:15px;line-height:1.45;margin:0}
+.tl-body{padding:16px 18px 18px 20px}
+.tl-head{display:flex;align-items:baseline;gap:16px;text-decoration:none}
+.tl-head:hover h3{color:var(--amber)}
+.tl-num{font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--amber);flex:none}
+.tl-node h3{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(18px,2vw,22px);line-height:1.15;margin:0;color:var(--paper)}
+.tl-summary{color:var(--dim);font-size:15px;line-height:1.45;margin:8px 0 0}
 .tl-chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
 .tl-chip{font-family:'Spline Sans Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--dim);border:1px solid var(--line);padding:4px 9px;border-radius:99px;transition:border-color .2s,color .2s}
 .tl-chip:hover{color:var(--amber);border-color:var(--amber)}
 .tl-foot{padding:26px clamp(22px,7vw,110px);border-top:1px solid var(--line);font-family:'Spline Sans Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#847d6c;display:flex;justify-content:space-between;gap:20px}.tl-foot a{color:var(--dim);text-decoration:none}
-@media(max-width:640px){.tl-nav{flex-wrap:wrap;gap:12px}.tl-navlinks{gap:14px}.tl-node{grid-template-columns:46px 1fr}.tl-num{padding:16px 0 0 12px;font-size:10px}.tl-body{padding:14px 14px 14px 14px}.tl-summary{font-size:14px}.tl-hero{padding-top:44px}.tl-title{font-size:44px}}
+@media(max-width:640px){.tl-head{gap:12px}.tl-num{font-size:10px}.tl-body{padding:14px 14px 16px 14px}.tl-summary{font-size:14px}.tl-hero{padding-top:44px}.tl-title{font-size:44px}}
 `;
 
 export default function TimelinePage() {
@@ -84,16 +87,7 @@ export default function TimelinePage() {
       </Helmet>
 
       <main className="tl">
-        <nav className="tl-nav" aria-label="Primary navigation">
-          <Link className="tl-mark" to="/">
-            <span>●</span> Scrolls of One
-          </Link>
-          <div className="tl-navlinks">
-            <Link to="/canon">The Canon</Link>
-            <Link to="/characters/one">Characters</Link>
-            <Link to="/timeline">Timeline</Link>
-          </div>
-        </nav>
+        <SiteNav active="timeline" />
 
         <header className="tl-hero">
           <div className="tl-kicker">The Voice of One</div>
@@ -117,9 +111,9 @@ export default function TimelinePage() {
                 <div className="tl-scenes">
                   {run.scenes.map((e) => (
                     <div className="tl-node" key={e.id} style={{ borderLeft: `3px solid ${color}` }}>
-                      <span className="tl-num">{String(e.order).padStart(2, "0")}</span>
                       <div className="tl-body">
-                        <Link to={`/scroll/${e.id}`}>
+                        <Link to={`/scroll/${e.id}?from=timeline`} className="tl-head">
+                          <span className="tl-num">{String(e.order).padStart(2, "0")}</span>
                           <h3>{e.title}</h3>
                         </Link>
                         <p className="tl-summary">{e.summary}</p>

@@ -1,5 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { characters, characterKeys, whoToCharacterKey } from '../src/characters.js';
+import { FROM } from '../src/navigation.js';
 
 const data = JSON.parse(readFileSync(new URL('../src/entries.json', import.meta.url), 'utf8'));
 const entries = data.entries;
@@ -56,6 +57,22 @@ for (const e of spine) {
     const key = whoToCharacterKey[w];
     if (key && !characterKeys.includes(key)) errors.push(`spine: ${e.id} links who "${w}" to missing character "${key}"`);
   }
+}
+
+// navigation.js: `from` whitelist integrity — every value resolves to a real destination,
+// and every character key has a `character-${key}` entry.
+const staticRoutes = new Set(['/', '/canon', '/timeline']);
+for (const [from, dest] of Object.entries(FROM)) {
+  if (dest.to.startsWith('/characters/')) {
+    const key = dest.to.slice('/characters/'.length);
+    if (!characterKeys.includes(key)) errors.push(`navigation: from "${from}" points to missing character "${key}"`);
+  } else if (!staticRoutes.has(dest.to)) {
+    errors.push(`navigation: from "${from}" points to unknown destination "${dest.to}"`);
+  }
+}
+for (const key of characterKeys) {
+  const fv = `character-${key}`;
+  if (!FROM[fv]) errors.push(`navigation: missing "from=${fv}" whitelist entry`);
 }
 
 const summaryOwners = new Map();

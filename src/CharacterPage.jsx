@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import data from "./entries.json";
 import { characters, characterKeys } from "./characters";
+import { fromForCharacter } from "./navigation";
+import SiteNav from "./SiteNav";
 
 const ENTRIES = data.entries;
 const byId = Object.fromEntries(ENTRIES.map((e) => [e.id, e]));
@@ -11,8 +13,8 @@ const CSS = `
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Spline+Sans+Mono:wght@400;500&display=swap');
 :root{background:#11100c;color:#eee6d5;color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#11100c}a{color:inherit}
 .chars{--paper:#eee6d5;--dim:#b9af98;--line:#383225;--amber:#dda63b;--green:#829a7a;min-height:100vh;background:radial-gradient(circle at 82% 9%,rgba(221,166,59,.08),transparent 28%),linear-gradient(180deg,#15130e,#0f0e0b 72%);color:var(--paper);font-family:'Newsreader',Georgia,serif}
-.chars-nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:20px clamp(22px,5vw,72px);border-bottom:1px solid var(--line);font-family:'Spline Sans Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
 .chars-mark{text-decoration:none}.chars-mark span{color:var(--amber)}
+.chars-subnav{display:flex;flex-wrap:wrap;gap:14px;padding:14px clamp(22px,5vw,72px);border-bottom:1px solid var(--line);font-family:'Spline Sans Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
 .chars-tabs{display:flex;gap:18px;flex-wrap:wrap}.chars-tabs a{color:var(--dim);text-decoration:none}.chars-tabs a:hover{color:var(--amber)}.chars-tabs a.on{color:var(--amber)}
 .chars-hero{padding:clamp(56px,9vw,110px) clamp(22px,7vw,110px) clamp(40px,6vw,70px);border-bottom:1px solid var(--line)}
 .chars-kicker{font-family:'Spline Sans Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--amber)}
@@ -71,10 +73,8 @@ export default function CharacterPage({ char }) {
       </Helmet>
 
       <main className="chars">
-        <nav className="chars-nav" aria-label="Characters">
-          <Link className="chars-mark" to="/canon">
-            <span>●</span> Scrolls of One
-          </Link>
+        <SiteNav />
+        <div className="chars-subnav" aria-label="Characters">
           <div className="chars-tabs">
             {characterKeys.map((k) => (
               <Link key={k} to={`/characters/${k}`} className={k === c.key ? "on" : ""}>
@@ -82,7 +82,7 @@ export default function CharacterPage({ char }) {
               </Link>
             ))}
           </div>
-        </nav>
+        </div>
 
         <section className="chars-hero">
           <div className="chars-kicker">Character · The Voice of One</div>
@@ -118,7 +118,7 @@ export default function CharacterPage({ char }) {
               <div className="chars-label">Essential scrolls &amp; scenes</div>
               <div className="entry-list">
                 {essentials.map((e) => (
-                  <Link className="entry-link" to={`/scroll/${e.id}`} key={e.id}>
+                  <Link className="entry-link" to={`/scroll/${e.id}?from=${fromForCharacter(c.key)}`} key={e.id}>
                     <b>{e.title}</b>
                     <span>{e.summary}</span>
                   </Link>
@@ -133,7 +133,7 @@ export default function CharacterPage({ char }) {
                   <li key={s.id}>
                     <span className="n" />
                     <span className="tx">
-                      <Link to={`/scroll/${s.id}`}>{s.entry.title}</Link>
+                      <Link to={`/scroll/${s.id}?from=${fromForCharacter(c.key)}`}>{s.entry.title}</Link>
                       <span className="note">{s.note}</span>
                     </span>
                   </li>
