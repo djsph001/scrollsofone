@@ -1,5 +1,5 @@
 import React from "react"; // eslint-disable-line no-unused-vars -- required by SSG JSX transform
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import data from "./entries.json";
 import SiteNav from "./SiteNav";
@@ -162,12 +162,61 @@ export default function CanonExplorer() {
   const [path, setPath] = useState(null);
   const [selected, setSelected] = useState(null);
   const [openedAt, setOpenedAt] = useState(0);
+  const triggerRef = useRef(null);
+  const drawerRef = useRef(null);
+  const closeBtnRef = useRef(null);
 
+  // Escape closes; Tab is trapped inside the open drawer.
   useEffect(() => {
-    const onKey = (e) => { if (e.key === "Escape") setSelected(null); };
+    const onKey = (e) => {
+      if (!selected) return;
+      if (e.key === "Escape") {
+        e.preventDefault();
+        setSelected(null);
+        return;
+      }
+      if (e.key !== "Tab") return;
+      const drawer = drawerRef.current;
+      if (!drawer) return;
+      const focusables = Array.from(
+        drawer.querySelectorAll('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])')
+      );
+      if (focusables.length === 0) return;
+      const first = focusables[0];
+      const last = focusables[focusables.length - 1];
+      const active = document.activeElement;
+      if (e.shiftKey) {
+        if (active === first || !drawer.contains(active)) {
+          e.preventDefault();
+          last.focus();
+        }
+      } else if (active === last || !drawer.contains(active)) {
+        e.preventDefault();
+        first.focus();
+      }
+    };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, []);
+  }, [selected]);
+
+  // On open: lock background scroll and move focus into the drawer.
+  useEffect(() => {
+    if (!selected) return;
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    closeBtnRef.current?.focus();
+    return () => {
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [selected]);
+
+  // On close: restore focus to the triggering card.
+  useEffect(() => {
+    if (!selected && triggerRef.current) {
+      triggerRef.current.focus();
+      triggerRef.current = null;
+    }
+  }, [selected]);
 
   const filtered = useMemo(() => {
     let base = PUBLIC_HEADS;
@@ -277,7 +326,16 @@ export default function CanonExplorer() {
             <ul className="voc-grid">
               {filtered.map((e, i) => (
                 <li key={e.id} className="voc-card" style={{ animationDelay: `${Math.min(i * 24, 360)}ms` }}>
-                  <button className="voc-card-btn" onClick={() => { setSelected(e); setOpenedAt(Date.now()); }}>
+                  <button
+                    className="voc-card-btn"
+                    onClick={(evt) => {
+                      triggerRef.current = evt.currentTarget;
+                      setSelected(e);
+                      setOpenedAt(Date.now());
+                    }}
+                    aria-expanded={selected?.id === e.id}
+                    aria-controls="canon-drawer"
+                  >
                     <div className="voc-card-meta">
                       <span className="voc-kind">{e.kind}</span>
                       <span className={"voc-status voc-status-" + e.status}>{STATUS_LABEL[e.status]}</span>
@@ -298,13 +356,21 @@ export default function CanonExplorer() {
 
       {selected && (
         <div className="voc-overlay" onClick={() => { if (Date.now() - openedAt > 300) setSelected(null); }}>
-          <div className="voc-drawer" onClick={(e) => e.stopPropagation()} role="dialog" aria-modal="true" aria-label={selected.title}>
-            <button className="voc-close" onClick={() => setSelected(null)} aria-label="Close">✕</button>
+          <div
+            className="voc-drawer"
+            ref={drawerRef}
+            onClick={(e) => e.stopPropagation()}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="canon-drawer-title"
+            id="canon-drawer"
+          >
+            <button className="voc-close" ref={closeBtnRef} onClick={() => setSelected(null)} aria-label="Close">✕</button>
             <div className="voc-drawer-meta">
               <span className="voc-kind">{selected.kind}</span>
               <span className={"voc-status voc-status-" + selected.status}>{STATUS_LABEL[selected.status]}</span>
             </div>
-            <h2 className="voc-drawer-title">{selected.title}</h2>
+            <h2 className="voc-drawer-title" id="canon-drawer-title">{selected.title}</h2>
             <div className="voc-drawer-tags">
               <span className="voc-series-tag">{selected.series}</span>
               {selected.who.map((w) => <span key={w} className="voc-who-tag">{w}</span>)}
