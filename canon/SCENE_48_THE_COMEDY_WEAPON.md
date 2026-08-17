@@ -5,7 +5,7 @@ series: Scenes
 kind: scene
 who: [Universal]
 status: canon
-arc: 6
+arc: 8
 order: 48
 summary: >
   A comedian mocks the witness circles: 'Apparently people are meeting in secret to read checklists.' Humor weaponized to make civic practice look absurd.

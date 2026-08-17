@@ -5,7 +5,7 @@
     "canon": 130,
     "publicHeads": 123,
     "canonicalPublicHeads": 123,
-    "generated": "2026-08-17T15:21:31.138Z"
+    "generated": "2026-08-17T15:38:16.938Z"
   },
   "entries": [
     {
@@ -1727,7 +1727,7 @@
         "Universal"
       ],
       "status": "canon",
-      "arc": 6,
+      "arc": 8,
       "order": 48,
       "summary": "A comedian mocks the witness circles: 'Apparently people are meeting in secret to read checklists.' Humor weaponized to make civic practice look absurd.",
       "supersedes": null,
@@ -1745,7 +1745,7 @@
         "Sandi"
       ],
       "status": "canon",
-      "arc": 6,
+      "arc": 8,
       "order": 49,
       "summary": "Sandi trends online because an influencer mocks her in a skit. She chooses silence. No correction, no defense, no feed.",
       "supersedes": null,
@@ -1763,7 +1763,7 @@
         "Universal"
       ],
       "status": "canon",
-      "arc": 6,
+      "arc": 8,
       "order": 50,
       "summary": "A bored editor accidentally uploads a spreadsheet showing coordinated payments to anti-circle influencers. The comedy campaign was astroturfed.",
       "supersedes": null,

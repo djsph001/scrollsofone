@@ -5,7 +5,7 @@ series: Scenes
 kind: scene
 who: [Universal]
 status: canon
-arc: 6
+arc: 8
 order: 50
 summary: >
   A bored editor accidentally uploads a spreadsheet showing coordinated payments to anti-circle influencers. The comedy campaign was astroturfed.

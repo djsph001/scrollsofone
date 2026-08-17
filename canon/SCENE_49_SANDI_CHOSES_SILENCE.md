@@ -5,7 +5,7 @@ series: Scenes
 kind: scene
 who: [Sandi]
 status: canon
-arc: 6
+arc: 8
 order: 49
 summary: >
   Sandi trends online because an influencer mocks her in a skit. She chooses silence. No correction, no defense, no feed.
