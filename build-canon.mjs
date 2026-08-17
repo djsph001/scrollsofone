@@ -4,7 +4,8 @@
  * ----------------------------------------------
  * Walks the canon directory, parses YAML frontmatter from every file,
  * validates against SCROLL_METADATA_SPEC v1, resolves supersedes chains,
- * and emits src/entries.json for the explorer.
+ * and emits generated/canon-manifest.json (full) + src/publicEntries.json
+ * (browser projection).
  *
  * Usage:
  *   node build-canon.mjs ./canon            # validate + build
@@ -192,14 +193,34 @@ const stats = {
   canon: output.filter((e) => e.status === "canon").length,
   publicHeads: output.filter((e) => e.visibility === "public" && e.isHead).length,
   canonicalPublicHeads: output.filter((e) => e.visibility === "public" && e.isHead && e.status === "canon").length,
-  generated: new Date().toISOString(),
 };
+// No `generated` timestamp: committed outputs must stay deterministic. A
+// checkout/build time is not content history, and there is no trustworthy
+// per-entry modification date to emit as a sitemap lastmod.
 
 if (checkOnly) {
   console.log(`\n  ✓ Validation passed (${stats.total} entries). No output written (--check).\n`);
   process.exit(0);
 }
 
+// ---------- Emit two outputs: full manifest (validators/audits) + public projection (browser) ----------
+// Bundle hygiene, NOT confidentiality: the public GitHub repo still exposes
+// archived source and history. This split only governs what ships in the
+// deployed application bundle. The full manifest must never be imported by
+// browser code (it lives outside src/ for that reason).
+const publicProjection = output
+  .filter((e) => e.visibility === "public" && e.isHead)
+  .map(({ id, title, series, kind, who, status, arc, order, summary, body }) =>
+    ({ id, title, series, kind, who, status, arc, order, summary, body }));
+
+const publicStats = {
+  publicHeads: stats.publicHeads,
+  canonicalPublicHeads: stats.canonicalPublicHeads,
+};
+
+mkdirSync("generated", { recursive: true });
 mkdirSync("src", { recursive: true });
-writeFileSync("src/entries.json", JSON.stringify({ stats, entries: output }, null, 2));
-console.log(`\n  ✓ src/entries.json written — ${stats.total} entries (${stats.public} public, ${stats.canon} canon)\n`);
+writeFileSync("generated/canon-manifest.json", JSON.stringify({ stats, entries: output }, null, 2));
+writeFileSync("src/publicEntries.json", JSON.stringify({ stats: publicStats, entries: publicProjection }, null, 2));
+console.log(`\n  ✓ generated/canon-manifest.json — ${stats.total} entries (${stats.public} public, ${stats.canon} canon)`);
+console.log(`  ✓ src/publicEntries.json — ${publicProjection.length} public heads (browser projection)\n`);

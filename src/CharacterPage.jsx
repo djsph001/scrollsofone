@@ -1,7 +1,7 @@
 import React from "react"; // eslint-disable-line no-unused-vars -- required by SSG JSX transform
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import data from "./entries.json";
+import data from "./publicEntries.json";
 import { characters, characterKeys } from "./characters";
 import { fromForCharacter } from "./navigation";
 import SiteNav from "./SiteNav";

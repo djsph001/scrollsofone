@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'; // eslint-disable-line no-unused-vars -- required by SSG JSX transform
 import { useLocation, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import data from '../entries.json';
+import data from '../publicEntries.json';
 import { whoToCharacterKey } from '../characters';
 import { backLinkFor } from '../navigation';
 import { SLUG_MAPS } from '../canonFilters';

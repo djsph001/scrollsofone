@@ -1,8 +1,8 @@
 // Vite-side data layer for the Canon Explorer filters. Derives the series/who
-// sets and their slug maps from entries.json (a Vite JSON import — this module
+// sets and their slug maps from publicEntries.json (a Vite JSON import — this module
 // is only imported by browser components, never by node scripts).
 
-import data from "./entries.json";
+import data from "./publicEntries.json";
 import { deriveSeries, deriveWho, buildSlugMaps, PATHS } from "./canonFilterParams";
 
 export const ENTRIES = data.entries;

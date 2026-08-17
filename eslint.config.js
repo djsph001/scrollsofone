@@ -17,5 +17,11 @@ export default defineConfig([
       globals: globals.browser,
       parserOptions: { ecmaFeatures: { jsx: true } },
     },
+    rules: {
+      // Bundle boundary: frontend modules must import only the public projection.
+      'no-restricted-imports': ['error', {
+        patterns: ['**/generated/**', '**/canon-manifest.json'],
+      }],
+    },
   },
 ])

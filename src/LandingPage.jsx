@@ -1,7 +1,7 @@
 import React from 'react'; // eslint-disable-line no-unused-vars -- required by SSG JSX transform
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import data from './entries.json';
+import data from './publicEntries.json';
 import SiteNav from './SiteNav';
 
 const CSS = `
@@ -20,7 +20,7 @@ const CSS = `
 `;
 const paths=[['01','Meet One','An undiscovered artist, trained political thinker, and conscience who refuses the throne.','/characters/one'],['02','One & Sandi','Love under surveillance, inheritance, and the machinery of public power.','/characters/sandi'],['03','The Stolen Voice','The Baptist disappears. A synthetic copy begins speaking in his place.','/characters/baptist'],['04','Carmichael','A president learns to convert crisis, grievance, and spectacle into authority.','/characters/carmichael']];
 
-export default function LandingPage(){const publicHeads=data.entries.filter(e=>e.visibility==='public'&&e.isHead);const canonHeads=publicHeads.filter(e=>e.status==='canon');return <><Helmet><title>Scrolls of One — A Universe of Conscience and Contested Truth</title><meta name="description" content="Enter the Voice of One universe: a literary archive about conscience, power, synthetic voices, and the difficult work of knowing whom to believe."/><link rel="canonical" href="https://scrollsofone.com/"/><style>{CSS}</style></Helmet><main className="one-home">
+export default function LandingPage(){const publicHeads=data.entries;const canonHeads=publicHeads.filter(e=>e.status==='canon');return <><Helmet><title>Scrolls of One — A Universe of Conscience and Contested Truth</title><meta name="description" content="Enter the Voice of One universe: a literary archive about conscience, power, synthetic voices, and the difficult work of knowing whom to believe."/><link rel="canonical" href="https://scrollsofone.com/"/><style>{CSS}</style></Helmet><main className="one-home">
 <SiteNav active="home" />
 <section className="one-hero"><div><div className="one-kicker">The Voice of One · A literary universe</div><h1 className="one-title">Who can <em>you believe?</em></h1><p className="one-lead">In a world where every voice can be manufactured, conscience is no longer an abstraction. It is a method of survival.</p><div className="one-actions"><a className="one-button" href="#enter">Enter the universe</a><Link className="one-button secondary" to="/canon">Open the canon record</Link></div></div><aside className="one-evidence" aria-label="The central question"><div className="one-label">Recovered record · Foundation</div><blockquote>“One works through method—constraining implementation rather than commanding the agenda.”</blockquote><div className="one-stamp">● Canon verified</div></aside></section>
 <section className="one-section" id="enter"><div className="one-sectionhead"><div className="one-label">Four entrances</div><div><h2>Choose where the record opens.</h2><p className="one-sectionintro">This universe can be entered through conscience, love, imitation, or power. Each path leads into the same contested history.</p></div></div><div className="one-paths">{paths.map(([n,t,c,to])=><Link className="one-path" to={to} key={t}><span className="one-number">{n}</span><h3>{t}</h3><p>{c}</p><span className="one-enter">Read the record →</span></Link>)}</div></section>

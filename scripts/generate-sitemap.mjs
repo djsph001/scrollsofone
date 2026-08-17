@@ -5,42 +5,38 @@ import { characterKeys } from '../src/characters.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-const data = JSON.parse(readFileSync(resolve(__dirname, '../src/entries.json'), 'utf-8'));
+// The sitemap derives from the browser projection (public heads only).
+const data = JSON.parse(readFileSync(resolve(__dirname, '../src/publicEntries.json'), 'utf-8'));
 const dist = resolve(__dirname, '../dist');
 const BASE = 'https://scrollsofone.com';
 
-const lastmod = data.stats.generated?.split('T')[0] || '2026-06-13';
-
-const entryUrls = data.entries
-  .filter(e => e.visibility !== 'archive' && e.isHead)
-  .map(e => ({
-    loc: `${BASE}/scroll/${e.id}`,
-    lastmod,
-    changefreq: 'monthly',
-    priority: '0.7',
-  }));
+// No <lastmod> is emitted: there is no trustworthy per-entry modification date,
+// and a synthetic global/build timestamp is not content history.
+const entryUrls = data.entries.map((e) => ({
+  loc: `${BASE}/scroll/${e.id}`,
+  changefreq: 'monthly',
+  priority: '0.7',
+}));
 
 const characterUrls = characterKeys.map((k) => ({
   loc: `${BASE}/characters/${k}`,
-  lastmod,
   changefreq: 'monthly',
   priority: '0.6',
 }));
 
 const urls = [
-  { loc: `${BASE}/`, changefreq: 'weekly', priority: '1.0', lastmod },
-  { loc: `${BASE}/canon`, changefreq: 'weekly', priority: '0.8', lastmod },
-  { loc: `${BASE}/timeline`, changefreq: 'weekly', priority: '0.8', lastmod },
-  { loc: `${BASE}/characters`, changefreq: 'weekly', priority: '0.8', lastmod },
+  { loc: `${BASE}/`, changefreq: 'weekly', priority: '1.0' },
+  { loc: `${BASE}/canon`, changefreq: 'weekly', priority: '0.8' },
+  { loc: `${BASE}/timeline`, changefreq: 'weekly', priority: '0.8' },
+  { loc: `${BASE}/characters`, changefreq: 'weekly', priority: '0.8' },
   ...characterUrls,
   ...entryUrls,
 ];
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map(u => `  <url>
+${urls.map((u) => `  <url>
     <loc>${u.loc}</loc>
-    <lastmod>${u.lastmod}</lastmod>
     <changefreq>${u.changefreq}</changefreq>
     <priority>${u.priority}</priority>
   </url>`).join('\n')}

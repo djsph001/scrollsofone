@@ -3,8 +3,9 @@ import { characters, characterKeys, whoToCharacterKey } from '../src/characters.
 import { FROM } from '../src/navigation.js';
 import { PATHS, toSlug, deriveSeries, deriveWho } from '../src/canonFilterParams.js';
 
-const data = JSON.parse(readFileSync(new URL('../src/entries.json', import.meta.url), 'utf8'));
-const entries = data.entries;
+const manifest = JSON.parse(readFileSync(new URL('../generated/canon-manifest.json', import.meta.url), 'utf8'));
+const projection = JSON.parse(readFileSync(new URL('../src/publicEntries.json', import.meta.url), 'utf8'));
+const entries = manifest.entries;
 const errors = [];
 const warnings = [];
 const ids = new Set(entries.map((entry) => entry.id));
@@ -83,6 +84,32 @@ for (const [label, values] of [['series', deriveSeries(entries)], ['who', derive
 }
 for (const entry of publicHeads) {
   if (!/^[A-Za-z0-9_\-]+$/.test(entry.id)) errors.push(`route safety: entry id "${entry.id}" is not a URL-safe path segment`);
+}
+
+// G1 — the browser projection must be exactly the public-head subset of the
+// full manifest: same IDs, same count, nothing more or less.
+const projectionIds = new Set(projection.entries.map((e) => e.id));
+const eligibleIds = new Set(publicHeads.map((e) => e.id));
+if (projection.entries.length !== publicHeads.length) {
+  errors.push(`G1: projection has ${projection.entries.length} entries, expected ${publicHeads.length} public heads`);
+}
+for (const id of projectionIds) {
+  if (!eligibleIds.has(id)) errors.push(`G1: projection contains non-public-head id "${id}"`);
+}
+for (const id of eligibleIds) {
+  if (!projectionIds.has(id)) errors.push(`G1: projection missing public-head id "${id}"`);
+}
+
+// G2 — publishing policy: only canonical public heads enter the browser
+// projection. Forbids archive (non-public visibility), superseded (non-head),
+// and draft/seed/repair (non-canon status) IDs.
+const manifestById = new Map(entries.map((e) => [e.id, e]));
+for (const pe of projection.entries) {
+  const full = manifestById.get(pe.id);
+  if (!full) { errors.push(`G2: projection id "${pe.id}" not in manifest`); continue; }
+  if (full.visibility !== 'public') errors.push(`G2: projection id "${pe.id}" is not public (${full.visibility})`);
+  if (!full.isHead) errors.push(`G2: projection id "${pe.id}" is superseded`);
+  if (full.status !== 'canon') errors.push(`G2: projection id "${pe.id}" has status "${full.status}" (only canon allowed)`);
 }
 
 const summaryOwners = new Map();

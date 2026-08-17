@@ -6,7 +6,7 @@ import SiteNav from "./SiteNav";
 import { ENTRIES, STATS, SERIES, WHO, PATHS, SLUG_MAPS } from "./canonFilters";
 import { Q_MAX, parseCanonParams, serializeCanonParams, buildExplorerParam } from "./canonFilterParams";
 
-const PUBLIC_HEADS = ENTRIES.filter((e) => e.visibility !== "archive" && e.isHead);
+const PUBLIC_HEADS = ENTRIES;
 
 const STATUS_LABEL = { canon: "Canon", draft: "Draft", seed: "Seed", repair: "Needs repair" };
 
@@ -272,7 +272,7 @@ export default function CanonExplorer() {
             for what it is. A plain, verified index for a story about who you can believe.
           </p>
           <div className="voc-stat">
-            <span><b>{STATS.publicHeads ?? STATS.public}</b> public works · <b>{STATS.canonicalPublicHeads ?? STATS.canon}</b> canonical heads</span>
+            <span><b>{STATS.publicHeads}</b> public works · <b>{STATS.canonicalPublicHeads}</b> canonical heads</span>
             <span className="voc-dot-canon">● canon</span>
             <span className="voc-dot-draft">● draft</span>
             <span className="voc-dot-seed">● seed</span>
@@ -423,7 +423,7 @@ export default function CanonExplorer() {
       )}
 
       <footer className="voc-foot">
-        <span>Scrolls of One — public canon record · {STATS.publicHeads ?? STATS.public} works</span>
+        <span>Scrolls of One — public canon record · {STATS.publicHeads} works</span>
         <span>
           A project of the{" "}
           <a href="https://emergenceinstitute.live" className="voc-foot-link"

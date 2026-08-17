@@ -6,8 +6,8 @@ import { characterKeys } from '../src/characters.js';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
 
-const data = JSON.parse(readFileSync(resolve(ROOT, 'src/entries.json'), 'utf-8'));
-const entries = data.entries.filter(e => e.visibility !== 'archive' && e.isHead);
+const data = JSON.parse(readFileSync(resolve(ROOT, 'src/publicEntries.json'), 'utf-8'));
+const entries = data.entries;
 
 // Generate Routes.jsx with explicit paths for every entry
 const routeLines = entries.map(e =>
