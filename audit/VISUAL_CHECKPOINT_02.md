@@ -2,8 +2,8 @@
 
 Date: 2026-08-18
 Author: Lumen (agent), per Dale's V2 rulings (see "Rulings" below).
-Status: EXECUTED locally; not pushed. All gates green; bundle sanity scan clean;
-visual render verified. Awaiting Dale's push authorization.
+Status: CLOSED (2026-08-18). Deployed to scrollsofone.com at commit 5261cde; all
+live verifications passed. Closure commit held locally, not pushed.
 
 Scope: collapse the two drifted palettes into ONE centralized token source using
 the homepage palette as the controlling family; remove verified dead navigation
@@ -109,3 +109,21 @@ Timeline 8 arc colors + fallback #8a8070, `--amber-dim` #c79a4a, `--line-2`
 - Seed moves off-green; seed entries are currently absent from the public
   projection, so no visible change today — token is correct before future use.
 - The 1%-opacity glow standardization (.07→.08) is visually imperceptible.
+
+## Deployment & live verification (2026-08-18 — CLOSED: pushed & deployed)
+
+- Deploy commit: 5261cde (origin/master). Live fingerprint: app-CoXIsYut.js /
+  app-CAcd_RxW.css (content-hash matches local build — Netlify serving V2).
+- Live checks: homepage renders the warm near-black / aged-ivory / muted-amber
+  palette with no broken styles and no horizontal overflow (1536px viewport);
+  /canon reports 119 public works · 119 canonical heads; sitemap 127 URLs; all
+  sampled routes return 200 (/ /canon /timeline /characters /characters/one
+  /scroll/…); zero old drifted hex in the live JS/CSS bundle.
+- Breakpoints verified present in served HTML (850/520/640/820/880/720px); the
+  removed `#root{width:1126px;…}` Vite rule was confirmed inert (vite-react-ssg
+  mounts to no `#root` element) — its deletion is scaffold cleanup, not layout.
+- Mobile: V2 changed zero layout/breakpoint/typography values (diff shows only
+  color swaps + dead-selector removal + inert scaffold deletion); a true
+  mobile-viewport screenshot was not achievable in the headless browser
+  (`resizeTo` set outerWidth but not innerWidth), so mobile parity is established
+  by the zero-layout-diff proof rather than a pixel screenshot.
