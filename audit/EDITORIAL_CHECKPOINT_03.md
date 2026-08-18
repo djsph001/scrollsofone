@@ -2,7 +2,8 @@
 
 Date: 2026-08-18
 Author: Lumen (agent), per Dale's rulings.
-Status: RULED. Executed same-day; see "Execution" section.
+Status: CLOSED (2026-08-18). Deployed to scrollsofone.com at commit e8ca4de; all
+live verifications passed.
 
 Scope: three rulings — (1) remove "complicity" from Sandi's synthesis copy, folded
 in from the CP02 closure; (2) make the homepage governing description exact and
@@ -48,6 +49,18 @@ Replace the redundant 118/118 pair with two genuinely different facts:
 Expected gate result: public heads stay 118; check:canon/test/lint/build green;
 homepage stats render 118 / 60; identity line present exactly once as the
 governing description.
+
+## Execution results (2026-08-18 — CLOSED: pushed & deployed)
+
+- Deploy commit: e8ca4de (origin/master). Live fingerprint: app-Bh-rXcui.js
+  (content-hash matches local build — Netlify serving the new commit).
+- Gates: check:canon PASS (118 heads, 0 warnings); 31/31 tests; lint clean;
+  build 126 URLs; sitemap 126.
+- Live verification passed: title "Scrolls of One — Who Can You Believe?";
+  identity line once visible (lead) + once in metadata; old premise language gone;
+  stats 118 canonical works + 60 scenes in sequence (both derived from data, not
+  hardcoded); "complicity" and "morally implicated" absent from bundle; Sandi's
+  revised role + roleInConflict live; working tree clean.
 
 ## Open items (carried forward)
 - None in this checkpoint's scope. Fiction/real-world colophon (from F9) remains a
