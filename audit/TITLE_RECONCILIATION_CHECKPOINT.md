@@ -3,7 +3,8 @@
 Date: 2026-08-18
 Author: Lumen (agent), per Dale's Cat 3 + Cat 4 rulings and the display-helper
 extension ruling.
-Status: EXECUTED locally; not pushed.
+Status: CLOSED (2026-08-18). Deployed to scrollsofone.com at commit 9693ea3; all
+live verifications passed.
 
 Scope: align 10 body headings to frontmatter (Cat 3), strip 3 "(Reframed: …)"
 annotations (Cat 4), and extend the V1 display helper with a structured
@@ -77,3 +78,15 @@ display-only — canon source headings are never altered.
   and scroll_ai_machine_and_the_boy ("# Scroll of Origins / AI & Power").
 - Case/punctuation near-matches left visible (e.g. scroll_on_mercy "Scroll: On …"
   vs "Scroll on …") — correct conservative behavior, no fuzzy match.
+
+## Execution results (2026-08-18 — CLOSED: pushed & deployed)
+
+- Deploy commit: 9693ea3 (origin/master). Live fingerprint: app-OJKUhx8U.js
+  (content-hash matches local build — Netlify serving the new commit).
+- Live verification passed: Scene 16 and Scene 56 open directly on prose; the ten
+  corrected headings match frontmatter in source; the three heading-level
+  "Reframed" annotations absent; Scene 67's near-match visible; structured
+  suppression matches the tested build; 50/50 tests; /canon 118 heads; sitemap
+  126; working tree clean.
+- Follow-up: final editorial-hygiene audit (see FINAL_EDITORIAL_HYGIENE_AUDIT.md)
+  before V2 token centralization.
