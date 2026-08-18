@@ -52,6 +52,20 @@ for (const f of jsFiles) {
 if (existsSync(join(DIST, 'canon-manifest.json'))) leaks.push('dist/canon-manifest.json present');
 if (existsSync(join(DIST, 'generated'))) leaks.push('dist/generated/ present');
 
+// Texture Checkpoint 01: textures are code-generated (SVG + CSS), never raster
+// imagery; the grain SVG data-URI must be monochrome (grayscale via
+// feColorMatrix saturate(0)) with no hex color literal. Mapping: white #ffffff
+// ↔ --paper #eee6d5, black #000000 ↔ --bg #11100c (audit/TEXTURE_CHECKPOINT_01.md).
+const rasterFiles = readdirSync(assetsDir).filter((f) => /\.(png|jpe?g|gif|webp|avif)$/i.test(f));
+if (rasterFiles.length) leaks.push(`raster imagery present in dist/assets: ${rasterFiles.join(', ')}`);
+for (const f of jsFiles) {
+  const content = readFileSync(join(assetsDir, f), 'utf8');
+  const grain = content.match(/data:image\/svg\+xml,[^"]+/g) || [];
+  for (const g of grain) {
+    if (/#[0-9a-fA-F]{3,8}\b/.test(g)) leaks.push(`${f}: grain SVG contains a hex color (must be monochrome)`);
+  }
+}
+
 if (leaks.length) {
   console.error('Bundle-boundary check FAILED:');
   for (const l of leaks) console.error(`  - ${l}`);
