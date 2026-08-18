@@ -2,7 +2,8 @@
 
 Date: 2026-08-18
 Author: Lumen (agent), per Dale's hygiene ruling.
-Status: EXECUTED locally; not pushed.
+Status: CLOSED (2026-08-18). Deployed to scrollsofone.com at commit ab6aec2; all
+live verifications passed.
 
 Scope: remove the verified leading filename line from the 53 audited canon source
 files (allowlist, not regex rewrite), and add a validation gate that rejects future
@@ -69,3 +70,14 @@ B. "(Reframed: …)" production notes embedded in headings:
     AND …"), scene_60 ("…due process as a stabilizer, not a …")
 
 These are authorial; the checkpoint only certifies the filename removal.
+
+## Execution results (2026-08-18 — CLOSED: pushed & deployed)
+
+- Deploy commit: ab6aec2 (origin/master). Live fingerprint: app-BhkEBcXk.js
+  (content-hash matches local build — Netlify serving the new commit).
+- Live verification passed: no filename-shaped `.md` line in the bundle; Scene 09
+  opens on its literary heading; the five mangled variants absent; hygiene gate
+  active in check-site-data.mjs; /canon 118 heads; sitemap 126; 43/43 tests;
+  working tree clean.
+- Follow-up (next): title-heading reconciliation audit (see
+  TITLE_HEADING_RECONCILIATION.md) before V2 token centralization.
