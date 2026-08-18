@@ -2,7 +2,8 @@
 
 Date: 2026-08-18
 Author: Lumen (agent), per Dale's Cat A / B1 / B2 / gate rulings.
-Status: EXECUTED locally; not pushed. Two rule-#5 items remain OPEN (see below).
+Status: CLOSED (2026-08-18). Deployed to scrollsofone.com at commit 95e07ae; all
+live verifications passed.
 
 Scope: apply all heading corrections, strip the four self-filename remnants,
 de-duplicate the three concatenations per the compare-then-act rules, and
@@ -72,8 +73,53 @@ already present before this checkpoint:
 These are production/AI scaffolding, not prose. Not removed here (only the
 divider + filename were authorized); awaiting a ruling.
 
-## Open items for Dale
+## Resolved items (ruled 2026-08-18, implemented in 95e07ae)
 
-Rule on the two STOPPED blocks (scene_58 divergent draft; conscience_03 unique
-scroll) and the two "Absolutely…" opening lines. Until then check:canon/build
-stay red on the two blocks — intentionally, so unresolved residue cannot ship.
+All three open items were resolved:
+
+1. Scene 58 divergent embedded draft → extracted verbatim to
+   `archive/duplicates/SCENE_58_THE_TARGETED_LEAK_EMBEDDED_DRAFT.md`
+   (non-controlling; 42 prose lines, 37 unique), then removed from Scene 56.
+   The standalone 181-line Scene 58 remains controlling.
+2. "Scroll of Conscience III: Conscious Responsibility" → promoted to a standalone
+   canonical entry `scroll_conscience_03_conscious_responsibility` (order 3, body
+   extracted verbatim), then removed from Baptist 01.
+3. The two "Absolutely…" authorial scaffolding lines stripped from Scene 10 and
+   Scene 51.
+
+## Execution results (2026-08-18 — CLOSED: pushed & deployed)
+
+- Deploy commit: 95e07ae (origin/master). Live fingerprint: app-YbyCX3Lb.js
+  (content-hash matches local build — Netlify serving the new commit).
+- Gate results (local, pre-push): 50/50 tests; lint clean; check:canon PASS
+  (139 entries, 119 public heads, 0 editorial warnings); build 127 URLs /
+  sitemap 127; bundle-boundary check clean.
+- Live verification passed:
+  - /canon shows 119 public works and 119 canonical heads.
+  - sitemap.xml contains 127 URLs, including
+    scroll_conscience_03_conscious_responsibility.
+  - /scroll/scroll_conscience_03_conscious_responsibility → 200, opens on
+    "Conscience is not a feeling."
+  - Baptist 01 no longer contains the embedded Conscious Responsibility scroll.
+  - Scene 56 contains only its own scene (no embedded Scenes 57–59).
+  - Scene 38 no longer embeds Scene 39.
+  - Standalone Scenes 57, 58, 59, 39 all return 200.
+  - The archived Scene 58 draft is absent from routes, sitemap, the public
+    projection, and the built JavaScript (present only as the non-controlling
+    archive/duplicates file).
+  - Public bundle: zero bare `.md` filename residue, zero "(Reframed: …)"
+    annotations, zero "Absolutely…" scaffolding.
+- Working tree clean.
+
+## Notes (discrepancies vs the brief)
+
+- The brief listed "138 validated records"; the build reports 139 (the new
+  Conscious Responsibility entry raises the total from 138 to 139). The build's
+  139 is authoritative. 119 public heads / 127 sitemap URLs / 50 tests are as
+  expected.
+- The built bundle still carries three bracketed cross-reference markers of the
+  form "[Scene extracted → canon/SCENE_NN_….md]" (parents of Scenes 12/29/31).
+  These are INTENTIONAL — recorded in CONTROLLING_VERSION_REGISTER.md §3 as
+  "cross-reference left in each parent" — and do not match the hygiene gate's
+  bare-filename pattern, so they are correctly permitted. Not residue; out of
+  scope for this checkpoint.
