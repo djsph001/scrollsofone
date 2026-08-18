@@ -2,7 +2,8 @@
 
 Date: 2026-08-18
 Author: Lumen (agent), per Dale's texture rulings.
-Status: EXECUTED locally; not pushed.
+Status: CLOSED (2026-08-18). Deployed to scrollsofone.com at commit e1895f1; all
+live verifications passed. Closure commit held locally, not pushed.
 
 Scope: minimal, restrained texture — grain + ledger rules on the homepage
 evidence block (`.one-evidence`) and extremely faint grain on the EntryPage
@@ -71,3 +72,16 @@ reserved (green appears only as the stamp's verification border/ink).
 - Stamp: `border:1px solid var(--green)`, `padding:4px 10px`,
   `transform:rotate(-1deg)` applied; the −1deg tilt is imperceptible by design
   ("approximately").
+
+## Deployment & live verification (2026-08-18 — CLOSED: pushed & deployed)
+
+- Deploy commit: e1895f1 (origin/master). Live fingerprint: app-Cr2lmugH.js
+  (content-hash matches local build — Netlify serving TC01).
+- Live checks: /canon 119 public works · 119 canonical heads; sitemap 127 URLs;
+  sampled routes 200; live bundle `feTurbulence` ×2 with 0 hex in the grain
+  data-URI (monochrome) and no raster assets.
+- Screenshots of the LIVE site are md5-identical to the local build (homepage
+  desktop/mobile + scroll) — the evidence texture, bordered stamp, mobile
+  wrapping, and verse grain all render pixel-identically to the verified local
+  build. No horizontal overflow at 375px.
+- Working tree clean.
