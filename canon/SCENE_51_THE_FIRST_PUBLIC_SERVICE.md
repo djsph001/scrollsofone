@@ -13,12 +13,6 @@ supersedes: null
 visibility: public
 ---
 
-Absolutely. Here are clean, fully rephrased versions of SCENE_51–SCENE_55 with all “Fourth Branch” language removed and replaced with in-universe concepts only (Witness Circles, Quiet Coalition, The Method, the Inside Game). Same plot, same momentum—no manifesto vibes.
-
-⸻
-
-SCENE_51_THE_FIRST_PUBLIC_SERVICE.md
-
 Scene: The First Public Service
 
 They didn’t respond with a thread.

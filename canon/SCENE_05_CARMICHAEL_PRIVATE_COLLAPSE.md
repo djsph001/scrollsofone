@@ -13,7 +13,7 @@ supersedes: null
 visibility: public
 ---
 
-Scene: Carmichael Alone
+Scene: Carmichael Alone After Confrontation
 (Immediately Following the Interrupted Meeting)
 Location: The same private study. The door has closed. He is alone.
 

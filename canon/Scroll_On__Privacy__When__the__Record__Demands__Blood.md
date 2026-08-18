@@ -13,7 +13,7 @@ supersedes: null
 visibility: public
 ---
 
-Scroll: On Privacy When the Record Demands Blood
+Scroll on Privacy When the Record Demands Blood
 
 They will try to make your body their argument.
 They will try to make your history their headline.

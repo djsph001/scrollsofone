@@ -13,12 +13,6 @@ supersedes: null
 visibility: public
 ---
 
-Absolutely. Next is where the horror becomes procedural—and that’s what makes it worse.
-
-⸻
-
-SCENE_10_THE_HARVEST.md
-
 Scene: The Harvest
 
 They didn’t blindfold him.

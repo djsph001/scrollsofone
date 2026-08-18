@@ -13,7 +13,7 @@ supersedes: null
 visibility: public
 ---
 
-Scroll: On Mercy That Has Teeth
+Scroll on Mercy That Has Teeth
 
 They offered it like kindness.
 

@@ -23,6 +23,7 @@ export const routes = [
   { path: '/scroll/scroll_origins_boy_who_believed', element: <EntryPage /> },
   { path: '/scroll/scroll_origins_when_the_machine_spoke_back', element: <EntryPage /> },
   { path: '/scroll/the_lonely_heart_of_the_prophet', element: <EntryPage /> },
+  { path: '/scroll/scroll_conscience_03_conscious_responsibility', element: <EntryPage /> },
   { path: '/scroll/scroll_conscience_04_decoy_detection', element: <EntryPage /> },
   { path: '/scroll/scroll_of_conscience_no_one_may_summon_the_end', element: <EntryPage /> },
   { path: '/scroll/scroll_conscience_that_technology_shall_bow_to_life', element: <EntryPage /> },

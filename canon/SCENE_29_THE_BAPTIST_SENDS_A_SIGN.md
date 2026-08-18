@@ -14,7 +14,7 @@ visibility: public
 source_extracted_from: scroll_conscience_04_decoy_detection
 ---
 
-Scene: The Sign
+Scene: The Baptist Sends a Sign
 
 They underestimated boredom.
 

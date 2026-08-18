@@ -13,7 +13,7 @@ supersedes: null
 visibility: public
 ---
 
-Scroll: On Naming Without Becoming the Play
+Scroll on Naming Without Becoming the Play
 
 There is a temptation
 to shout the name

@@ -13,7 +13,7 @@ supersedes: null
 visibility: public
 ---
 
-Scroll: On Returning Without Becoming the Story
+Scroll on Returning Without Becoming the Story
 
 They think return means surrender.
 They think return means repentance.

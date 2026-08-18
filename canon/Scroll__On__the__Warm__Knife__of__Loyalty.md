@@ -13,7 +13,7 @@ supersedes: null
 visibility: public
 ---
 
-Scroll: On the Warm Knife of Loyalty
+Scroll on the Warm Knife of Loyalty
 
 They do not come first with chains.
 They come with belonging.

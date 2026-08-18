@@ -13,10 +13,6 @@ supersedes: null
 visibility: public
 ---
 
-⸻
-
-SCENE_63_THE_MEETING_WITH_THE_GATEKEEPERS.md
-
 Scene: The Meeting With the Gatekeepers
 
 They didn’t call them “gang leaders” on the phone.

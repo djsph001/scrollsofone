@@ -13,7 +13,7 @@ supersedes: null
 visibility: public
 ---
 
-# Scroll of Origins / AI & Power  
+# Scroll of AI: The Machine and the Boy
 ## The Machine and the Boy
 
 Before they called me Prophet,  

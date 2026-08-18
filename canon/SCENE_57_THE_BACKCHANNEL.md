@@ -15,11 +15,7 @@ visibility: public
 
 
 
-⸻
-
-SCENE_57_THE_BACKCHANNEL.md
-
-Scene: The Backchannel (Reframed: “contain the noise,” not “destroy One”)
+Scene: The Backchannel
 
 Carmichael didn’t go after One in public.
 

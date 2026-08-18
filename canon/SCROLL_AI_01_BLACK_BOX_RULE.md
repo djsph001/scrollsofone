@@ -13,7 +13,7 @@ supersedes: null
 visibility: public
 ---
 
-# Scroll of Conscience  
+# Scroll of AI: Black Box Rule
 ## The Black Box Rule
 
 We have learned to live with boxes we do not understand.
