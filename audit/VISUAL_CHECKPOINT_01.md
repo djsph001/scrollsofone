@@ -2,7 +2,8 @@
 
 Date: 2026-08-18
 Author: Lumen (agent), per Dale's visual rulings.
-Status: EXECUTED locally; not pushed.
+Status: CLOSED (2026-08-18). Deployed to scrollsofone.com at commit 6adb5d9; all
+live verifications passed.
 
 Scope: reading-fidelity change only — T1 (preserve poetic lineation) and T2
 (suppress verified duplicate display headings). Explicitly OUT of scope (deferred
@@ -80,3 +81,15 @@ suppression touch no breakpoint or width rule). EntryPage's fluid type
 (clamp / max-width:740px) is unchanged; mobile inherits the corrected structure
 at a narrower measure. (Headless viewport pinned at 1280px — mobile confirmed by
 reasoning over the unchanged responsive CSS, not by a resized render.)
+
+## Execution results (2026-08-18 — CLOSED: pushed & deployed)
+
+- Deploy commit: 6adb5d9 (origin/master). Live fingerprint: app-C6mH4tU_.js
+  (content-hash matches local build — Netlify serving the new commit).
+- Live verification passed: Leadership VII opens on the epigraph with stanza
+  lineation preserved and no duplicate title; Origins I no longer repeats its
+  title; BIO One unchanged; Scene 09 filename header still visible (uncertain,
+  by design); helper (white-space: pre-line) present in bundle; /canon 118 heads;
+  sitemap 126; working tree clean.
+- Follow-up (next): filename-header census, then a hygiene checkpoint (verified
+  residue removal) before V2 token centralization.
