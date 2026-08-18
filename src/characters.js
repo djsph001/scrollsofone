@@ -12,7 +12,7 @@ export const characters = {
     roleInConflict:
       "One is a conscience in conflict with power. He cannot choose the agenda — only constrain implementation: “I can't command the river; I can work the locks.” His leverage is procedural and informational — receipts, deadlines, audits, documented tradeoffs — and his defining refusal is to meet President Carmichael on the regime's stage. In a world where voices can be manufactured, he works through method rather than spectacle.",
     relationships: [
-      { name: "Sandi Carmichael", text: "His great love, the President's daughter, and a bridge between the worlds he moves between. Tender, complicated, lived under impossible pressure." },
+      { name: "Sandi Carmichael", text: "His great love and the President's daughter. Her knowledge of the regime forces his moral abstractions to confront their human cost. Tender, complicated, lived under impossible pressure." },
       { name: "The Baptist", text: "His mentor and the one voice he trusts — the only person permitted to name his ego and his self-pity." },
       { name: "President Carmichael", text: "The embodiment of power without conscience, and the adversary he refuses to meet on the regime's terms." },
     ],
@@ -38,18 +38,17 @@ export const characters = {
     key: "sandi",
     name: "Sandi Carmichael",
     shortName: "Sandi",
-    role: "The President's daughter, One's partner, the bridge between regimes",
+    role: "The President's daughter, One's partner, and a political actor with knowledge, complicity, and agency",
     intro:
       "Sandi is the daughter of President Carmichael and One's partner — raised inside the machinery of spectacle, where she learned early that adults lie in two directions: to the public and to themselves. She learned the machine's mechanics without losing the ability to see through it. Sharper than both men who orbit her, she is not a damsel or a prop: she is a woman making impossible choices in real time, knowing every option costs something she loves.",
     roleInConflict:
-      "Sandi stands at the dangerous intersection of family, power, and conscience. She exists between her father's empire and the future One imagines, and the choice between them becomes unavoidable. She is not a bridge — she is the person deciding which side of the river to stand on.",
+      "Sandi is a political actor with complicity, knowledge, and agency. She understands the regime from within, and that knowledge forces One's moral abstractions to confront their human cost. Caught between her father's empire and the future One imagines, the choice between them becomes unavoidable — and she is the person who makes it.",
     relationships: [
       { name: "President Carmichael (father)", text: "She loves him and sees him clearly. He taught her to read power, but never when to refuse it." },
       { name: "One", text: "She fell for him because he couldn't perform. Their love is tender, complicated, and exists under impossible pressure." },
       { name: "Her child", text: "Her fiercest boundary. She refuses to let the pregnancy be turned into a prophecy or a dynastic asset." },
     ],
     essentials: [
-      "bio_sandi",
       "scroll_of_sandi_i",
       "scroll_of_sandi_ii_the_file_on_one",
       "scroll_of_sandi_iii",
@@ -57,7 +56,6 @@ export const characters = {
       "scene_sandi_between_two_voices",
     ],
     readingPath: [
-      { id: "bio_sandi", note: "Who she is." },
       { id: "scroll_of_sandi_i", note: "Growing up inside the performance." },
       { id: "scroll_of_sandi_ii_the_file_on_one", note: "The first time she protects One." },
       { id: "scroll_of_sandi_iii", note: "The private moment before the world finds out." },
@@ -80,14 +78,12 @@ export const characters = {
       { name: "The regime", text: "Recognized as One's stabilizing influence — and, for that, a target." },
     ],
     essentials: [
-      "bio_baptist",
       "scroll_baptist_01_first_counsel",
       "scroll_of_the_baptist_ii",
       "scroll_of_the_baptist_iii",
       "scroll_of_the_baptist_iv",
     ],
     readingPath: [
-      { id: "bio_baptist", note: "Who he is." },
       { id: "scroll_baptist_01_first_counsel", note: "The first meeting." },
       { id: "scroll_of_the_baptist_ii", note: "The warning about copies and verification." },
       { id: "scroll_of_the_baptist_iii", note: "Read this before the next — and note what's missing." },
@@ -103,7 +99,7 @@ export const characters = {
     intro:
       "Carmichael is the President — the man who converts crisis, spectacle, and manufactured truth into power. He treats the country not as something to govern but as a set of stories to curate, and he taught his daughter Sandi to read power without ever teaching her when to refuse it. He is the embodiment of power without conscience — the man One refuses to become.",
     roleInConflict:
-      "The story's Antichrist figure, Carmichael's defining move is spectacle: sound as emotion, emotion as leverage. His arc runs from converting a police killing into political authority, through an assassination attempt he turns into a public miracle and an election he turns into a story of theft — and finally to the manufacture of a synthetic voice to bless the machinery of power. He is the pressure that tests every other character's conscience.",
+      "Carmichael's defining move is spectacle: sound as emotion, emotion as leverage. His arc runs from converting a police killing into political authority, through an assassination attempt he turns into a public miracle and an election he turns into a story of theft — and finally to the manufacture of a synthetic voice to bless the machinery of power. He is the story's Antichrist figure, and the pressure that tests every other character's conscience.",
     relationships: [
       { name: "Sandi (daughter)", text: "He loves her and sees her as succession; their bond shatters when she chooses One and their child over the legacy." },
       { name: "One", text: "His central adversary — the conscience that refuses the stage." },

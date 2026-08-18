@@ -10,7 +10,7 @@ order: null
 summary: >
   Canon blurb: 'Read the Book!' This book is built on a dangerous idea: This is the reign of the Antichrist.
 supersedes: null
-visibility: public
+visibility: archive
 ---
 
 Canon Blurb: “Read the Book!”

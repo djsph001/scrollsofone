@@ -16,11 +16,7 @@ export const routes = [
   { path: '/characters/sandi', element: <CharacterPage char="sandi" /> },
   { path: '/characters/baptist', element: <CharacterPage char="baptist" /> },
   { path: '/characters/carmichael', element: <CharacterPage char="carmichael" /> },
-  { path: '/scroll/additional_profile_for_baptist', element: <EntryPage /> },
-  { path: '/scroll/bio_baptist', element: <EntryPage /> },
   { path: '/scroll/bio_one', element: <EntryPage /> },
-  { path: '/scroll/bio_sandi', element: <EntryPage /> },
-  { path: '/scroll/the_baptist_s_character_file', element: <EntryPage /> },
   { path: '/scroll/scroll_origins_i_basis_of_my_art', element: <EntryPage /> },
   { path: '/scroll/scroll_origins_xii_the_haitian_son', element: <EntryPage /> },
   { path: '/scroll/scroll_of_origins_the_artist_who_didnt_want_a_throne', element: <EntryPage /> },
@@ -138,5 +134,4 @@ export const routes = [
   { path: '/scroll/scene_the_letter_that_finds_them', element: <EntryPage /> },
   { path: '/scroll/scene_the_retaliation_move_duplicate', element: <EntryPage /> },
   { path: '/scroll/scene_the_warm_rescue', element: <EntryPage /> },
-  { path: '/scroll/the_root_of_the_myth', element: <EntryPage /> },
 ];

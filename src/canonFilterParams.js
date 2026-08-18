@@ -13,9 +13,9 @@ export const FILTER_KEYS = ["q", "series", "who", "path"];
 // Reading paths — single source of truth (previously inline in
 // CanonExplorer.jsx and duplicated in scripts/check-site-data.mjs).
 export const PATHS = {
-  "Start here": ["bio_one", "scroll_origins_i_basis_of_my_art", "scroll_of_sandi_ii_the_file_on_one", "scroll_of_the_baptist_ii", "scroll_of_one_on_spectacle_and_power", "the_root_of_the_myth"],
+  "Start here": ["bio_one", "scroll_origins_i_basis_of_my_art", "scroll_of_sandi_ii_the_file_on_one", "scroll_of_the_baptist_ii", "scroll_of_one_on_spectacle_and_power"],
   "One & Sandi": ["love_series_letter_to_sandi_i_the_quiet_lobby", "love_kitchen_light", "love_letter_to_sandi_viii_newsstand", "scroll_of_sandi_ii_the_file_on_one", "scene_the_dagger_point", "scene_the_inaugural_ballroom"],
-  "The Baptist & the synthetic voice": ["bio_baptist", "scroll_of_the_baptist_ii", "scroll_of_the_baptist_iv", "scroll_of_carmichael_iv", "scroll_conscience_04_decoy_detection"],
+  "The Baptist & the synthetic voice": ["scroll_of_the_baptist_ii", "scroll_of_the_baptist_iv", "scroll_of_carmichael_iv", "scroll_conscience_04_decoy_detection"],
   "Carmichael's descent": ["scroll_of_carmichael_i", "scroll_of_carmichael_ii", "scroll_of_carmichael_iii", "scroll_of_carmichael_iv", "scroll_of_one_on_spectacle_and_power"],
   "Power & method": ["scroll_leadership_servant_test", "scroll_of_leadership_vii_the_means_are_the_message", "scroll_on_naming_without_becoming_the_play", "scroll_of_one_the_scapegoat_ledger", "scroll_governance_01_the_fourth_branch"],
 };

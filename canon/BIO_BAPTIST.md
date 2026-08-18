@@ -10,7 +10,7 @@ order: null
 summary: >
   Full canonical profile of the Baptist: former theologian and psychiatrist with Haitian roots, known for refusal and the 'canary in the coal mine' role.
 supersedes: null
-visibility: public
+visibility: archive
 ---
 
 # Character Profile: The Baptist

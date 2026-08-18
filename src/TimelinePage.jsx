@@ -93,7 +93,7 @@ export default function TimelinePage() {
           <div className="tl-kicker">The Voice of One</div>
           <h1 className="tl-title">The Timeline</h1>
           <p className="tl-lead">
-            The story in order — sixty numbered scenes, from the first counsel to the terms of silence. Arcs mark the
+            The story in order — sixty numbered scenes, from The Order to the terms of silence. Arcs mark the
             theme each scene serves, not its place in time; the numbers are the sequence.
           </p>
         </header>
