@@ -1,6 +1,6 @@
 ---
 id: scene_the_letter_that_finds_them
-title: "Scene: The Letter That Finds Them"
+title: "Scene — The Letter That Finds Them"
 series: Scenes
 kind: scene
 who: [One, Sandi]

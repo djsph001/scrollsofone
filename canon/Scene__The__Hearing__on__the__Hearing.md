@@ -1,6 +1,6 @@
 ---
 id: scene_the_hearing_on_the_hearing
-title: "Scene: The Hearing on the Hearing"
+title: "Scene — The Hearing on the Hearing"
 series: Scenes
 kind: scene
 who: [One, Sandi]

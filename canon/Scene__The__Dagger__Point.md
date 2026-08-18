@@ -1,6 +1,6 @@
 ---
 id: scene_the_dagger_point
-title: "Scene: The Dagger Point"
+title: "Scene — The Dagger Point"
 series: Scenes
 kind: scene
 who: [One, Sandi]

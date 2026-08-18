@@ -1,6 +1,6 @@
 ---
 id: scene_public_fallout_pregnancy_discovery
-title: "Scene: Public Fallout — Pregnancy Discovery"
+title: "Scene — Public Fallout — Pregnancy Discovery"
 series: Scenes
 kind: scene
 who: [One, Sandi]

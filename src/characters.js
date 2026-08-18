@@ -8,7 +8,7 @@ export const characters = {
     shortName: "One",
     role: "The conscience — trained political thinker, undiscovered artist, the story's center",
     intro:
-      "One is a trained political thinker and an undiscovered artist with real talent — raised Catholic and told to “be like Jesus,” a directive he took literally while everyone else treated it as metaphor. He is not a clean messiah: exhausted, doubtful, wounded, often angry, but still committed to love and justice. He claims no divinity — only that he was given an impossible standard as a child and decided to take it seriously.",
+      "One is a trained political thinker and an undiscovered artist with real talent — raised Catholic and told to “be like Jesus,” a directive he took literally while everyone else treated it as metaphor. He is a fallible conscience — exhausted, doubtful, wounded, often angry, yet still committed to love and justice — whose authority comes from conduct, refusal, and return, not from claimed perfection. He was given an impossible standard as a child and decided to take it seriously.",
     roleInConflict:
       "One is a conscience in conflict with power. He cannot choose the agenda — only constrain implementation: “I can't command the river; I can work the locks.” His leverage is procedural and informational — receipts, deadlines, audits, documented tradeoffs — and his defining refusal is to meet President Carmichael on the regime's stage. In a world where voices can be manufactured, he works through method rather than spectacle.",
     relationships: [
@@ -40,7 +40,7 @@ export const characters = {
     shortName: "Sandi",
     role: "The President's daughter, One's partner, and a political actor with knowledge, complicity, and agency",
     intro:
-      "Sandi is the daughter of President Carmichael and One's partner — raised inside the machinery of spectacle, where she learned early that adults lie in two directions: to the public and to themselves. She learned the machine's mechanics without losing the ability to see through it. Sharper than both men who orbit her, she is not a damsel or a prop: she is a woman making impossible choices in real time, knowing every option costs something she loves.",
+      "Sandi is the daughter of President Carmichael and One's partner — raised inside the machinery of spectacle, where she learned early that adults lie in two directions: to the public and to themselves. She learned the machine's mechanics without losing the ability to see through it. She is a politically capable, morally implicated actor making impossible choices in real time, knowing every option costs something she loves.",
     roleInConflict:
       "Sandi is a political actor with complicity, knowledge, and agency. She understands the regime from within, and that knowledge forces One's moral abstractions to confront their human cost. Caught between her father's empire and the future One imagines, the choice between them becomes unavoidable — and she is the person who makes it.",
     relationships: [

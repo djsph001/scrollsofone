@@ -1,6 +1,6 @@
 ---
 id: scene_sandi_between_two_voices
-title: "Scene: Sandi Between Two Voices"
+title: "Scene — Sandi Between Two Voices"
 series: Scenes
 kind: scene
 who: [Sandi, One]

@@ -1,6 +1,6 @@
 ---
 id: scene_the_counter_story
-title: "Scene: The Counter Story"
+title: "Scene — The Counter Story"
 series: Scenes
 kind: scene
 who: [One, Sandi]

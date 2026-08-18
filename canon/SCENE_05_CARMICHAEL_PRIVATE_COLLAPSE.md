@@ -1,6 +1,6 @@
 ---
 id: scene_carmichael_alone_after_confrontation
-title: "Scene: Carmichael Alone After Confrontation"
+title: "Scene — Carmichael Alone After Confrontation"
 series: Scenes
 kind: scene
 who: [Carmichael]

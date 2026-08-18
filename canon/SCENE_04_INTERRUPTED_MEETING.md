@@ -1,6 +1,6 @@
 ---
 id: scene_the_interrupted_meeting_revised
-title: "Scene: The Interrupted Meeting"
+title: "Scene — The Interrupted Meeting"
 series: Scenes
 kind: scene
 who: [One, Carmichael]

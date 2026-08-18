@@ -1,6 +1,6 @@
 ---
 id: scene_one_calls_his_mother
-title: "Scene: One Calls His Mother"
+title: "Scene — One Calls His Mother"
 series: Scenes
 kind: scene
 who: [One]

@@ -1,6 +1,6 @@
 ---
 id: scene_the_barbershop_test
-title: "Scene: The Barbershop Test"
+title: "Scene — The Barbershop Test"
 series: Scenes
 kind: scene
 who: [One]

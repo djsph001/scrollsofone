@@ -15,14 +15,9 @@ visibility: public
 
 Scroll of Leadership VII: The Means Are the Message
 
-Spoken in the voice of One
-
 “If I become what I hate in order to stop what I hate,
 I haven’t stopped it.
 I’ve just changed the uniform it wears.”
-
-Remember as you read:
-This is a fictional universe, a mirror for the real one — not a direct political program, not a command.
 
 ⸻
 

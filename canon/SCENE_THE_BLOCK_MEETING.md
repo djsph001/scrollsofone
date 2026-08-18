@@ -1,6 +1,6 @@
 ---
 id: scene_the_block_meeting
-title: "Scene: The Block Meeting"
+title: "Scene — The Block Meeting"
 series: Scenes
 kind: scene
 who: [One]

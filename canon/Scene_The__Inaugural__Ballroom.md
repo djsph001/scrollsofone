@@ -1,6 +1,6 @@
 ---
 id: scene_the_inaugural_ballroom
-title: "Scene: The Inaugural Ballroom"
+title: "Scene — The Inaugural Ballroom"
 series: Scenes
 kind: scene
 who: [One, Sandi, Carmichael]

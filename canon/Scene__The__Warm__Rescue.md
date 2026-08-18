@@ -1,6 +1,6 @@
 ---
 id: scene_the_warm_rescue
-title: "Scene: The Warm Rescue"
+title: "Scene — The Warm Rescue"
 series: Scenes
 kind: scene
 who: [Sandi]

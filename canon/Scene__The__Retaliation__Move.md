@@ -1,6 +1,6 @@
 ---
 id: scene_the_retaliation_move_duplicate
-title: "Scene: The Retaliation Move"
+title: "Scene — The Retaliation Move"
 series: Scenes
 kind: scene
 who: [One, Sandi]

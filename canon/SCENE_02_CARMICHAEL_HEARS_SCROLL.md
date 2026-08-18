@@ -1,6 +1,6 @@
 ---
 id: scene_carmichael_hears_the_scroll
-title: "Scene: Carmichael Hears the Scroll"
+title: "Scene — Carmichael Hears the Scroll"
 series: Scenes
 kind: scene
 who: [Carmichael]

@@ -1,6 +1,6 @@
 ---
 id: scene_first_public_appearance
-title: "Scene: First Public Appearance"
+title: "Scene — First Public Appearance"
 series: Scenes
 kind: scene
 who: [One, Sandi, Carmichael]
