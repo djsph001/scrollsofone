@@ -2,7 +2,9 @@
 
 Date: 2026-08-18
 Author: Lumen (agent), per Dale's four rulings.
-Status: RULED. Executed same-day; see "Execution" section and commit for the mechanical changes.
+Status: CLOSED (2026-08-18). Deployed to scrollsofone.com at commit 554edf1; all live
+verifications passed. Remaining voice/style items (F4/F7/F9/F10/F12) carry into a
+separate editorial checkpoint.
 
 Scope: apply Dale's four controlling rulings and the F1–F14 findings from the
 read-only editorial audit (scrollsofone-editorial-audit-2026-08-18.md). This is a
@@ -92,16 +94,15 @@ marketing blurb; it does NOT touch diegetic uses of the framing.
 Expected gate result: public heads 123 → 118; check:canon green (0 editorial warnings);
 reading paths resolve; "Framing" series and "Meta" who disappear from filter UI (correct).
 
-## Execution results (2026-08-18, executed — NOT pushed)
+## Execution results (2026-08-18 — CLOSED: pushed & deployed)
 
-- build-canon: 138 entries → 118 public heads (119 public, 130 canon).
-- `npm run check:canon`: PASS — "118 public heads; 0 editorial warning(s)"; boundary pass.
-- `npm test`: 31/31 pass. `npm run lint`: clean.
-- `npm run build`: 126 URLs (was 131); sitemap 126; bundle-boundary pass.
-- Verified: 5 archived IDs absent from sitemap/routes/bundle; bodies nulled in
-  manifest; source files preserved; title fixes and all copy edits present in dist;
-  "bridge between regimes" absent from dist; homepage stat now 118/118.
-- Working tree: changes staged locally, STOP before push (per discipline).
+- Deploy commit: 554edf1824cab10e518686411b665a597ad62f7c (origin/master).
+- Live fingerprint: scrollsofone.com serves assets/app-CcbvQl57.js (content-hash
+  matches local build — Netlify serving the new commit).
+- Live verification passed: homepage 118/118; Baptist entrance spoiler-light;
+  five archived IDs 404 + absent from sitemap/bundle; production scaffolding gone;
+  "bridge between regimes" gone; corrected scene titles live; timeline lead "The
+  Order"; sitemap 126 URLs; working tree clean.
 
 ## Open items (author rulings requested before next checkpoint)
 
