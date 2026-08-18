@@ -12,7 +12,7 @@ summary: >
 supersedes: null
 visibility: public
 ---
-Scene: The Silence
+Scene: Sandi Chooses Silence
 
 The next morning, Sandi’s name trended again.
 

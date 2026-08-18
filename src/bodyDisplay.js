@@ -16,6 +16,22 @@ export function titleKey(s) {
     .trim();
 }
 
+// Recognize a structured heading: kind label ("Scene", "Scroll of <Series>",
+// "Love Series"), optional Arabic or Roman number, a separator (colon or dash),
+// then the descriptive title. The series label is matched non-greedily so a
+// following number/title is never swallowed into the label.
+const HEADING_RE = /^(?:Scene|Scroll(?: of [A-Za-z0-9 &'\u2019]+?)?|Love Series)\s*(?:(?:\d{1,3})|(?:M{0,4}(?:CM|CD|D?C{0,3})(?:XC|XL|L?X{0,3})(?:IX|IV|V?I{0,3})))?\s*[:\u2014\u2013\u2012-]\s*(.*)$/;
+
+// Return the descriptive core of a structured heading, or null when the string
+// does not begin with a recognized kind label. Used to suppress a body heading
+// only when its core exactly equals the frontmatter title's core.
+function headingCore(s) {
+  const m = HEADING_RE.exec(String(s ?? '').trim());
+  if (!m) return null;
+  const core = (m[1] || '').trim();
+  return core ? titleKey(core) : null;
+}
+
 // Split a body into blocks at blank lines. Normalizes CRLF and Unicode line
 // separators to \n first. Each block keeps its internal single line breaks
 // (intended to render under white-space: pre-line).
@@ -64,6 +80,15 @@ export function stripDuplicateTitle(body, title) {
   const second = stripHeading(lines[1]);
   if (second && titleKey(`${first} ${second}`) === target) {
     return dropLeading(lines, 2);
+  }
+
+  // Structured heading: strip kind + number + separator from both the body's
+  // leading line and the frontmatter title, and suppress only on an exact core
+  // match (e.g. "Scene: The Approach" vs "Scene 09 — The Approach"). No fuzzy.
+  const bodyCore = headingCore(first);
+  const titleCore = headingCore(title);
+  if (bodyCore !== null && titleCore !== null && bodyCore === titleCore) {
+    return dropLeading(lines, 1);
   }
 
   return body; // uncertain — leave visible and report

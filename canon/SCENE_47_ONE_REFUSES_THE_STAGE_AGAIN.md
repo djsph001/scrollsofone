@@ -12,7 +12,7 @@ summary: >
 supersedes: null
 visibility: public
 ---
-Scene: The Refusal
+Scene: One Refuses the Stage Again
 
 They wanted him in a chair under bright lights.
 

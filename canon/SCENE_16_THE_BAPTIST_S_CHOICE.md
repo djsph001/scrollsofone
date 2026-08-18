@@ -12,7 +12,7 @@ summary: >
 supersedes: null
 visibility: public
 ---
-Scene: The Choice
+Scene: The Baptist's Choice
 
 The chair was comfortable on purpose.
 

@@ -12,7 +12,7 @@ summary: >
 supersedes: null
 visibility: public
 ---
-Scene: The Pregnancy Weaponized (Reframed: One refuses spectacle AND refuses escalation)
+Scene: The Pregnancy Weaponized
 
 It didn’t start as cruelty.
 

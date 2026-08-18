@@ -12,7 +12,7 @@ summary: >
 supersedes: null
 visibility: public
 ---
-Scene: The Rule
+Scene: One Writes the Rule
 
 He didn’t write it like scripture.
 

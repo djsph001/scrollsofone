@@ -12,7 +12,7 @@ summary: >
 supersedes: null
 visibility: public
 ---
-Scene: The Compliance Patch (Reframed: de-risking, not attacking)
+Scene: The Compliance Patch
 
 The portal updated on a Friday evening—quietly.
 

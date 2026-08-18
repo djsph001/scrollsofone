@@ -12,7 +12,7 @@ summary: >
 supersedes: null
 visibility: public
 ---
-Scroll of Conscience: On Decoy Rooms
+Scroll of Conscience: Decoy Detection
 (A Checklist for Citizens in the Age of Staged Truth)
 
 They will not always silence the truth.

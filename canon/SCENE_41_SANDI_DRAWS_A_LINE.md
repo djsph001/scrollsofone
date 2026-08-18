@@ -12,7 +12,7 @@ summary: >
 supersedes: null
 visibility: public
 ---
-Scene: The Line
+Scene: Sandi Draws a Line
 
 Sandi hadn’t spoken to her father directly in weeks.
 

@@ -12,7 +12,7 @@ summary: >
 supersedes: null
 visibility: public
 ---
-Scene: The Minimal Appearance
+Scene: One and Sandi Go Public
 
 They didn’t do a press conference.
 

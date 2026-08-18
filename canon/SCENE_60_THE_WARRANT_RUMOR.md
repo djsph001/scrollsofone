@@ -12,7 +12,7 @@ summary: >
 supersedes: null
 visibility: public
 ---
-Scene: The Warrant Rumor (Reframed: due process as a stabilizer, not a weapon)
+Scene: The Warrant Rumor
 
 At 7:19 a.m., a “warrant” appeared online.
 

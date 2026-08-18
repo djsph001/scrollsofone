@@ -12,7 +12,7 @@ summary: >
 supersedes: null
 visibility: public
 ---
-Scroll of AI & Power: Verify the Voice
+Scroll of AI: Black Box Rule 02: Verify the Voice
 (A Public Protocol Posted by One)
 
 If you are hearing a voice you trust—

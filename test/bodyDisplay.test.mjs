@@ -87,3 +87,46 @@ test("stripDuplicateTitle leaves an empty title or empty body unchanged", () => 
   assert.equal(stripDuplicateTitle("", "Some Title"), "");
   assert.equal(stripDuplicateTitle("Body text.", ""), "Body text.");
 });
+
+// Structured heading comparison (kind + optional number + separator).
+
+test("structured: numbered vs unnumbered scene heading is equivalent", () => {
+  assert.equal(
+    stripDuplicateTitle("Scene: The Approach\n\nBody.", "Scene 09 — The Approach"),
+    "Body.",
+  );
+});
+
+test("structured: Roman vs Arabic numeral mismatch is equivalent", () => {
+  assert.equal(
+    stripDuplicateTitle("Scroll of Governance I: The Fourth Branch\n\nBody.", "Scroll of Governance 01 — The Fourth Branch"),
+    "Body.",
+  );
+});
+
+test("structured: series-label variant with multi-part title is equivalent", () => {
+  assert.equal(
+    stripDuplicateTitle("Scroll of AI: Black Box Rule 02: Verify the Voice\n\nBody.", "Scroll of AI — Black Box Rule 02: Verify the Voice"),
+    "Body.",
+  );
+});
+
+test("structured: a contradiction (different title) is NOT suppressed", () => {
+  const body = "Scene: The Choice\n\nBody.";
+  assert.equal(stripDuplicateTitle(body, "Scene 16 — The Baptist's Choice"), body);
+});
+
+test("structured: a near-match (parenthetical vs dash suffix) is NOT suppressed", () => {
+  const body = "Scene: The Terms of Silence (Haiti)\n\nBody.";
+  assert.equal(stripDuplicateTitle(body, "Scene 67 — The Terms of Silence — Haiti"), body);
+});
+
+test("structured: a partial heading (series + number only) is NOT suppressed", () => {
+  const body = "Scroll of the Baptist II\n\nBody.";
+  assert.equal(stripDuplicateTitle(body, "Scroll of the Baptist II — The Warning"), body);
+});
+
+test("structured: prose is never suppressed as a heading", () => {
+  const body = "One is the central character of this universe.\n\nBody.";
+  assert.equal(stripDuplicateTitle(body, "BIO One"), body);
+});

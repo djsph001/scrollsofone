@@ -12,7 +12,7 @@ summary: >
 supersedes: null
 visibility: public
 ---
-Scene: The Terms of Silence
+Scene: Drafting the Terms of Silence
 
 They didn’t schedule it like diplomacy.
 
