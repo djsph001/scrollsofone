@@ -40,7 +40,7 @@ export const characters = {
     shortName: "Sandi",
     role: "The President's daughter, One's partner, and a political actor with knowledge, complicity, and agency",
     intro:
-      "Sandi is the daughter of President Carmichael and One's partner — raised inside the machinery of spectacle, where she learned early that adults lie in two directions: to the public and to themselves. She learned the machine's mechanics without losing the ability to see through it. She is a politically capable, morally implicated actor making impossible choices in real time, knowing every option costs something she loves.",
+      "Sandi is the daughter of President Carmichael and One's partner — raised inside the machinery of spectacle, where she learned early that adults lie in two directions: to the public and to themselves. She learned the machine's mechanics without losing the ability to see through it. She is a politically capable actor, shaped by proximity to power and forced to make impossible choices in real time.",
     roleInConflict:
       "Sandi is a political actor with complicity, knowledge, and agency. She understands the regime from within, and that knowledge forces One's moral abstractions to confront their human cost. Caught between her father's empire and the future One imagines, the choice between them becomes unavoidable — and she is the person who makes it.",
     relationships: [

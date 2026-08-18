@@ -2,7 +2,9 @@
 
 Date: 2026-08-18
 Author: Lumen (agent), per Dale's five rulings (F4, F7, F9, F10, F12).
-Status: RULED. Executed same-day; see "Execution" section.
+Status: CLOSED (2026-08-18, amended). Checkpoint content deployed at 08b2653; the
+closure commit was amended to correct Sandi's framing (proximity/entanglement ≠
+complicity or culpability). Next editorial work (F11 + F14) is a separate checkpoint.
 
 Scope: apply the five rulings to reader-facing synthesis copy and title grammar.
 Boundaries are explicit: F7 touches only derived synthesis (src/characters.js), NOT
@@ -24,8 +26,13 @@ Remove "not a clean messiah" and "not a damsel or prop". Preserve meaning
 affirmatively:
 - One: a fallible conscience whose authority comes from conduct, refusal, and
   return — not claimed perfection.
-- Sandi: a politically capable, morally implicated actor whose choices carry their
-  own consequences.
+- Sandi: a politically capable actor, shaped by proximity to power and forced to
+  make impossible choices in real time.
+
+Sandi characterization principle (amended 2026-08-18): being Carmichael's daughter,
+understanding the regime, or benefiting from proximity to power makes Sandi
+politically entangled and morally tested — it does not by itself establish
+complicity or culpability. "Morally implicated" over-claimed and was replaced.
 
 Apply ONLY to reader-facing synthesis copy (src/characters.js). Do NOT
 global-replace inside authored canon (e.g. BIO_ONE.md's "Not a clean messiah" stays).
@@ -66,6 +73,19 @@ to justify it.
 
 Expected gate result: public heads stay 118; check:canon green; no title-format
 collisions; titles render "Scene — X" for unnumbered scenes.
+
+## Execution results (2026-08-18 — CLOSED: pushed & deployed, amended)
+
+- Checkpoint content commit 08b2653 (deployed); closure commit amended to fold in
+  the Sandi framing correction and the characterization principle above.
+- Gates: check:canon PASS (118 public heads, 0 warnings); 31/31 tests; lint clean;
+  build 126 URLs; sitemap 126.
+- Live verification passed: One/Sandi affirmative intros live; negations
+  ("not a clean messiah", "not a damsel", "Sharper than both men") absent from
+  bundle; Leadership VII opens diegetic with disclaimer+byline gone; 17 unnumbered
+  "Scene —" titles + 60 numbered "Scene NN —" titles; both Terms of Silence scenes
+  distinct; Scene 49 legacy ID intact with correct display title; homepage 118/118;
+  sitemap 126; working tree clean.
 
 ## Open items (carried forward)
 - None in this checkpoint's scope. Fiction/real-world colophon (from F9) is a
