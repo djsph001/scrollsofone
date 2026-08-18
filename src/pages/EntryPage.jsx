@@ -6,6 +6,7 @@ import { whoToCharacterKey } from '../characters';
 import { backLinkFor } from '../navigation';
 import { SLUG_MAPS } from '../canonFilters';
 import SiteNav from '../SiteNav';
+import { bodyBlocks, stripDuplicateTitle } from '../bodyDisplay';
 
 const ENTRIES = data.entries;
 
@@ -32,7 +33,7 @@ a.tag{text-decoration:none}
 a.tag:hover{text-decoration:none;border-color:#e0a838;color:#e0a838}
 .summary{font-size:19px;line-height:1.5;color:#ebe3d1;margin-bottom:26px;padding-bottom:22px;border-bottom:1px solid #322c1f}
 .body{font-size:16px;line-height:1.65;color:#d4ccbf}
-.body p{margin-bottom:0.75rem}
+.body p{margin-bottom:0.75rem;white-space:pre-line}
 .entry-next{margin-top:44px;padding-top:20px;border-top:1px solid #322c1f;font-family:'Spline Sans Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
 .entry-next-label{color:#8b8470;display:block;margin-bottom:12px}
 .entry-next-links{display:flex;flex-wrap:wrap;gap:16px}
@@ -126,7 +127,9 @@ export default function EntryPage() {
 
         <div className="body">
           {entry.body ? (
-            entry.body.split('\n').map((line, i) => <p key={i}>{line}</p>)
+            bodyBlocks(stripDuplicateTitle(entry.body, entry.title)).map((block, i) => (
+              <p key={i}>{block}</p>
+            ))
           ) : (
             <p className="visually-hidden">Full text available in published editions.</p>
           )}
