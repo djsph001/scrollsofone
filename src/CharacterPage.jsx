@@ -11,9 +11,9 @@ const byId = Object.fromEntries(ENTRIES.map((e) => [e.id, e]));
 
 const CSS = `
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Spline+Sans+Mono:wght@400;500&display=swap');
-:root{background:#11100c;color:#eee6d5;color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#11100c}a{color:inherit}
-.chars{--paper:#eee6d5;--dim:#b9af98;--line:#383225;--amber:#dda63b;--green:#829a7a;min-height:100vh;background:radial-gradient(circle at 82% 9%,rgba(221,166,59,.08),transparent 28%),linear-gradient(180deg,#15130e,#0f0e0b 72%);color:var(--paper);font-family:'Newsreader',Georgia,serif}
-.chars-mark{text-decoration:none}.chars-mark span{color:var(--amber)}
+a{color:inherit}
+.chars{min-height:100vh;background:radial-gradient(circle at 82% 9%,var(--amber-glow),transparent 28%),linear-gradient(180deg,var(--bg-top),var(--bg-bottom) 72%);color:var(--paper);font-family:'Newsreader',Georgia,serif}
+.chars-mark{text-decoration:none}
 .chars-subnav{display:flex;flex-wrap:wrap;gap:14px;padding:14px clamp(22px,5vw,72px);border-bottom:1px solid var(--line);font-family:'Spline Sans Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
 .chars-tabs{display:flex;gap:18px;flex-wrap:wrap}.chars-tabs a{color:var(--dim);text-decoration:none}.chars-tabs a:hover{color:var(--amber)}.chars-tabs a.on{color:var(--amber)}
 .chars-hero{padding:clamp(56px,9vw,110px) clamp(22px,7vw,110px) clamp(40px,6vw,70px);border-bottom:1px solid var(--line)}
@@ -28,9 +28,9 @@ const CSS = `
 .chars-section h2{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(28px,3.4vw,42px);line-height:1.05;margin:0 0 18px;max-width:18ch}
 .chars-body{color:var(--dim);font-size:18px;line-height:1.55;max-width:640px;margin:0}
 .rel{display:grid;gap:14px}.rel-item{border-left:2px solid var(--line);padding:2px 0 2px 18px}.rel-item b{color:var(--paper);font-weight:600;font-family:'Fraunces',serif;font-size:19px}.rel-item p{color:var(--dim);margin:4px 0 0;font-size:16px;line-height:1.5}
-.entry-list{display:grid;gap:2px}.entry-link{text-decoration:none;padding:14px 16px;border:1px solid var(--line);background:rgba(31,28,20,.4);transition:background .2s,border-color .2s}.entry-link:hover{background:#201c14;border-color:var(--amber)}.entry-link b{display:block;font-family:'Fraunces',serif;font-weight:500;font-size:19px;color:var(--paper)}.entry-link span{display:block;color:var(--dim);font-size:15px;margin-top:4px;line-height:1.45}
+.entry-list{display:grid;gap:2px}.entry-link{text-decoration:none;padding:14px 16px;border:1px solid var(--line);background:var(--veil);transition:background .2s,border-color .2s}.entry-link:hover{background:var(--surface);border-color:var(--amber)}.entry-link b{display:block;font-family:'Fraunces',serif;font-weight:500;font-size:19px;color:var(--paper)}.entry-link span{display:block;color:var(--dim);font-size:15px;margin-top:4px;line-height:1.45}
 .path{list-style:none;margin:0;padding:0;counter-reset:p}.path li{counter-increment:p;display:flex;gap:16px;padding:13px 0;border-bottom:1px solid var(--line)}.path li:last-child{border-bottom:0}.path .n{font-family:'Spline Sans Mono',monospace;color:var(--amber);font-size:11px;padding-top:5px}.path .n:after{content:counter(p,decimal-leading-zero)}.path .tx a{color:var(--paper);text-decoration:none;font-family:'Fraunces',serif;font-size:19px;font-weight:500}.path .tx a:hover{color:var(--amber)}.path .tx .note{display:block;color:var(--dim);font-size:14px;margin-top:3px;font-family:'Newsreader',serif}
-.chars-foot{padding:26px clamp(22px,7vw,110px);border-top:1px solid var(--line);font-family:'Spline Sans Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#847d6c;display:flex;justify-content:space-between;gap:20px}.chars-foot a{color:var(--dim);text-decoration:none}
+.chars-foot{padding:26px clamp(22px,7vw,110px);border-top:1px solid var(--line);font-family:'Spline Sans Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);display:flex;justify-content:space-between;gap:20px}.chars-foot a{color:var(--dim);text-decoration:none}
 `;
 
 export default function CharacterPage({ char }) {

@@ -43,23 +43,20 @@ for (const e of SPINE) {
 
 const CSS = `
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Spline+Sans+Mono:wght@400;500&display=swap');
-:root{background:#11100c;color:#eee6d5;color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#11100c}a{color:inherit}
-.tl{--paper:#eee6d5;--dim:#b9af98;--line:#383225;--amber:#dda63b;min-height:100vh;background:radial-gradient(circle at 18% 6%,rgba(221,166,59,.07),transparent 26%),linear-gradient(180deg,#15130e,#0f0e0b 72%);color:var(--paper);font-family:'Newsreader',Georgia,serif}
-.tl-nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:20px clamp(22px,5vw,72px);border-bottom:1px solid var(--line);font-family:'Spline Sans Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
-.tl-mark{text-decoration:none}.tl-mark span{color:var(--amber)}
-.tl-navlinks{display:flex;gap:20px;flex-wrap:wrap}.tl-navlinks a{color:var(--dim);text-decoration:none}.tl-navlinks a:hover{color:var(--amber)}
+a{color:inherit}
+.tl{min-height:100vh;background:radial-gradient(circle at 18% 6%,var(--amber-glow),transparent 26%),linear-gradient(180deg,var(--bg-top),var(--bg-bottom) 72%);color:var(--paper);font-family:'Newsreader',Georgia,serif}
 .tl-hero{padding:clamp(52px,8vw,96px) clamp(22px,7vw,110px) clamp(28px,4vw,44px)}
 .tl-kicker{font-family:'Spline Sans Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--amber)}
 .tl-title{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(46px,8vw,96px);line-height:.92;letter-spacing:-.03em;margin:16px 0 14px}
 .tl-lead{color:var(--dim);font-size:clamp(18px,2vw,23px);max-width:720px;line-height:1.45;margin:0}
-.tl-notice{margin:0 clamp(22px,7vw,110px);padding:14px 18px;border:1px solid #4d3f22;border-left:3px solid var(--amber);background:rgba(221,166,59,.06);color:var(--dim);font-size:15px;line-height:1.5;max-width:720px}
+.tl-notice{margin:0 clamp(22px,7vw,110px);padding:14px 18px;border:1px solid var(--amber-border);border-left:3px solid var(--amber);background:var(--amber-veil);color:var(--dim);font-size:15px;line-height:1.5;max-width:720px}
 .tl-spine{list-style:none;margin:0;padding:clamp(28px,4vw,48px) clamp(22px,5vw,72px) clamp(60px,8vw,110px)}
 .tl-run{padding:0 0 0 0;margin:0 0 22px}
 .tl-arc{font-family:'Spline Sans Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;display:flex;align-items:center;gap:12px;padding:10px 0 12px;color:var(--dim)}
 .tl-arc:before{content:"";width:9px;height:9px;border-radius:50%;background:currentColor;flex:none}
 .tl-scenes{display:grid;gap:1px;border:1px solid var(--line);border-radius:4px;overflow:hidden}
-.tl-node{display:block;background:rgba(24,22,16,.5);transition:background .2s}
-.tl-node:hover{background:#211d14}
+.tl-node{display:block;background:var(--veil-node);transition:background .2s}
+.tl-node:hover{background:var(--surface)}
 .tl-body{padding:16px 18px 18px 20px}
 .tl-head{display:flex;align-items:baseline;gap:16px;text-decoration:none}
 .tl-head:hover h3{color:var(--amber)}
@@ -69,7 +66,7 @@ const CSS = `
 .tl-chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
 .tl-chip{font-family:'Spline Sans Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--dim);border:1px solid var(--line);padding:4px 9px;border-radius:99px;transition:border-color .2s,color .2s}
 .tl-chip:hover{color:var(--amber);border-color:var(--amber)}
-.tl-foot{padding:26px clamp(22px,7vw,110px);border-top:1px solid var(--line);font-family:'Spline Sans Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#847d6c;display:flex;justify-content:space-between;gap:20px}.tl-foot a{color:var(--dim);text-decoration:none}
+.tl-foot{padding:26px clamp(22px,7vw,110px);border-top:1px solid var(--line);font-family:'Spline Sans Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);display:flex;justify-content:space-between;gap:20px}.tl-foot a{color:var(--dim);text-decoration:none}
 @media(max-width:640px){.tl-head{gap:12px}.tl-num{font-size:10px}.tl-body{padding:14px 14px 16px 14px}.tl-summary{font-size:14px}.tl-hero{padding-top:44px}.tl-title{font-size:44px}}
 `;
 
