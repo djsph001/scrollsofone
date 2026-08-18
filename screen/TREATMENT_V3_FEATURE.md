@@ -7,6 +7,7 @@ Prologue voice: screen/PROLOGUE_V2_THE_ONE_WHO_REFUSED-production.fountain
 Controlling Prologue language: "Before they called him dangerous. Before they called him prophet."
 Date: 2026-08-18 | Target: 110-125 minutes | Runtime: ~118 minutes
 Status: Locked feature-treatment checkpoint. Adaptation material — not canon.
+Chronology ruling I23 (2026-08-18): Beat 14 limited refusal; Beat 19 verification addendum; Beat 49 full scroll.
 Source correction: "him" retained as controlling; "me" not used.
 
 -------------------------------------------------------------------------------
@@ -169,11 +170,11 @@ theft story not concession. Only instant losing becomes "robbed."
 
 Intercut: Sandi told her father's people have clinic photo. No spin:
 "She's focused on her health and her future." Not "our future." One
-drafts On Spectacle and Power: won't debate on donors' stage — "I have
-debated men like him my whole life at kitchen tables..." Counter-offer:
-release Baptist, publish evidence, allow verification. Carmichael hears
-it read aloud. Done being refused. Calls different meeting — not usual
-staff.
+drafts an early limited refusal — won't debate on donors' stage —
+"I have debated men like him my whole life at kitchen tables..." and
+demands only published evidence and independent verification [I23, Beat
+14 limited; full scroll at Beat 49]. Carmichael hears it read aloud.
+Done being refused. Calls different meeting — not usual staff.
 
 ---
 SEQUENCE 4 — ABDUCTION AND FLOOD  [39:00 - 58:00]
@@ -491,9 +492,10 @@ VOICE / SCRIPTURE
 I1  Network invitation as trigger — Seq 1. Compresses repeated televised-
     stage invitations into one diegetic prompt for the refusal post. No
     new character or institution.
-I2  Sandi + One's first meeting dramatized — Seq 2. File implies contact;
-    Love Series texture provides tone. No canonical first-meeting scene
-    quoted; meeting staged without new lore.
+I2  Early established-intimacy scene — Seq 2. Their literal first
+    encounter occurs offscreen; the apartment scene dramatizes the foothold
+    implied by canon. Love Series texture provides tone. No canonical
+    first-meeting scene quoted; staged without new lore. WEEKS LATER.
 I3  Unpublished clinic photo held as choice — Seq 2-4 arc. Leak timeline
     compressed so Carmichael holds photo before deploying, creating
     thriller window. Event (leak) remains as in SCENE_08/SCROLL_SANDI_04.
@@ -552,6 +554,12 @@ I21 Small-bag departure, empty-pockets ritual — Seq 8 (65,67). Staging of
     ritual, not new requirement.
 I22 THE VOICE third occurrence under closing line — Seq 8. Timing;
     ambiguity preserved.
+I23 Chronology correction — Seq 2/3/7. One cannot demand Baptist's release
+    before Baptist disappears nor expose VOX before it is authorized; the
+    complete SCROLL_ONE_01 belongs at Beat 49 after VOX exposure. Beat 14
+    (Seq 2) is limited to published evidence/verification; Beat 19 is a
+    verification addendum for the election; Beat 49 carries the full scroll
+    (release + program disclosure + evidence + verification).
 
 No other inventions. If a beat has a direct scene/scroll source listed
 in Section 5, it is not invention; it is traceability.

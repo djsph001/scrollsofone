@@ -8,7 +8,7 @@
 
 - **I2 — Beat 8:** Early established-intimacy scene [ADAPTATION-ONLY]. Their literal first encounter occurs offscreen. Dramatizes the relationship foothold implied by canon; Love Series gives tone. Staged as intimate apartment (tea, vinyl, window, parked car) — no promises, no backstory, no new lore.
 - **I3a/I3b — Beats 12,14:** Unpublished Brooklyn clinic stills held as choice, not yet deployed. Leak timeline compressed so Carmichael holds before deploying; "her future" vs "our future" dramatized.
-- **Timing — Beat 14:** Counter-offer language from `SCROLL_ONE_01_ON_SPECTACLE_AND_POWER` staged as kitchen-table draft, plain background, text-only.
+- **I23 — Beat 14:** Early limited refusal [ADAPTATION-ONLY timing]. Only published evidence + independent verification; no Baptist/synthetic-program language (complete scroll at Beat 49 per chronology ruling). Staged as kitchen-table draft, plain background, text-only — limited phrasing from `SCROLL_ONE_01_ON_SPECTACLE_AND_POWER`.
 
 ## Voice
 
@@ -43,3 +43,4 @@ No `Notes:` field. All flags here.
 
 - A `screen/fountain/VOICE_OF_ONE_Seq02_Beats07-14.fountain`
 - A `screen/fountain/VOICE_OF_ONE_Seq02_Beats07-14_ADAPTATION_NOTES.md`
+- I23 applied retroactively in this batch (see Seq03 notes).

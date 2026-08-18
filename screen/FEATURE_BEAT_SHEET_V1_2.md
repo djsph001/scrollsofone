@@ -154,8 +154,8 @@ BEAT 7 — THE FILE ON ONE  p.12-13
   [ADAPTATION-ONLY]: None. Grounded in BIO_SANDI assignment.
 
 BEAT 8 — ROOMS, SEASONS, MUSIC  p.14-15
-  Location / Characters: VARIOUS ROOMS; ONE and SANDI.
-  Visible action: One and Sandi meet without mythology — rooms, seasons, music, tender, already under surveillance. Small domestic details — who makes tea, what song is on.
+  Location / Characters: SANDI'S APARTMENT — WEEKS LATER; ONE and SANDI.
+  Visible action: Early established-intimacy scene — WEEKS LATER. — not first meeting. Small apartment, kettle, vinyl, tea, shoulder/mug/song/steam, tender, already under surveillance. Literal first encounter occurred offscreen.
   Dramatic purpose: Give love a body before politics claims it; surveillance present from start so intimacy is never naive.
   One's objective: To be a person with her, not a symbol.
   Opposition: Surveillance that will later leak; regime's need to weaponize intimacy.
@@ -163,7 +163,7 @@ BEAT 8 — ROOMS, SEASONS, MUSIC  p.14-15
   Emotional turn: Tender, anachronistic — kinship older than strategy.
   Exit escalation: Domestic is already political — mother call will show why.
   Canon sources: TREATMENT V3 Seq 2 Love texture, canon/BIO_SANDI.md
-  [ADAPTATION-ONLY]: I2 — First meeting dramatized. File implies contact; Love Series provides tone. No canonical first-meeting scene quoted.
+  [ADAPTATION-ONLY]: I2 — Early established-intimacy scene [ADAPTATION-ONLY]. Their literal first encounter occurs offscreen; this dramatizes the foothold implied by canon. Love Series provides tone. No canonical first-meeting scene quoted.
 
 BEAT 9 — SOUP-CAN LABELS  p.16-17
   Location / Characters: ONE'S KITCHEN — PHONE; ONE, MOTHER (voice).
@@ -227,15 +227,15 @@ BEAT 13 — HEAR THE INSTRUCTION  p.24-25
 
 BEAT 14 — "SHE'S FOCUSED ON HER HEALTH"  p.26-28 — ACT I BREAK
   Location / Characters: OFFICE / PHONE; SANDI, ONE, CARMICHAEL'S PEOPLE (off-screen).
-  Visible action: Sandi told father's people have the clinic photo. No spin: "She's focused on her health and her future." Not "our future." One drafts On Spectacle and Power: won't debate on donors' stage — "I have debated men like him my whole life at kitchen tables..." Counter-offer: release Baptist, publish evidence, allow verification.
+  Visible action: Sandi told father's people have the clinic photo. No spin: "She's focused on her health and her future." Not "our future." One drafts an early limited refusal — won't debate on donors' stage — "I have debated men like him at kitchen tables my whole life..." — and demands only published evidence and independent verification. No Baptist or synthetic-program language. [I23 — full scroll at Beat 49.]
   Dramatic purpose: Act I break — private refusal becomes public offer with terms; Sandi's pronoun is act of protection that will cost.
   One's objective: To refuse stage and reframe negotiation on verification, not performance.
   Opposition: Leak pressure to collapse "her future" into "our dynasty/prophecy."
   Verification / Fourth Branch: First written counter-offer with verification terms.
   Emotional turn: Restraint as agency — Sandi's one-word edit ("her" not "our") holds line.
   Exit escalation: Offer rejected by power will become abduction — truth persists, so voice must be manufactured.
-  Canon sources: canon/SCROLL_SANDI_04_PREGNANCY_PUBLIC.md, canon/SCROLL_ONE_01_ON_SPECTACLE_AND_POWER.md
-  [ADAPTATION-ONLY]: I3b — "Her future" vs "our future" dramatization. Compressed leak-privilege timing.
+  Canon sources: canon/SCROLL_SANDI_04_PREGNANCY_PUBLIC.md ("her future"), limited demand staged from canon/SCROLL_ONE_01_ON_SPECTACLE_AND_POWER.md (evidence + verification only) — full scroll at Beat 49.
+  [ADAPTATION-ONLY]: I3b — "Her future" vs "our future" dramatization [I23 timeline: release/program deferred to Beat 49]. Compressed leak-privilege timing.
 
 ==============================
 SEQUENCE 3 — THE MASK, THE BULLET, THE THEFT (pp. 29-41)
@@ -280,7 +280,7 @@ BEAT 17 — THE STOLEN ELECTION  p.33-34
 
 BEAT 18 — SANDI'S SHORTER SHRIFT  p.35-36
   Location / Characters: HALLWAY / PRESS EDGE; SANDI, AIDE.
-  Visible action: Sandi told clinic photo is being shopped. She repeats verbatim: "She's focused on her health and her future." Pronoun held. Aide notes window closing.
+  Visible action: Sandi told clinic photo is being shopped. She repeats verbatim: "She's focused on her health and her future." Pronoun held. Concrete cost: excluded from 4 o'clock secure briefing without notice — badge red light, chair holds folders. [ADAPTATION-ONLY]
   Dramatic purpose: Sandi's bridge cost made visible — holding "her" costs standing in father's house.
   One's objective: Off-screen — drafting power paper.
   Opposition: Meme economy that wants "our baby" as prophecy/succession.
@@ -290,22 +290,22 @@ BEAT 18 — SANDI'S SHORTER SHRIFT  p.35-36
   Canon sources: canon/BIO_SANDI.md, canon/SCROLL_SANDI_04_PREGNANCY_PUBLIC.md
   [ADAPTATION-ONLY]: None — continuation of Beat 14 pronoun defense.
 
-BEAT 19 — ON SPECTACLE AND POWER (KITCHEN TABLE DRAFT)  p.37-38
+BEAT 19 — VERIFICATION ADDENDUM (KITCHEN TABLE DRAFT)  p.37-38 [I23]
   Location / Characters: KITCHEN TABLE; ONE alone, pen, radio low.
-  Visible action: One writes: "I have debated men like him my whole life at kitchen tables — I won't debate him on a donors' stage." Reads aloud to empty room. Adds counter-offer: release Baptist, publish evidence, allow verification.
-  Dramatic purpose: Make procedural refusal physical — writing as working locks.
+  Visible action: One writes a limited verification addendum responding to the theft claim: "Publish precinct evidence. Preserve records. Permit independent review. An unverified claim will not become a stage." No Baptist, no VOX language — cannot exist yet. Reads aloud to empty room.
+  Dramatic purpose: Make procedural refusal physical — writing as working locks — but limited to election, preserving chronology for full scroll at Beat 49.
   One's objective: To refuse without disengaging — offer verification instead.
   Opposition: Stage that wants his face in archive — edit, isolate, ridicule.
-  Verification / Fourth Branch: Method over charisma named.
-  Emotional turn: Tired authority — essay as prayer.
+  Verification / Fourth Branch: Method over charisma named — precinct records as verification.
+  Emotional turn: Tired authority — note as prayer.
   Exit escalation: Paper goes out — Carmichael done being refused.
-  Canon sources: canon/SCROLL_ONE_01_ON_SPECTACLE_AND_POWER.md
-  [ADAPTATION-ONLY]: None.
+  Canon sources: Limited demand staged from canon/SCROLL_ONE_01_ON_SPECTACLE_AND_POWER.md (published evidence + independent verification; full scroll with release/program disclosure at Beat 49) — see I23.
+  [ADAPTATION-ONLY]: I23 — Chronology correction (Beat 19 limited addendum; full scroll deferred to Beat 49; no Baptist/VOX here).
 
 BEAT 20 — DONE BEING REFUSED  p.39-40
   Location / Characters: WHITE HOUSE — NIGHT; CARMICHAEL hearing essay read aloud.
-  Visible action: Aide reads kitchen-table essay. Carmichael silent, then: calls different meeting — not usual staff. "Get me the continuities."
-  Dramatic purpose: Causal hinge — One's verification offer triggers Project VOX.
+  Visible action: Aide reads kitchen-table addendum. Carmichael silent, then: calls different meeting — not usual staff. "Get me the continuities."
+  Dramatic purpose: Causal hinge — One's limited verification addendum triggers need for other meeting.
   One's objective: Off-screen — to be heard on his terms.
   Opposition: Carmichael's humiliation at being refused three times in three registers.
   Verification / Fourth Branch: Antithesis — continuity of guidance will counterfeit conscience.
@@ -316,7 +316,7 @@ BEAT 20 — DONE BEING REFUSED  p.39-40
 
 BEAT 21 — NOT THE USUAL STAFF  p.41
   Location / Characters: CONFERENCE ROOM — EMPTY CHAIRS; CARMICHAEL, TECHNOCRATS.
-  Visible action: New faces — not political staff. Bureaucratic approval: "Continuity of guidance." Not called cloning. Form initialed.
+  Visible action: New faces — not political staff. Feasibility review restricted: whether guidance can be made continuous across absence. No target named, no method described. Form initialed: REVIEW checked, AUTHORIZE empty.
   Dramatic purpose: Antichrist procedural beat — authoring conscience's voice as paperwork, not lightning.
   One's objective: Absent — ethic about to be counterfeited.
   Opposition: N/A — this is opposition institutionalizing itself.
@@ -670,17 +670,17 @@ BEAT 48 — THE HEARING: SEAL, MICROPHONES, CLOCK  p.93-94 — HEARING BREAKS
   Canon sources: canon/SCENE_46_THE_FIRST_PUBLIC_HEARING.md
   [ADAPTATION-ONLY]: None. Hearing staging from canon.
 
-BEAT 49 — SAME PARAGRAPH, NOW WITH COST  p.95-96
+BEAT 49 — ON SPECTACLE AND POWER (COMPLETE SCROLL)  p.95-96 [I23]
   Location / Characters: PLAIN BACKGROUND — TEXT ONLY; ONE (off-screen text), COUNCIL.
-  Visible action: One refuses again: one paragraph, plain background, text-only, comments disabled — same language as Beat 5 with cost behind it (kitchens dark). Council sends no leader. Sends Standard Kit — checklist, ethic, minutes — read by no one in particular.
+  Visible action: One posts the complete SCROLL_ONE_01_ON_SPECTACLE_AND_POWER — now chronologically possible after Baptist's disappearance and VOX exposure: "I have debated men like him my whole life at kitchen tables..." Release the Baptist. Disclose the synthetic-prophet program. Publish the evidence. Allow independent verification. Plain background, text-only, comments disabled. Same paragraph as Beat 5 now with full scroll cost behind it (kitchens dark). Council sends no leader. Sends Standard Kit — checklist, ethic, minutes — read by no one in particular.
   Dramatic purpose: Refusal compounded — same act now proves infrastructure that does not need him or a single room; hearing has no one to archive.
   One's objective: To refuse stage without abandoning people.
   Opposition: Archive that needs footage — denied.
   Verification / Fourth Branch: Standard Kit as Stage 2 verification delivered to hearing.
   Emotional turn: Quiet repetition as proof — not louder, same.
   Exit escalation: If hearing fails, comedy will try contempt.
-  Canon sources: canon/SCENE_47_ONE_REFUSES_THE_STAGE_AGAIN.md
-  [ADAPTATION-ONLY]: None.
+  Canon sources: canon/SCROLL_ONE_01_ON_SPECTACLE_AND_POWER.md (complete scroll — now at Beat 49 per I23), canon/SCENE_47_ONE_REFUSES_THE_STAGE_AGAIN.md
+  [ADAPTATION-ONLY]: I23 — Complete scroll placed at Beat 49 after VOX authorization/deployment; not at Beats 14/19.
 
 BEAT 50 — "WITNESS CIRCLES(tm)"  p.97-98
   Location / Characters: LATE-NIGHT STAGE / APARTMENTS WATCHING; CLEAN-SUIT COMEDIAN, CROWD.
@@ -937,6 +937,7 @@ Adaptation-only elements (with V3 I-numbers; new/modified flagged):
   I20 — Beats 62/1: Sonogram/checklist images [ADAPTATION-ONLY private visual dramatizations]
   I21a/b— Beats 57-58: Small-bag/empty-pockets ritual [ADAPTATION-ONLY visual ritual]
   I22 — Beat 62: THE VOICE 3/3 under closing [ADAPTATION-ONLY timing]
+  I23 — Beats 14,19,49: Chronology correction — One cannot demand Baptist/release or expose VOX before disappearance/authorization; Beat 14 limited to donors' stage + evidence/verification, Beat 19 limited addendum for election records, Beat 49 complete SCROLL_ONE_01 (release + program disclosure + evidence + verification).
 
   Modified / new vs V1:
     I8 modified — midpoint now paired with external transfer (Beat 30) surrendering control.
