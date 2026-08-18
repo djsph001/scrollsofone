@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_23_THE_EXAMPLE.md
-
 Scene: The Example
 
 They didn’t arrest the journalist.

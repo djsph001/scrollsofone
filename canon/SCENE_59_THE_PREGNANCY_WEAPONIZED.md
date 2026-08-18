@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_59_THE_PREGNANCY_WEAPONIZED.md
-
 Scene: The Pregnancy Weaponized (Reframed: One refuses spectacle AND refuses escalation)
 
 It didn’t start as cruelty.

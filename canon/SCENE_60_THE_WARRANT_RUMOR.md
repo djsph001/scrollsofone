@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_60_THE_WARRANT_RUMOR.md
-
 Scene: The Warrant Rumor (Reframed: due process as a stabilizer, not a weapon)
 
 At 7:19 a.m., a “warrant” appeared online.

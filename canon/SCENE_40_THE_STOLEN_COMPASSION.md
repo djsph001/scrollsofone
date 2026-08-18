@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_40_THE_STOLEN_COMPASSION.md
-
 Scene: The Stolen Compassion
 
 The regime didn’t attack the Mutual Aid Branch head-on.

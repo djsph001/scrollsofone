@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_39_THE_MUTUAL_AID_BRANCH.md
-
 Scene: The Mutual Aid Branch
 
 They didn’t announce it.

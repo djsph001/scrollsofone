@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_30_THE_INTERN_DISAPPEARS.md
-
 Scene: The Intern Disappears
 
 She didn’t sleep.

@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCROLL_CONSCIENCE_04_DECOY_DETECTION.md
-
 Scroll of Conscience: On Decoy Rooms
 (A Checklist for Citizens in the Age of Staged Truth)
 

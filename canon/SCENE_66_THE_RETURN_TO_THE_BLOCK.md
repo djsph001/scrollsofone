@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_66_THE_RETURN_TO_THE_BLOCK.md
-
 Scene: The Return to the Block
 
 He came back to the neighborhood the way people come back when they don’t want to be seen.

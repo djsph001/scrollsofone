@@ -12,11 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-
-
-SCENE_56_THE_COMPLIANCE_PATCH.md
-
 Scene: The Compliance Patch (Reframed: de-risking, not attacking)
 
 The portal updated on a Friday evening—quietly.

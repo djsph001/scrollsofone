@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_61_THE_WELFARE_CHECK.md
-
 Scene: The Welfare Check
 
 The knock came at 2:14 p.m.

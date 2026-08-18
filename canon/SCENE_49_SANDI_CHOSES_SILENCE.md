@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_49_SANDI_CHOSES_SILENCE.md
-
 Scene: The Silence
 
 The next morning, Sandi’s name trended again.

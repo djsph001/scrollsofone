@@ -12,10 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-
-SCENE_47_ONE_REFUSES_THE_STAGE_AGAIN.md
-
 Scene: The Refusal
 
 They wanted him in a chair under bright lights.

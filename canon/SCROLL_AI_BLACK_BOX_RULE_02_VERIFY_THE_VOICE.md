@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCROLL_AI_BLACK_BOX_RULE_02_VERIFY_THE_VOICE.md
-
 Scroll of AI & Power: Verify the Voice
 (A Public Protocol Posted by One)
 

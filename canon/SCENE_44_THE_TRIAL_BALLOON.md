@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_44_THE_TRIAL_BALLOON.md
-
 Scene: The Trial Balloon
 
 They didn’t come for the circles with sirens.

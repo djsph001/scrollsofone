@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-ENE_18_THE_PUBLIC_AWAKENING.md
-
 Scene: The Public Awakening
 
 They released the clip anyway.

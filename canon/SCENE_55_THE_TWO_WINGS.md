@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_55_THE_TWO_WINGS.md
-
 Scene: The Two Wings
 
 A week later, the meeting wasn’t a rally.

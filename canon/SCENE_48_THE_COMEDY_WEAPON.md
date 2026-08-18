@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_48_THE_COMEDY_WEAPON.md
-
 Scene: The Comedy Weapon
 
 It started like a joke.

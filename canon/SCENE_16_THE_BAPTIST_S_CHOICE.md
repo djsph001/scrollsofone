@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_16_THE_BAPTIST’S_CHOICE.md
-
 Scene: The Choice
 
 The chair was comfortable on purpose.

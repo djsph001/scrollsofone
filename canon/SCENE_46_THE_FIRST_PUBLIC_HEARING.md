@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_46_THE_FIRST_PUBLIC_HEARING.md
-
 Scene: The First Public Hearing
 
 They staged it like democracy.

@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_17_THE_REAL_CLIP.md
-
 Scene: The Real Clip
 
 They gave him a chair and a camera like it was a favor.

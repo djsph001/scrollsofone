@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_27_THE_DECOY_ROOM.md
-
 Scene: The Decoy Room
 
 They built it like a trap you could photograph.

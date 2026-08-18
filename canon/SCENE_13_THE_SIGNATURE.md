@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_13_THE_SIGNATURE.md
-
 Scene: The Signature
 
 One didn’t answer right away.

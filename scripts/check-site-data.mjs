@@ -120,6 +120,21 @@ for (const entry of publicHeads) {
   else summaryOwners.set(summary, entry.id);
 }
 
+// Hygiene gate: a public head's body must not begin with a source-filename line
+// (production residue). Narrow, unmistakable detection only — removal is done by
+// an audited allowlist, never by this pattern.
+const FILENAME_HEADER_RE = /^[A-Z][A-Z0-9_'\u2019]*\.md$/;
+for (const entry of publicHeads) {
+  const first = String(entry.body ?? '')
+    .replace(/\r\n/g, '\n')
+    .replace(/\u2028/g, '\n')
+    .split('\n')
+    .find((l) => l.trim().length > 0);
+  if (first && FILENAME_HEADER_RE.test(first.trim())) {
+    errors.push(`hygiene: ${entry.id} body begins with filename residue "${first.trim()}"`);
+  }
+}
+
 for (const warning of warnings) console.warn(`warning: ${warning}`);
 if (errors.length) {
   for (const error of errors) console.error(`error: ${error}`);

@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_11_THE_FIRST_FAKE.md
-
 Scene: The First Fake
 
 It didn’t hit like a scandal.

@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_24_ONE_AND_SANDI_GO_PUBLIC.md
-
 Scene: The Minimal Appearance
 
 They didn’t do a press conference.

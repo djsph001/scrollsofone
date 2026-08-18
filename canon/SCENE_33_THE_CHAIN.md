@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_33_THE_CHAIN.md
-
 Scene: The Chain
 
 The first witness circle wasn’t announced with a banner.

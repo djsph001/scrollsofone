@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_45_THE_COUNCIL_OF_KITCHENS.md
-
 Scene: The Council of Kitchens
 
 It happened without an announcement.

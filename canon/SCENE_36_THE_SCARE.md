@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_36_THE_SCARE.md
-
 Scene: The Scare
 
 The third library circle never started.

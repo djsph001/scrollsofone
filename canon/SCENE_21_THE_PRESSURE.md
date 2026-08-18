@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_21_THE_PRESSURE.md
-
 Scene: The Pressure
 
 The President didn’t know where the room was.

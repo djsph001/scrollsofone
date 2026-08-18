@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_64_THE_TERMS_OF_SILENCE.md
-
 Scene: The Terms of Silence
 
 They didn’t schedule it like diplomacy.

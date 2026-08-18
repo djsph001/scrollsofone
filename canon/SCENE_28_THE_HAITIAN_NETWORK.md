@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_28_THE_HAITIAN_NETWORK.md
-
 Scene: The Haitian Network
 
 They didn’t call it a network.

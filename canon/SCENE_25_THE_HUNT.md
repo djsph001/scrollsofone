@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_25_THE_HUNT.md
-
 Scene: The Hunt
 
 They didn’t hunt the room like police.

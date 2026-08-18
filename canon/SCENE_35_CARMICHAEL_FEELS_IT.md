@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_35_CARMICHAEL_FEELS_IT.md
-
 Scene: The Feeling
 
 The President felt it before the data proved it.

@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_58_THE_TARGETED_LEAK.md
-
 Scene: The Targeted Leak
 
 The leak hit at 6:42 a.m.

@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_43_ONE_WRITES_THE_RULE.md
-
 Scene: The Rule
 
 He didn’t write it like scripture.

@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_20_THE_SAFEHOUSE.md
-
 Scene: The Safehouse
 
 They didn’t call it a safehouse.

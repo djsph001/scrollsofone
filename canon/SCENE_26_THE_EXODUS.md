@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_26_THE_EXODUS.md
-
 Scene: The Exodus
 
 Sandi felt it first.

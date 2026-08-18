@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-CENE_22_THE_TURNING_POINT.md
-
 Scene: The Turning Point
 
 The story finally broke in the most boring way possible.

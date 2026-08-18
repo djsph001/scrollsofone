@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCROLL_OF_ONE_THE_PHILOSOPHER_S_EYES.md
-
 Scroll of One: The Philosopher’s Eyes
 
 When the philosopher came out of the dark,

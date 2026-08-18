@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_67_THE_TERMS_OF_SILENCE.md
-
 Scene: The Terms of Silence (Haiti)
 
 They didn’t tell him where until the last hour.

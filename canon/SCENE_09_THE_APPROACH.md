@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_09_THE_APPROACH.md
-
 Scene: The Approach
 
 They didn’t come with sirens.

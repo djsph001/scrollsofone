@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_65_THE_DEPARTURE.md
-
 Scene: The Departure
 
 The decision didn’t come with thunder.

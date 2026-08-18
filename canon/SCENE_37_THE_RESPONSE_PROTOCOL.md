@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_37_THE_RESPONSE_PROTOCOL.md
-
 Scene: The Response Protocol
 
 By the next morning, there was no viral outrage thread.

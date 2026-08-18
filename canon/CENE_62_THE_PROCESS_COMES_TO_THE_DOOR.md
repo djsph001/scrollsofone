@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_62_THE_PROCESS_COMES_TO_THE_DOOR.md
-
 Scene: The Process Comes to the Door
 
 The second visit didn’t come with smiles.

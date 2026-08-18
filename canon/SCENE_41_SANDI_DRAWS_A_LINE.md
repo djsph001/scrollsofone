@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_41_SANDI_DRAWS_A_LINE.md
-
 Scene: The Line
 
 Sandi hadn’t spoken to her father directly in weeks.

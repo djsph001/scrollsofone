@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_52_THE_HAITI_TERM_SHEET.md
-
 Scene: The Haiti Term Sheet
 
 The invite didn’t come as a threat.

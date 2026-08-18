@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_53_THE_ANNOUNCEMENT_AS_RECEIPT.md
-
 Scene: The Announcement as Receipt
 
 They built the stage the way they always did: clean flags, clean podium, clean words.

@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_14_THE_FIRST_PUBLIC_TEST.md
-
 Scene: The First Public Test
 
 One didn’t post a denial.

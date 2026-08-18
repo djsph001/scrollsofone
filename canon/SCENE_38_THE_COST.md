@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_38_THE_COST.md
-
 Scene: The Cost
 
 It didn’t look like a crackdown.

@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCROLL_GOVERNANCE_01_THE_FOURTH_BRANCH.md
-
 Scroll of Governance I: The Fourth Branch
 
 The problem is not that people disagree.

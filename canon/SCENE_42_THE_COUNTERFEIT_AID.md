@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_42_THE_COUNTERFEIT_AID.md
-
 Scene: The Counterfeit Aid
 
 The first person to take the White House “Community Stability Program” wasn’t naïve.

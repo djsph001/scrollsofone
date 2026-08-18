@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_34_THE_SECOND_CIRCLE.md
-
 Scene: The Second Circle
 
 The second circle didn’t feel like a sequel.

@@ -12,9 +12,6 @@ summary: >
 supersedes: null
 visibility: public
 ---
-
-SCENE_50_THE_JOKE_BACKFIRES.md
-
 Scene: The Joke Backfires
 
 It wasn’t a heroic exposé.
